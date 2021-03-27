@@ -425,6 +425,25 @@
   img {
     pointer-events: none;
   }
+      /* width */
+      ::-webkit-scrollbar {
+    width: 10px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+    background: #0A0F16;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+    background: #0E141D;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+    background: #0E141D;
+    }
 </style>
 <script>
   $('img').mousedown(function (e) {
