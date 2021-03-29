@@ -20,10 +20,8 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
-    <link rel="icon"
-    type="image/png"
-    href="assets/AnaxesLogo.png"
-    />
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="icon" type="image/png" href="/assets/AnaxesLogo.png"/>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anaxes.xyz</title>
@@ -57,7 +55,7 @@
             14 y/o Aspiring NASA Astrophysicist, Verified Discord Bot Developer and avid Web Developer.
             <div class="block mt-12">
               <a
-              href="https://github.com/DiscordAnaxes"
+              href="github"
               target="_blank"
               class="font-bold px-6 py-2 mr-2 sm:mb-0 mb-4 inline-block rounded-md text-white hover:text-white transform hover:scale-105 duration-200 cursor-pointer"
               style="background-color: #0E141D;"
@@ -65,7 +63,7 @@
               <i class="fab fa-github mr-3"></i>Github
               </a>
               <a
-              href="https://discord.com/users/567885938160697377"
+              href="discord"
               target="_blank"
               class="font-bold px-6 py-2 mr-2 sm:mb-0 mb-4 inline-block rounded-md text-white discord transform hover:scale-105 duration-200 cursor-pointer"
               style="background-color: #0E141D;"
@@ -73,7 +71,7 @@
               <i class="fab fa-discord mr-3"></i>Discord
             </a>
               <a
-                href="https://twitter.com/DiscordAnaxes"
+                href="twitter"
                 target="_blank"
                 class="font-bold px-6 py-2 mr-2 sm:mb-0 mb-4 inline-block rounded-md text-white twitter transform hover:scale-105 duration-200 cursor-pointer"
                 style="background-color: #0E141D;"
@@ -96,13 +94,13 @@
         </div>
         <div class="mx-auto w-1/2 transform hover:scale-110 transition duration-300">
           <img
-            src="assets/giphy (25).gif"
+            src="/assets/giphy (25).gif"
             class="hidden lg:flex rounded-lg w-3/5 ml-auto mx-auto"
             draggable="false"
             style="border-radius: 2.5vw;"
           />
           <img
-            src="assets/giphy (25).gif"
+            src="/assets/giphy (25).gif"
             class="flex lg:hidden mt-12 lg:mt-0 rounded-lg sm:w-1/1 md:w-4/5 lg:w-3/5 mx-auto"
             draggable="false"
             style="border-radius: 2.5vw;"
@@ -433,9 +431,9 @@
       </div> -->
     <div class="md:px-16 px-4 pb-16 pt-16 text-center">
       <div class="mt-4 items-center">
-          <a target="_blank" href="//github.com/DiscordAnaxes" class="mr-3 github socialbtn fab fa-github text-3xl text-gray-600"></a>
+          <a target="_blank" href="github" class="mr-3 github socialbtn fab fa-github text-3xl text-gray-600"></a>
           <a target="_blank" href="//discord.com/users/567885938160697377" class="socialbtn discord2 fab fa-discord text-3xl mr-3 text-gray-600"></a>
-          <a target="_blank" href="//twitter.com/DiscordAnaxes" class="mr-3 twitter2 socialbtn fab fa-twitter text-3xl text-gray-600"></a>
+          <a target="_blank" href="twitter" class="mr-3 twitter2 socialbtn fab fa-twitter text-3xl text-gray-600"></a>
           <a target="_blank" href="//fontawesome.com/icons" class="mr-3 fontawesome socialbtn fab fa-font-awesome text-3xl text-gray-600"></a>
           <a target="_blank" href="//nasa.gov" class="mr-3 socialbtn fad fa-user-astronaut text-3xl text-gray-600 hover:text-green-400"></a>
       </div>
@@ -449,77 +447,6 @@
     </div>
   </body>
 </html>
-<style>
-  body {
-    font-family: 'Inter', sans-serif;
-  }
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -16px;
-    margin-right: -16px;
-  }
-  .col {
-    flex: none;
-  }
-  .github:hover {
-    color: #FFF;
-  }
-  .twitter {
-    color: #00b6f1;
-  }
-  .discord {
-    color: #7289DA;
-  }
-  .fontawesome:hover {
-        color: #339af0;
-    }
-  .twitter2:hover {
-    color: #00b6f1;
-  }
-  .discord2:hover {
-    color: #7289DA;
-  }
-  .animate-spin {
-    animation: spin 2s linear infinite;
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-  }
-  .socialbtn:hover {
-  transform: translate(0px, -3px);
-  animation-name: headsup;
-  animation-duration: 0.3s;
-  }
-  img {
-    pointer-events: none;
-  }
-      /* width */
-      ::-webkit-scrollbar {
-    width: 10px;
-    }
-
-    /* Track */
-    ::-webkit-scrollbar-track {
-    background: #0A0F16;
-    }
-
-    /* Handle */
-    ::-webkit-scrollbar-thumb {
-    background: #0E141D;
-    }
-
-    /* Handle on hover */
-    ::-webkit-scrollbar-thumb:hover {
-    background: #0E141D;
-    }
-</style>
 <script>
   $('img').mousedown(function (e) {
   if(e.button == 2) { // right click
@@ -529,7 +456,7 @@
 </script>
 <script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="assets/JS/main.js"></script>
+<script src="/assets/JS/main.js"></script>
 <script>
   new kursor({
   type: 2,
