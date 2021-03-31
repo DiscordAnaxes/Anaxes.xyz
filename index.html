@@ -66,7 +66,7 @@
           <div
             class="sm:w-full md:w-4/5 lg:w-full mx-auto font-regular text-lg text-gray-600 mt-12"
           >
-            14 y/o Aspiring NASA Astrophysicist, Verified Discord Bot Developer, and avid Web Developer.
+            Hey <span class="wave"><i class="twa twa-wave"></i></span>, I am Anaxes <i class="twa twa-computer"></i>. 14 y/o Aspiring NASA Astrophysicist <i class="twa twa-rocket"></i>, Verified Discord Bot Developer <i class="twa twa-robot-face"></i>, and avid Web Developer <i class="twa twa-globe-with-meridians"></i>.
             <div class="block mt-12">
               <a
               href="github"
@@ -531,6 +531,40 @@
     ::-webkit-scrollbar-thumb:hover {
     background: #0E141D;
     }
+    .wave {
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
 </style>
 <script>
   $('img').mousedown(function (e) {
