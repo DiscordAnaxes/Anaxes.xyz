@@ -55,6 +55,7 @@
     <meta data-react-helmet="true" name="twitter:description" content="Hey 👋, I am Anaxes 💻. 14 y/o Aspiring NASA Astrophysicist 🚀, Verified Discord Bot Developer 🤖, and avid Web Developer 🌐." />
     <meta data-react-helmet="true" name="twitter:image" content="https://cdn.tixte.com/uploads/cdn.anaxes.xyz/knh1fqtco9a.png" />
     <meta data-n-head="ssr" data-hid="theme-color" name="theme-color" name="theme-color" content="#0A0F16;">
+    <script src='assets/JS/lanyard.js' defer></script>
   </head>
   <body style="background-color: #0A0F16;">
     <script>
@@ -126,7 +127,7 @@
     <div class="px-4 py-4 max-w-6xl mx-auto container mt-20 px-2">
     <div class="lg:flex items-center">
       <div class="w-full text-center lg:text-left lg:w-2/3 ">
-        <div class="font-bold text-4xl"><span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-green-400 hover:from-pink-500 hover:to-yellow-400">Anaxes</span></div>
+        <div class="font-bold text-4xl"><span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-green-400 hover:from-pink-500 hover:to-yellow-400">Anaxes</span>&nbsp;<span id="discord_status"></span></div>
         <div class="font-semibold text-lg text-gray-500">
           Discord Bot Developer & Avid Front-end Developer
         </div>
@@ -139,6 +140,8 @@
           <div class="flex-shrink-0 flex items-center"><i class="twa twa-eyes"></i>&nbsp;Watching&nbsp;<a href="https://myanimelist.net/anime/1735/Naruto__Shippuuden" target="_blank" class="font-bold naruto flex-shrink-0 flex items-center"><img src="assets/naruto.png" class="block h-5 w-auto" />&nbsp;Naruto Shippūden&nbsp;<i class="fad fa-external-link"></i></a>&nbsp; Up Next:&nbsp;<a href="https://myanimelist.net/anime/16498/Shingeki_no_Kyojin" target="_blank" class="font-bold attack_on_titan flex-shrink-0 flex items-center"><img src="assets/attack_on_titan.png" class="block h-5 w-auto" />&nbsp;Shingeki no Kyojin&nbsp;<i class="fad fa-external-link"></i></a></div>
           <br/>
           <div class="flex-shrink-0 flex items-center"><i class="twa twa-video-game"></i>&nbsp;Playing&nbsp;<a href="https://playvalorant.com/" target="_blank" class="font-bold valorant flex-shrink-0 flex items-center"><img src="assets/valorant.png" class="block h-5 w-auto" />&nbsp;Valorant&nbsp;<i class="fad fa-external-link"></i></a>,&nbsp;<a href="https://www.ea.com/games/starwars/battlefront/star-wars-battlefront-2" target="_blank" class="font-bold bf2 flex-shrink-0 flex items-center"><img src="assets/battlefront2.png" class="block h-5 w-auto" />&nbsp;Battlefront 2&nbsp;<i class="fad fa-external-link"></i></a>&nbsp;&&nbsp;<a href="https://www.ea.com/games/titanfall/titanfall-2" target="_blank" class="font-bold ttf2 flex-shrink-0 flex items-center"><img src="assets/titanfall2.png" class="block h-5 w-auto" />&nbsp;Titanfall 2&nbsp;<i class="fad fa-external-link"></i></a></div>
+          <br/>
+          <div id="lanyard_status"></div>
           <div class="block mt-12">
             <a
               rel="noopener noreferrer"
@@ -477,7 +480,7 @@
         <a rel="noopener noreferrer" target="_blank" href="//nasa.gov" class="mr-3 socialbtn fad fa-user-astronaut text-3xl text-gray-600 hover:text-green-400"></a>
       </div>
       <br />
-      <p class="font-bold text-yellow-500 hover:text-pink-500"><i class="fad fa-crown"></i>&nbsp;<a rel="noopener noreferrer" href="//audun.gg" target="_blank">Audun.gg</a></p>
+      <p class="font-bold text-yellow-500 hover:text-pink-500"><i class="fad fa-crown"></i>&nbsp;<a rel="noopener noreferrer" href="https://github.com/audn/audun.gg" target="_blank">Audun.gg</a></p>
       <p class="font-medium text-lg inter text-white">
         Copyright &copy; <a rel="noopener noreferrer" href="/"><span class="font-semibold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-green-400 hover:from-pink-500 hover:to-yellow-400">Anaxes.xyz</span></a>&nbsp;2020 - <script>document.write(new Date().getFullYear());</script>.
       </p>
