@@ -1,608 +1,1032 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <!--Title-->
+    <title>Anaxes.xyz</title>
+    <link rel="icon" type="image/png" href="assets/AnaxesLogo.png" />
+
+    <!--TailwindCSS , Font Awesome & Twitter Emojis-->
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@^1.0/dist/tailwind.min.css"
       rel="stylesheet"
-      />
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap"
       rel="stylesheet"
-      />
+    />
     <link
       href="https://rawgit.com/ellekasai/twemoji-awesome/gh-pages/twemoji-awesome.css"
       rel="stylesheet"
-      />
+    />
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.14.0/css/all.css"
       integrity="sha384-VhBcF/php0Z/P5ZxlxaEx1GwqTQVIBu4G4giRWxTKOCjTxsPFETUDdVL5B6vYvOt"
       crossorigin="anonymous"
-      />
-    <!-- <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css"> -->
-    <link rel="icon"
-      type="image/png"
-      href="assets/AnaxesLogo.png"
-      />
-    <title>Anaxes.xyz</title>
+    />
     <script async src="https://arc.io/widget.min.js#LoGVav8q"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PJNZJ7FWF0"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      
-      gtag('config', 'G-PJNZJ7FWF0');
-    </script>
-    <meta name= “robots” content= “INDEX, FOLLOW”>
+
+    <!--META-->
+    <meta charset="UTF-8" />
+    <meta name="“robots”" content="“INDEX," FOLLOW” />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content="Gatsby 2.20.14" />
     <title data-react-helmet="true">Anaxes.xyz</title>
-    <!-- <meta data-react-helmet="true" property=og:image content="https://cdn.tixte.com/file/tixtehost/uploads/anaxes.is-from.space/kmx11ubnj09.gif"> -->
-    <meta data-react-helmet="true" name="description" content="Hey 👋, I am Anaxes 💻. 14 y/o Aspiring NASA Astrophysicist 🚀, Verified Discord Bot Developer 🤖, and avid Web Developer 🌐." />
-    <meta data-react-helmet="true" name="image" content="https://cdn.tixte.com/uploads/cdn.anaxes.xyz/knh1fqtco9a.png" />
+    <meta
+      data-react-helmet="true"
+      name="description"
+      content="Hey 👋, I am Anaxes 💻. 14 y/o Aspiring NASA Astrophysicist 🚀, Verified Discord Bot Developer 🤖, and avid Web Developer 🌐."
+    />
+    <meta
+      data-react-helmet="true"
+      name="image"
+      content="https://cdn.tixte.com/uploads/cdn.anaxes.xyz/knh1fqtco9a.png"
+    />
     <meta data-react-helmet="true" property="og:title" content="Anaxes.xyz" />
-    <meta data-react-helmet="true" property="og:description" content="Hey 👋, I am Anaxes 💻. 14 y/o Aspiring NASA Astrophysicist 🚀, Verified Discord Bot Developer 🤖, and avid Web Developer 🌐." />
-    <meta data-react-helmet="true" property="og:image" content="https://cdn.tixte.com/uploads/cdn.anaxes.xyz/knh1fqtco9a.png" />
-    <meta data-react-helmet="true" property="og:url" content="https://anaxes.xyz" />
+    <meta
+      data-react-helmet="true"
+      property="og:description"
+      content="Hey 👋, I am Anaxes 💻. 14 y/o Aspiring NASA Astrophysicist 🚀, Verified Discord Bot Developer 🤖, and avid Web Developer 🌐."
+    />
+    <meta
+      data-react-helmet="true"
+      property="og:image"
+      content="https://cdn.tixte.com/uploads/cdn.anaxes.xyz/knh1fqtco9a.png"
+    />
+    <meta
+      data-react-helmet="true"
+      property="og:url"
+      content="https://anaxes.xyz"
+    />
     <meta data-react-helmet="true" property="og:type" content="website" />
-    <meta data-react-helmet="true" name="twitter:card" content="summary_large_image" />
-    <meta data-react-helmet="true" name="twitter:creator" content="@DiscordAnaxes" />
+    <meta
+      data-react-helmet="true"
+      name="twitter:card"
+      content="summary_large_image"
+    />
+    <meta
+      data-react-helmet="true"
+      name="twitter:creator"
+      content="@DiscordAnaxes"
+    />
     <meta data-react-helmet="true" name="twitter:title" content="Anaxes.xyz" />
-    <meta data-react-helmet="true" name="twitter:description" content="Hey 👋, I am Anaxes 💻. 14 y/o Aspiring NASA Astrophysicist 🚀, Verified Discord Bot Developer 🤖, and avid Web Developer 🌐." />
-    <meta data-react-helmet="true" name="twitter:image" content="https://cdn.tixte.com/uploads/cdn.anaxes.xyz/knh1fqtco9a.png" />
-    <meta data-n-head="ssr" data-hid="theme-color" name="theme-color" name="theme-color" content="#0A0F16;">
-    <script src='assets/JS/lanyard.js' defer></script>
+    <meta
+      data-react-helmet="true"
+      name="twitter:description"
+      content="Hey 👋, I am Anaxes 💻. 14 y/o Aspiring NASA Astrophysicist 🚀, Verified Discord Bot Developer 🤖, and avid Web Developer 🌐."
+    />
+    <meta
+      data-react-helmet="true"
+      name="twitter:image"
+      content="https://cdn.tixte.com/uploads/cdn.anaxes.xyz/knh1fqtco9a.png"
+    />
+    <meta
+      data-n-head="ssr"
+      data-hid="theme-color"
+      name="theme-color"
+      name="theme-color"
+      content="#0A0F16;"
+    />
+
+    <!--CSS + JS-->
+    <script src="assets/js/lanyard.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/support.js"></script>
+    <script src="assets/js/img.js"></script>
+    <link
+      rel="stylesheet"
+      href="assets/css/style.css"
+      crossorigin="anonymous"
+    />
   </head>
-  <body style="background-color: #0A0F16;">
-    <script>
-      window.showHelp = function() {
-      if (document.getElementById('show_side').style.marginTop === '1000px') return;
-      document.getElementById('show_side').style.display = 'block'
-      document.getElementById('click_it').classList.add('animate__fadeOut')
-      document.getElementById('click_it').classList.add('animate__faster')
-      document.getElementById('show_side').classList.add('animate__animated')
-      document.getElementById('show_side').classList.add('animate__fadeInRight')
-      document.getElementById('show_side').classList.add('animate__faster')
-      document.getElementById('show_side').classList.remove('animate__fadeOut')
-      }
-      window.hideHelp = function() {
-      if (document.getElementById('show_side').style.marginTop === '1000px') return;
-      document.getElementById('click_it').classList.remove('animate__fadeOut')
-      document.getElementById('click_it').classList.add('animate__fadeInUp')
-      document.getElementById('show_side').classList.add('animate__animated')
-      document.getElementById('show_side').classList.add('animate__fadeOut')
-      document.getElementById('show_side').classList.remove('animate__fadeIn')
-      setTimeout(function(){  document.getElementById('show_side').style.display = 'none' }, 20);
-      }
-      document.addEventListener('click', function(event) {
-      var isClickInsideElement = document.getElementById('show_side').contains(event.target);
-      var isClickInsideSecondary = document.getElementById('click_it').contains(event.target)
-      if (!isClickInsideElement && !isClickInsideSecondary) {
-      window.hideHelp()
-      }
-      });
-    </script>
-    <div onclick="window.showHelp()" id="click_it" class="cursor-pointer shadow-lg p-4 bg-blue-900 rounded-full animate__animated animate__fadeInUp" style="position:fixed;bottom:20px;right:20px;z-index:9999;background-color: #0E141D;">
+  <body style="background-color: #0a0f16">
+    <div
+      onclick="window.showHelp()"
+      id="click_it"
+      class="
+        cursor-pointer
+        shadow-lg
+        p-4
+        bg-blue-900
+        rounded-full
+        animate__animated animate__fadeInUp
+      "
+      style="
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 9999;
+        background-color: #0e141d;
+      "
+    >
       &nbsp;<i class="fas fa-question text-white text-3xl"></i>&nbsp;
     </div>
-    <div id="show_side" class="md:p-6 fixed right-0 bottom-0 w-64 md:origin-bottom-right rounded-lg transition transform ease-out duration-75 opacity-100 scale-100 md:w-2/6" style="z-index:99999;max-width:370px;margin-bottom:-6px;margin-right:-6px;display:none;">
-      <div role="menu" aria-orientation="vertical" aria-labelledby="user-menu" class="shadow-xl py-2 mt-2 bg-gray-700 rounded-lg shadow-2xl" style="border-radius: 1vw;background-color: #0E141D;">
-        <a rel="noopener noreferrer" href="https://discord.com/users/567885938160697377" target="_blank" role="menuitem" class="block px-6 py-4 text-sm leading-5 text-white transition duration-150 ease-in-out hover:bg-gray-800 focus:outline-none" style="border-radius: 0.5vw;">
-        <span class="flex items-center text-base font-bold">
-        <i class="twa text-lg twa-white-question-mark"></i>&nbsp;Discord DM
-        </span>
-        <span class="block mt-2 text-sm text-gray-400">Get support by DM'ing me.</span>
+    <div
+      id="show_side"
+      class="
+        md:p-6
+        fixed
+        right-0
+        bottom-0
+        w-64
+        md:origin-bottom-right
+        rounded-lg
+        transition
+        transform
+        ease-out
+        duration-75
+        opacity-100
+        scale-100
+        md:w-2/6
+      "
+      style="
+        z-index: 99999;
+        max-width: 370px;
+        margin-bottom: -6px;
+        margin-right: -6px;
+        display: none;
+      "
+    >
+      <div
+        role="menu"
+        aria-orientation="vertical"
+        aria-labelledby="user-menu"
+        class="shadow-xl py-2 mt-2 bg-gray-700 rounded-lg shadow-2xl"
+        style="border-radius: 1vw; background-color: #0e141d"
+      >
+        <a
+          rel="noopener noreferrer"
+          href="https://discord.com/users/567885938160697377"
+          target="_blank"
+          role="menuitem"
+          class="
+            block
+            px-6
+            py-4
+            text-sm
+            leading-5
+            text-white
+            transition
+            duration-150
+            ease-in-out
+            hover:bg-gray-800
+            focus:outline-none
+          "
+          style="border-radius: 0.5vw"
+        >
+          <span class="flex items-center text-base font-bold">
+            <i class="twa text-lg twa-white-question-mark"></i>&nbsp;Discord DM
+          </span>
+          <span class="block mt-2 text-sm text-gray-400"
+            >Get support by DM'ing me.</span
+          >
         </a>
-        <a rel="noopener noreferrer" href="mailto:anaxesoce@gmail.com" role="menuitem" class="block px-6 py-4 text-sm leading-5 text-white transition duration-150 ease-in-out hover:bg-gray-800 focus:outline-none" style="border-radius: 0.5vw;">
-        <span class="flex items-center text-base font-bold">
-        <i class="twa text-lg twa-incoming-envelope"></i>&nbsp;Email Support
-        </span>
-        <span class="block mt-2 text-sm text-gray-400">Get quick and easy support via email.</span>
+        <a
+          rel="noopener noreferrer"
+          href="mailto:anaxesoce@gmail.com"
+          role="menuitem"
+          class="
+            block
+            px-6
+            py-4
+            text-sm
+            leading-5
+            text-white
+            transition
+            duration-150
+            ease-in-out
+            hover:bg-gray-800
+            focus:outline-none
+          "
+          style="border-radius: 0.5vw"
+        >
+          <span class="flex items-center text-base font-bold">
+            <i class="twa text-lg twa-incoming-envelope"></i>&nbsp;Email Support
+          </span>
+          <span class="block mt-2 text-sm text-gray-400"
+            >Get quick and easy support via email.</span
+          >
         </a>
-        <a rel="noopener noreferrer" href="https://status.anaxes.xyz" target="_blank" role="menuitem" class="block px-6 py-4 text-sm leading-5 text-white transition duration-150 ease-in-out hover:bg-gray-800 focus:outline-none" style="border-radius: 0.5vw;">
-        <span class="flex items-center text-base font-bold">
-        <i class="twa text-lg twa-satellite"></i>&nbsp;Status
-        </span>
-        <span class="block mt-2 text-sm text-gray-400">Check the status of my websites.</span>
+        <a
+          rel="noopener noreferrer"
+          href="https://status.anaxes.xyz"
+          target="_blank"
+          role="menuitem"
+          class="
+            block
+            px-6
+            py-4
+            text-sm
+            leading-5
+            text-white
+            transition
+            duration-150
+            ease-in-out
+            hover:bg-gray-800
+            focus:outline-none
+          "
+          style="border-radius: 0.5vw"
+        >
+          <span class="flex items-center text-base font-bold">
+            <i class="twa text-lg twa-satellite"></i>&nbsp;Status
+          </span>
+          <span class="block mt-2 text-sm text-gray-400"
+            >Check the status of my websites.</span
+          >
         </a>
       </div>
     </div>
-    <!-- <div class="px-6 md:px-4 py-4" style="background-color: #0E141D;">
-      <div class="max-w-6xl mx-auto container text-white">
-        <div class="flex">
-          <div class="flex-initial">
-            <i class="twa twa-tada font-bold mr-4"></i>
-          </div>
-          &nbsp;
-          <div class="flex-1">
-            Website is now functional! Credit to <a rel="noopener noreferrer" href="https://audun.gg" class="text-yellow-500 hover:text-pink-500" target="_blank"><i class="fad fa-crown"></i>&nbsp;Audun.gg</a>
-          </div>
-        </div>
-      </div>
-      </div> -->
     <div class="px-4 py-4 max-w-6xl mx-auto container mt-20 px-2">
-    <div class="lg:flex items-center">
-      <div class="w-full text-center lg:text-left lg:w-2/3 ">
-        <div class="font-bold text-4xl"><span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-green-400 hover:from-pink-500 hover:to-yellow-400">Anaxes</span>&nbsp;<span id="discord_status"></span></div>
-        <div class="font-semibold text-lg text-gray-500">
-          Discord Bot Developer & Avid Front-end Developer
+      <div class="lg:flex items-center">
+        <div class="w-full text-center lg:text-left lg:w-2/3">
+          <div class="font-bold text-4xl">
+            <span
+              class="
+                bg-clip-text
+                text-transparent
+                bg-gradient-to-r
+                from-blue-500
+                to-green-400
+                hover:from-pink-500
+                hover:to-yellow-400
+              "
+              >Anaxes</span
+            >&nbsp;<span id="discord_status"></span>
+          </div>
+          <div class="font-semibold text-lg text-gray-500">
+            Discord Bot Developer & Avid Front-end Developer
+          </div>
+          <div
+            class="
+              sm:w-full
+              md:w-4/5
+              lg:w-full
+              mx-auto
+              font-regular
+              text-lg text-gray-600
+              mt-12
+            "
+          >
+            Hey <span class="wave"><i class="twa twa-wave"></i></span>, I am
+            Anaxes <i class="twa twa-computer"></i>. 14 y/o Aspiring NASA
+            Astrophysicist <i class="twa twa-rocket"></i>, Verified Discord Bot
+            Developer <i class="twa twa-robot-face"></i>, and avid Web Developer
+            <i class="twa twa-globe-with-meridians"></i><br /><br />
+            <div class="flex-shrink-0 flex items-center">
+              <i class="twa twa-art"></i>&nbsp;Working on&nbsp;<a
+                href="https://dscjobs.org"
+                target="_blank"
+                class="font-bold dscjobs flex-shrink-0 flex items-center"
+                ><img
+                  src="assets/images/dscjobs.png"
+                  class="block h-5 w-auto" />&nbsp;dscjobs.org&nbsp;<i
+                  class="fad fa-external-link"
+                ></i></a
+              >&nbsp;&&nbsp;<a
+                href="https://widget.style"
+                target="_blank"
+                class="font-bold discord2 flex-shrink-0 flex items-center"
+                ><img
+                  src="assets/images/logo.png"
+                  class="block h-5 w-auto" />&nbsp;widget.style&nbsp;<i
+                  class="fad fa-external-link"
+                ></i
+              ></a>
+            </div>
+            <br />
+            <div class="flex-shrink-0 flex items-center">
+              <i class="twa twa-eyes"></i>&nbsp;Watching&nbsp;<a
+                href="https://myanimelist.net/anime/1735/Naruto__Shippuuden"
+                target="_blank"
+                class="font-bold naruto flex-shrink-0 flex items-center"
+                ><img
+                  src="assets/images/naruto.png"
+                  class="block h-5 w-auto" />&nbsp;Naruto Shippūden&nbsp;<i
+                  class="fad fa-external-link"
+                ></i></a
+              >&nbsp; Up Next:&nbsp;<a
+                href="https://myanimelist.net/anime/16498/Shingeki_no_Kyojin"
+                target="_blank"
+                class="
+                  font-bold
+                  attack_on_titan
+                  flex-shrink-0 flex
+                  items-center
+                "
+                ><img
+                  src="assets/images/attack_on_titan.png"
+                  class="block h-5 w-auto" />&nbsp;Shingeki no Kyojin&nbsp;<i
+                  class="fad fa-external-link"
+                ></i
+              ></a>
+            </div>
+            <br />
+            <div class="flex-shrink-0 flex items-center">
+              <i class="twa twa-video-game"></i>&nbsp;Playing&nbsp;<a
+                href="https://playvalorant.com/"
+                target="_blank"
+                class="font-bold valorant flex-shrink-0 flex items-center"
+                ><img
+                  src="assets/images/valorant.png"
+                  class="block h-5 w-auto" />&nbsp;Valorant&nbsp;<i
+                  class="fad fa-external-link"
+                ></i></a
+              >,&nbsp;<a
+                href="https://www.ea.com/games/starwars/battlefront/star-wars-battlefront-2"
+                target="_blank"
+                class="font-bold bf2 flex-shrink-0 flex items-center"
+                ><img
+                  src="assets/images/battlefront2.png"
+                  class="block h-5 w-auto" />&nbsp;Battlefront 2&nbsp;<i
+                  class="fad fa-external-link"
+                ></i></a
+              >&nbsp;&&nbsp;<a
+                href="https://www.ea.com/games/titanfall/titanfall-2"
+                target="_blank"
+                class="font-bold ttf2 flex-shrink-0 flex items-center"
+                ><img
+                  src="assets/images/titanfall2.png"
+                  class="block h-5 w-auto" />&nbsp;Titanfall 2&nbsp;<i
+                  class="fad fa-external-link"
+                ></i
+              ></a>
+            </div>
+            <br />
+            <div id="lanyard_status"></div>
+          </div>
         </div>
         <div
-          class="sm:w-full md:w-4/5 lg:w-full mx-auto font-regular text-lg text-gray-600 mt-12"
+          class="
+            mx-auto
+            w-1/2
+            transform
+            hover:scale-110
+            transition
+            duration-300
+          "
+        >
+          <img
+            src="assets/images/giphy (25).gif"
+            class="hidden lg:flex rounded-lg w-3/5 ml-auto mx-auto"
+            alt="My_Logo"
+            draggable="false"
+            style="border-radius: 2.5vw"
+          />
+          <img
+            src="assets/images/AnaxesLogo.png"
+            class="
+              flex
+              lg:hidden
+              mt-12
+              lg:mt-0
+              rounded-lg
+              sm:w-1/1
+              md:w-4/5
+              lg:w-3/5
+              mx-auto
+            "
+            alt="My_Logo"
+            draggable="false"
+            style="border-radius: 2.5vw"
+          />
+        </div>
+      </div>
+      <div
+        class="
+          font-regular
+          flex
+          tracking-widest
+          uppercase
+          text-md text-gray-500
+          mt-32
+          mb-6
+        "
+      >
+        Personal projects
+      </div>
+      <div class="mt-12 row items-center justify-center">
+        <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/3">
+          <a
+            rel="noopener noreferrer"
+            href="https://pb.anaxes.xyz"
+            target="_blank"
           >
-          Hey <span class="wave"><i class="twa twa-wave"></i></span>, I am Anaxes <i class="twa twa-computer"></i>. 14 y/o Aspiring NASA Astrophysicist <i class="twa twa-rocket"></i>, Verified Discord Bot Developer <i class="twa twa-robot-face"></i>, and avid Web Developer <i class="twa twa-globe-with-meridians"></i><br/><br/>
-          <div class="flex-shrink-0 flex items-center"><i class="twa twa-art"></i>&nbsp;Working on&nbsp;<a href="https://dscjobs.org" target="_blank" class="font-bold dscjobs flex-shrink-0 flex items-center"><img src="assets/dscjobs.png" class="block h-5 w-auto" />&nbsp;dscjobs.org&nbsp;<i class="fad fa-external-link"></i></a>&nbsp;&&nbsp;<a href="https://widget.style" target="_blank" class="font-bold discord2 flex-shrink-0 flex items-center"><img src="assets/logo.png" class="block h-5 w-auto" />&nbsp;widget.style&nbsp;<i class="fad fa-external-link"></i></a></div>
-          <br/>
-          <div class="flex-shrink-0 flex items-center"><i class="twa twa-eyes"></i>&nbsp;Watching&nbsp;<a href="https://myanimelist.net/anime/1735/Naruto__Shippuuden" target="_blank" class="font-bold naruto flex-shrink-0 flex items-center"><img src="assets/naruto.png" class="block h-5 w-auto" />&nbsp;Naruto Shippūden&nbsp;<i class="fad fa-external-link"></i></a>&nbsp; Up Next:&nbsp;<a href="https://myanimelist.net/anime/16498/Shingeki_no_Kyojin" target="_blank" class="font-bold attack_on_titan flex-shrink-0 flex items-center"><img src="assets/attack_on_titan.png" class="block h-5 w-auto" />&nbsp;Shingeki no Kyojin&nbsp;<i class="fad fa-external-link"></i></a></div>
-          <br/>
-          <div class="flex-shrink-0 flex items-center"><i class="twa twa-video-game"></i>&nbsp;Playing&nbsp;<a href="https://playvalorant.com/" target="_blank" class="font-bold valorant flex-shrink-0 flex items-center"><img src="assets/valorant.png" class="block h-5 w-auto" />&nbsp;Valorant&nbsp;<i class="fad fa-external-link"></i></a>,&nbsp;<a href="https://www.ea.com/games/starwars/battlefront/star-wars-battlefront-2" target="_blank" class="font-bold bf2 flex-shrink-0 flex items-center"><img src="assets/battlefront2.png" class="block h-5 w-auto" />&nbsp;Battlefront 2&nbsp;<i class="fad fa-external-link"></i></a>&nbsp;&&nbsp;<a href="https://www.ea.com/games/titanfall/titanfall-2" target="_blank" class="font-bold ttf2 flex-shrink-0 flex items-center"><img src="assets/titanfall2.png" class="block h-5 w-auto" />&nbsp;Titanfall 2&nbsp;<i class="fad fa-external-link"></i></a></div>
-          <br/>
-          <div id="lanyard_status"></div>
-          <!-- <div class="block mt-12">
+            <div
+              class="
+                flex
+                items-center
+                px-6
+                py-4
+                transform
+                hover:scale-105
+                duration-200
+                shadow
+                rounded-md
+                px-6
+                sm:px-4
+                hover:bg-gray-100
+                cursor-pointer
+              "
+              style="background-color: #0e141d; border-radius: 1vw"
+            >
+              <div class="flex items-center">
+                <div class="flex-initial ml-4 mr-6">
+                  <img
+                    src="assets/images/projects/pbot.png"
+                    class="h-12 w-auto"
+                  />
+                </div>
+                <div class="flex-initial">
+                  <div class="font-semibold text-md text-gray-600">PBOT</div>
+                  <div class="font-bold text-xl text-red-500">204 servers!</div>
+                  <div class="font-regular text-xs text-gray-500">
+                    Launched 16th July 2020
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/3">
+          <a
+            rel="noopener noreferrer"
+            href="https://widget.style"
+            target="_blank"
+          >
+            <div
+              class="
+                flex
+                items-center
+                px-6
+                py-4
+                transform
+                hover:scale-105
+                duration-200
+                shadow
+                rounded-md
+                px-6
+                sm:px-4
+                hover:bg-gray-100
+                cursor-pointer
+              "
+              style="background-color: #0e141d; border-radius: 1vw"
+            >
+              <div class="flex items-center">
+                <div class="flex-initial ml-4 mr-6">
+                  <img src="assets/images/logo.png" class="h-12 w-auto" />
+                </div>
+                <div class="flex-initial">
+                  <div class="font-semibold text-md text-gray-600">
+                    Widget.style
+                  </div>
+                  <div class="font-bold text-xl text-blue-500">Unknown</div>
+                  <div class="font-regular text-xs text-gray-500">
+                    Launched 11th February 2021
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/3">
+          <a
+            rel="noopener noreferrer"
+            href="https://dscjobs.org"
+            target="_blank"
+          >
+            <div
+              class="
+                flex
+                items-center
+                px-6
+                py-4
+                transform
+                hover:scale-105
+                duration-200
+                shadow
+                rounded-md
+                px-6
+                sm:px-4
+                hover:bg-gray-100
+                cursor-pointer
+              "
+              style="background-color: #0e141d; border-radius: 1vw"
+            >
+              <div class="flex items-center">
+                <div class="flex-initial ml-4 mr-6">
+                  <img src="assets/images/dscjobs.png" class="h-12 w-auto" />
+                </div>
+                <div class="flex-initial">
+                  <div class="font-semibold text-md text-gray-600">
+                    DscJobs.org
+                  </div>
+                  <div class="font-bold text-xl text-pink-300">100 cv's!</div>
+                  <div class="font-regular text-xs text-gray-500">
+                    Launched 6th February 2021
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/3">
+          <a rel="noopener noreferrer" href="https://bots.land" target="_blank">
+            <div
+              class="
+                flex
+                items-center
+                px-6
+                py-4
+                transform
+                hover:scale-105
+                duration-200
+                shadow
+                rounded-md
+                px-6
+                sm:px-4
+                hover:bg-gray-100
+                cursor-pointer
+              "
+              style="background-color: #0e141d; border-radius: 1vw"
+            >
+              <div class="flex items-center">
+                <div class="flex-initial ml-4 mr-6">
+                  <img
+                    src="assets/images/projects/botsland.png"
+                    class="h-10 w-auto"
+                  />
+                </div>
+                <div class="flex-initial">
+                  <div class="font-semibold text-md text-gray-600">
+                    Bots.land
+                  </div>
+                  <div class="font-bold text-xl text-orange-500">100 bots!</div>
+                  <div class="font-regular text-xs text-gray-500">
+                    Project shut down late 2020
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/3">
+          <div
+            class="
+              flex
+              items-center
+              px-6
+              py-4
+              transform
+              hover:scale-105
+              duration-200
+              shadow
+              rounded-md
+              px-6
+              sm:px-4
+              hover:bg-gray-100
+              cursor-pointer
+            "
+            style="background-color: #0e141d; border-radius: 1vw"
+          >
+            <div class="flex items-center">
+              <div class="flex-initial ml-4 mr-6">
+                <img
+                  src="assets/images/projects/discordhub.png"
+                  class="h-10 w-auto"
+                />
+              </div>
+              <div class="flex-initial">
+                <div class="font-semibold text-md text-gray-600">
+                  DiscordHub.gg
+                </div>
+                <div class="font-bold text-xl text-green-500">Unknown</div>
+                <div class="font-regular text-xs text-gray-500">
+                  Not properly launched
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/3">
+          <div
+            class="
+              flex
+              items-center
+              px-6
+              py-4
+              transform
+              hover:scale-105
+              duration-200
+              shadow
+              rounded-md
+              px-6
+              sm:px-4
+              hover:bg-gray-100
+              cursor-pointer
+            "
+            style="background-color: #0e141d; border-radius: 1vw"
+          >
+            <div class="flex items-center">
+              <div class="flex-initial ml-4 mr-6">
+                <img
+                  src="assets/images/projects/blurple.png"
+                  class="h-12 w-auto"
+                />
+              </div>
+              <div class="flex-initial">
+                <div class="font-semibold text-md text-gray-600">
+                  Blurple.gg
+                </div>
+                <div class="font-bold text-xl text-pink-500">Unknown</div>
+                <div class="font-regular text-xs text-gray-500">
+                  Project shut down early 2021
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/3">
+          <a
+            rel="noopener noreferrer"
+            href="https://premid.app/users/567885938160697377"
+            target="_blank"
+          >
+            <div
+              class="
+                flex
+                items-center
+                px-6
+                py-4
+                transform
+                hover:scale-105
+                duration-200
+                shadow
+                rounded-md
+                px-6
+                sm:px-4
+                hover:bg-gray-100
+                cursor-pointer
+              "
+              style="background-color: #0e141d; border-radius: 1vw"
+            >
+              <div class="flex items-center">
+                <div class="flex-initial ml-4 mr-6">
+                  <img
+                    src="assets/images/projects/premid.png"
+                    class="h-12 w-auto"
+                  />
+                </div>
+                <div class="flex-initial">
+                  <div class="font-semibold text-md text-gray-600">
+                    PreMiD Presences
+                  </div>
+                  <div class="font-bold text-xl text-purple-500">
+                    4 Presences!
+                  </div>
+                  <div class="font-regular text-xs text-gray-500">
+                    Began 8th May 2021
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/3">
+          <div
+            class="
+              flex
+              items-center
+              px-6
+              py-4
+              transform
+              hover:scale-105
+              duration-200
+              shadow
+              rounded-md
+              px-6
+              sm:px-4
+              hover:bg-gray-100
+              cursor-pointer
+            "
+            style="background-color: #0e141d; border-radius: 1vw"
+          >
+            <div class="flex items-center">
+              <div class="flex-initial ml-4 mr-6">
+                <img
+                  src="assets/images/projects/kamino_development.png"
+                  class="h-12 w-auto"
+                />
+              </div>
+              <div class="flex-initial">
+                <div class="font-semibold text-md text-gray-600">
+                  Kamino.anaxes.xyz
+                </div>
+                <div class="font-bold text-xl text-indigo-500">Unknown</div>
+                <div class="font-regular text-xs text-gray-500">
+                  Shut down a week after release
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/3">
+          <div
+            class="
+              flex
+              items-center
+              px-6
+              py-4
+              transform
+              hover:scale-105
+              duration-200
+              shadow
+              rounded-md
+              px-6
+              sm:px-4
+              hover:bg-gray-100
+              cursor-pointer
+            "
+            style="background-color: #0e141d; border-radius: 1vw"
+          >
+            <div class="flex items-center">
+              <div class="flex-initial ml-4 mr-6">
+                <img
+                  src="assets/images/projects/tribe-bot.png"
+                  class="h-12 w-auto"
+                />
+              </div>
+              <div class="flex-initial">
+                <div class="font-semibold text-md text-gray-600">Tribe-Bot</div>
+                <div class="font-bold text-xl text-blue-200">66 servers!</div>
+                <div class="font-regular text-xs text-gray-500">
+                  Project shut down early 2021
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="
+            text-center
+            lg:text-left
+            font-regular
+            tracking-widest
+            uppercase
+            text-sm text-gray-500
+            mt-16
+            mb-6
+          "
+        >
+          Services that I work for
+        </div>
+        <div class="row items-center justify-center mb-8">
+          <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/3">
+            <a
+              rel="noopener noreferrer"
+              href="https://infinitybotlist.com"
+              target="_blank"
+            >
+              <div
+                class="
+                  flex
+                  items-center
+                  px-6
+                  py-4
+                  transform
+                  hover:scale-105
+                  duration-200
+                  shadow
+                  rounded-md
+                  px-6
+                  sm:px-4
+                  hover:bg-gray-100
+                  cursor-pointer
+                "
+                style="background-color: #0e141d; border-radius: 1vw"
+              >
+                <div class="flex items-center">
+                  <div class="flex-initial ml-4 mr-6">
+                    <img
+                      src="assets/images/staff/ibl.png"
+                      class="h-12 w-auto"
+                    />
+                  </div>
+                  <div class="flex-initial">
+                    <div class="font-semibold text-md text-gray-600">
+                      Infinity Bot List
+                    </div>
+                    <div class="font-bold text-lg text-green-500">
+                      Senior Administrator
+                    </div>
+                    <div class="font-regular text-xs text-gray-500">
+                      Check out their website.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/3">
+            <a rel="noopener noreferrer" href="https://oce.gg" target="_blank">
+              <div
+                class="
+                  flex
+                  items-center
+                  px-6
+                  py-4
+                  transform
+                  hover:scale-105
+                  duration-200
+                  shadow
+                  rounded-md
+                  px-6
+                  sm:px-4
+                  hover:bg-gray-100
+                  cursor-pointer
+                "
+                style="background-color: #0e141d; border-radius: 1vw"
+              >
+                <div class="flex items-center">
+                  <div class="flex-initial ml-4 mr-6">
+                    <img src="assets/images/staff/oce.png" class="h-4 w-auto" />
+                  </div>
+                  <div class="flex-initial">
+                    <div class="font-semibold text-md text-gray-600">
+                      OCE.gg
+                    </div>
+                    <div class="font-bold text-lg text-blue-500">
+                      Community Moderator
+                    </div>
+                    <div class="font-regular text-xs text-gray-500">
+                      Check out their website.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/3">
             <a
               rel="noopener noreferrer"
               href="https://github.com/DiscordAnaxes"
               target="_blank"
-              class="font-bold px-6 py-2 mr-2 sm:mb-0 mb-4 inline-block rounded-md text-white hover:text-white transform hover:scale-105 duration-200 cursor-pointer"
-              style="background-color: #0E141D;"
+            >
+              <div
+                class="
+                  flex
+                  items-center
+                  px-6
+                  py-4
+                  transform
+                  hover:scale-105
+                  duration-200
+                  shadow
+                  rounded-md
+                  px-6
+                  sm:px-4
+                  hover:bg-gray-100
+                  cursor-pointer
+                "
+                style="background-color: #0e141d; border-radius: 1vw"
               >
-            <i class="fab fa-github mr-3"></i>Github
+                <div class="flex items-center">
+                  <div class="flex-initial ml-4 mr-6">
+                    <i class="twa twa-joy text-4xl"></i>
+                  </div>
+                  <div class="flex-initial">
+                    <div class="font-semibold text-md text-gray-600">
+                      Myself
+                    </div>
+                    <div class="font-bold text-lg text-pink-500">
+                      Moral Support
+                    </div>
+                    <div class="font-regular text-xs text-gray-500">
+                      Check out my github.
+                    </div>
+                  </div>
+                </div>
+              </div>
             </a>
-            <a
-              rel="noopener noreferrer"
-              href="https://discord.com/users/567885938160697377"
-              target="_blank"
-              class="font-bold px-6 py-2 mr-2 sm:mb-0 mb-4 inline-block rounded-md text-white discord transform hover:scale-105 duration-200 cursor-pointer"
-              style="background-color: #0E141D;"
+          </div>
+          <div class="md:px-16 px-4 pb-16 pt-16 text-center">
+            <div class="mt-4 items-center">
+              <a
+                rel="noopener noreferrer"
+                target="_blank"
+                href="//github.com/DiscordAnaxes"
+                class="
+                  mr-3
+                  github
+                  socialbtn
+                  fab
+                  fa-github
+                  text-3xl text-gray-600
+                "
+              ></a>
+              <a
+                rel="noopener noreferrer"
+                target="_blank"
+                href="//discord.com/users/567885938160697377"
+                class="
+                  socialbtn
+                  discord2
+                  fab
+                  fa-discord
+                  text-3xl
+                  mr-3
+                  text-gray-600
+                "
+              ></a>
+              <a
+                rel="noopener noreferrer"
+                target="_blank"
+                href="//twitter.com/DiscordAnaxes"
+                class="
+                  mr-3
+                  twitter2
+                  socialbtn
+                  fab
+                  fa-twitter
+                  text-3xl text-gray-600
+                "
+              ></a>
+              <a
+                rel="noopener noreferrer"
+                target="_blank"
+                href="//fontawesome.com/icons"
+                class="
+                  mr-3
+                  fontawesome
+                  socialbtn
+                  fab
+                  fa-font-awesome
+                  text-3xl text-gray-600
+                "
+              ></a>
+              <a
+                rel="noopener noreferrer"
+                target="_blank"
+                href="//nasa.gov"
+                class="
+                  mr-3
+                  socialbtn
+                  fad
+                  fa-user-astronaut
+                  text-3xl text-gray-600
+                  hover:text-green-400
+                "
+              ></a>
+            </div>
+            <br />
+            <p class="font-bold text-yellow-500 hover:text-pink-500">
+              <i class="fad fa-crown"></i>&nbsp;<a
+                rel="noopener noreferrer"
+                href="https://github.com/audn/audun.gg"
+                target="_blank"
+                >Audun.gg</a
               >
-            <i class="fab fa-discord mr-3"></i>Discord
-            </a>
-            <a
-              rel="noopener noreferrer"
-              href="https://twitter.com/DiscordAnaxes"
-              target="_blank"
-              class="font-bold px-6 py-2 mr-2 sm:mb-0 mb-4 inline-block rounded-md text-white twitter transform hover:scale-105 duration-200 cursor-pointer"
-              style="background-color: #0E141D;"
+            </p>
+            <p class="font-medium text-lg inter text-white">
+              Copyright &copy;
+              <a rel="noopener noreferrer" href="/"
+                ><span
+                  class="
+                    font-semibold
+                    bg-clip-text
+                    text-transparent
+                    bg-gradient-to-r
+                    from-blue-500
+                    to-green-400
+                    hover:from-pink-500
+                    hover:to-yellow-400
+                  "
+                  >Anaxes.xyz</span
+                ></a
+              >&nbsp;2020 -
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              .
+            </p>
+            <br />
+            <center>
+              <a
+                rel="noopener noreferrer"
+                href="//www.dmca.com/Protection/Status.aspx?ID=4ee7500b-1976-4cba-9bfa-0065bbf2c085"
+                target="_blank"
+                title="DMCA.com Protection Status"
+                class="dmca-badge"
               >
-            <i class="fab fa-twitter mr-3"></i>Twitter
-            </a>
-            <a
-              rel="noopener noreferrer"
-              href="#"
-              class="font-bold px-6 py-2 mr-2 sm:mb-0 mb-4 inline-block rounded-md text-white transform hover:scale-105 duration-200 cursor-pointer"
-              style="background-color: #0E141D; "
-              >
-            <i class="fab fa-instagram mr-3" style="color: transparent;background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);background-clip: text;-webkit-background-clip: text"></i><span style="color: transparent;background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);background-clip: text;-webkit-background-clip: text">Instagram</span></a>
-          </div> -->
-        </div>
-      </div>
-      <div class="mx-auto w-1/2 transform hover:scale-110 transition duration-300">
-        <img
-          src="assets/giphy (25).gif"
-          class="hidden lg:flex rounded-lg w-3/5 ml-auto mx-auto"
-          alt="My_Logo"
-          draggable="false"
-          style="border-radius: 2.5vw;"
-          />
-        <img
-          src="assets/AnaxesLogo.png"
-          class="flex lg:hidden mt-12 lg:mt-0 rounded-lg sm:w-1/1 md:w-4/5 lg:w-3/5 mx-auto"
-          alt="My_Logo"
-          draggable="false"
-          style="border-radius: 2.5vw;"
-          />
-      </div>
-    </div>
-    <div
-      class="font-regular flex tracking-widest uppercase text-md text-gray-500 mt-32 mb-6"
-      >
-      Personal projects
-    </div>
-    <div class="mt-12 row items-center justify-center">
-    <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/3">
-      <a rel="noopener noreferrer" href="https://pb.anaxes.xyz" target="_blank">
-        <div
-          class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer"
-          style="background-color: #0E141D; border-radius: 1vw;"
-          >
-          <div class="flex items-center">
-            <div class="flex-initial ml-4 mr-6">
-              <img src="assets/projects/pbot.png" class="h-12 w-auto"/>
-            </div>
-            <div class="flex-initial">
-              <div class="font-semibold text-md text-gray-600">
-                PBOT
-              </div>
-              <div class="font-bold text-xl text-red-500">204 servers!</div>
-              <div class="font-regular text-xs text-gray-500">
-                Launched 16th July 2020
-              </div>
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/3">
-      <a rel="noopener noreferrer" href="https://widget.style" target="_blank">
-        <div
-          class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer"
-          style="background-color: #0E141D; border-radius: 1vw;"
-          >
-          <div class="flex items-center">
-            <div class="flex-initial ml-4 mr-6">
-              <img src="assets/logo.png" class="h-12 w-auto"/>
-            </div>
-            <div class="flex-initial">
-              <div class="font-semibold text-md text-gray-600">
-                Widget.style
-              </div>
-              <div class="font-bold text-xl text-blue-500">
-                Unknown
-              </div>
-              <div class="font-regular text-xs text-gray-500">
-                Launched 11th February 2021
-              </div>
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/3">
-      <a rel="noopener noreferrer" href="https://dscjobs.org" target="_blank">
-        <div
-          class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer"
-          style="background-color: #0E141D; border-radius: 1vw;"
-          >
-          <div class="flex items-center">
-            <div class="flex-initial ml-4 mr-6">
-              <img src="assets/dscjobs.png" class="h-12 w-auto"/>
-            </div>
-            <div class="flex-initial">
-              <div class="font-semibold text-md text-gray-600">DscJobs.org</div>
-              <div class="font-bold text-xl text-pink-300">100 cv's!</div>
-              <div class="font-regular text-xs text-gray-500">
-                Launched 6th February 2021
-              </div>
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/3">
-      <a rel="noopener noreferrer" href="https://bots.land" target="_blank">
-        <div
-          class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer"
-          style="background-color: #0E141D; border-radius: 1vw;"
-          >
-          <div class="flex items-center">
-            <div class="flex-initial ml-4 mr-6">
-              <img src="assets/projects/botsland.png" class="h-10 w-auto"/>
-            </div>
-            <div class="flex-initial">
-              <div class="font-semibold text-md text-gray-600">Bots.land</div>
-              <div class="font-bold text-xl text-orange-500">100 bots!</div>
-              <div class="font-regular text-xs text-gray-500">
-                Project shut down late 2020
-              </div>
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/3">
-      <div
-        class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer"
-        style="background-color: #0E141D; border-radius: 1vw;"
-        >
-        <div class="flex items-center">
-          <div class="flex-initial ml-4 mr-6">
-            <img src="assets/projects/discordhub.png" class="h-10 w-auto"/>
-          </div>
-          <div class="flex-initial">
-            <div class="font-semibold text-md text-gray-600">DiscordHub.gg</div>
-            <div class="font-bold text-xl text-green-500">Unknown</div>
-            <div class="font-regular text-xs text-gray-500">
-              Not properly launched
-            </div>
+                <img
+                  src="https://images.dmca.com/Badges/dmca-badge-w100-5x1-07.png?ID=4ee7500b-1976-4cba-9bfa-0065bbf2c085"
+                  alt="DMCA.com Protection Status"
+              /></a>
+              <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"></script>
+            </center>
           </div>
         </div>
       </div>
-    </div>
-    <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/3">
-      <div
-        class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer"
-        style="background-color: #0E141D; border-radius: 1vw;"
-        >
-        <div class="flex items-center">
-          <div class="flex-initial ml-4 mr-6">
-            <img src="assets/projects/blurple.png" class="h-12 w-auto"/>
-          </div>
-          <div class="flex-initial">
-            <div class="font-semibold text-md text-gray-600">Blurple.gg</div>
-            <div class="font-bold text-xl text-pink-500">Unknown</div>
-            <div class="font-regular text-xs text-gray-500">
-              Project shut down early 2021
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/3">
-      <a rel="noopener noreferrer" href="https://premid.app/users/567885938160697377" target="_blank">
-        <div
-          class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer"
-          style="background-color: #0E141D; border-radius: 1vw;"
-          >
-          <div class="flex items-center">
-            <div class="flex-initial ml-4 mr-6">
-              <img src="assets/projects/premid.png" class="h-12 w-auto"/>
-            </div>
-            <div class="flex-initial">
-              <div class="font-semibold text-md text-gray-600">PreMiD Presences</div>
-              <div class="font-bold text-xl text-purple-500">4 Presences!</div>
-              <div class="font-regular text-xs text-gray-500">
-                Began 8th May 2021
-              </div>
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/3">
-      <div
-        class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer"
-        style="background-color: #0E141D; border-radius: 1vw;"
-        >
-        <div class="flex items-center">
-          <div class="flex-initial ml-4 mr-6">
-            <img src="assets/projects/kamino_development.png" class="h-12 w-auto"/>
-          </div>
-          <div class="flex-initial">
-            <div class="font-semibold text-md text-gray-600">Kamino.anaxes.xyz</div>
-            <div class="font-bold text-xl text-indigo-500">Unknown</div>
-            <div class="font-regular text-xs text-gray-500">
-              Shut down a week after release
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/3">
-      <div
-        class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer"
-        style="background-color: #0E141D; border-radius: 1vw;"
-        >
-        <div class="flex items-center">
-          <div class="flex-initial ml-4 mr-6">
-            <img src="assets/projects/tribe-bot.png" class="h-12 w-auto"/>
-          </div>
-          <div class="flex-initial">
-            <div class="font-semibold text-md text-gray-600">Tribe-Bot</div>
-            <div class="font-bold text-xl text-blue-200">66 servers!</div>
-            <div class="font-regular text-xs text-gray-500">
-              Project shut down early 2021
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      class="text-center lg:text-left font-regular tracking-widest uppercase text-sm text-gray-500 mt-16 mb-6"
-      >
-      Services that I work for
-    </div>
-    <div class="row items-center justify-center mb-8">
-    <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/3">
-      <a rel="noopener noreferrer" href="https://infinitybotlist.com" target="_blank">
-        <div
-          class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer"
-          style="background-color: #0E141D; border-radius: 1vw;"
-          >
-          <div class="flex items-center">
-            <div class="flex-initial ml-4 mr-6">
-              <img src="assets/projects/ibl.png" class="h-12 w-auto"/>
-            </div>
-            <div class="flex-initial">
-              <div class="font-semibold text-md text-gray-600">
-                Infinity Bot List
-              </div>
-              <div class="font-bold text-lg text-green-500">
-                Senior Administrator
-              </div>
-              <div class="font-regular text-xs text-gray-500">
-                Check out their website.
-              </div>
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/3">
-      <a rel="noopener noreferrer" href="https://oce.gg" target="_blank">
-        <div
-          class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer"
-          style="background-color: #0E141D; border-radius: 1vw;"
-          >
-          <div class="flex items-center">
-            <div class="flex-initial ml-4 mr-6">
-              <img src="assets/projects/oce.png" class="h-4 w-auto"/>
-            </div>
-            <div class="flex-initial">
-              <div class="font-semibold text-md text-gray-600">
-                OCE.gg
-              </div>
-              <div class="font-bold text-lg text-blue-500">
-                Community Moderator
-              </div>
-              <div class="font-regular text-xs text-gray-500">
-                Check out their website.
-              </div>
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/3">
-      <a rel="noopener noreferrer" href="https://github.com/DiscordAnaxes" target="_blank">
-        <div
-          class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer"
-          style="background-color: #0E141D; border-radius: 1vw;"
-          >
-          <div class="flex items-center">
-            <div class="flex-initial ml-4 mr-6">
-              <i class="twa twa-joy text-4xl"></i>
-            </div>
-            <div class="flex-initial">
-              <div class="font-semibold text-md text-gray-600">
-                Myself
-              </div>
-              <div class="font-bold text-lg text-pink-500">
-                Moral Support
-              </div>
-              <div class="font-regular text-xs text-gray-500">
-                Check out my github.
-              </div>
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="md:px-16 px-4 pb-16 pt-16 text-center">
-      <div class="mt-4 items-center">
-        <a rel="noopener noreferrer" target="_blank" href="//github.com/DiscordAnaxes" class="mr-3 github socialbtn fab fa-github text-3xl text-gray-600"></a>
-        <a rel="noopener noreferrer" target="_blank" href="//discord.com/users/567885938160697377" class="socialbtn discord2 fab fa-discord text-3xl mr-3 text-gray-600"></a>
-        <a rel="noopener noreferrer" target="_blank" href="//twitter.com/DiscordAnaxes" class="mr-3 twitter2 socialbtn fab fa-twitter text-3xl text-gray-600"></a>
-        <a rel="noopener noreferrer" target="_blank" href="//fontawesome.com/icons" class="mr-3 fontawesome socialbtn fab fa-font-awesome text-3xl text-gray-600"></a>
-        <a rel="noopener noreferrer" target="_blank" href="//nasa.gov" class="mr-3 socialbtn fad fa-user-astronaut text-3xl text-gray-600 hover:text-green-400"></a>
-      </div>
-      <br />
-      <p class="font-bold text-yellow-500 hover:text-pink-500"><i class="fad fa-crown"></i>&nbsp;<a rel="noopener noreferrer" href="https://github.com/audn/audun.gg" target="_blank">Audun.gg</a></p>
-      <p class="font-medium text-lg inter text-white">
-        Copyright &copy; <a rel="noopener noreferrer" href="/"><span class="font-semibold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-green-400 hover:from-pink-500 hover:to-yellow-400">Anaxes.xyz</span></a>&nbsp;2020 - <script>document.write(new Date().getFullYear());</script>.
-      </p>
-      <br />
-      <center>
-        <a rel="noopener noreferrer" href="//www.dmca.com/Protection/Status.aspx?ID=4ee7500b-1976-4cba-9bfa-0065bbf2c085" target="_blank" title="DMCA.com Protection Status" class="dmca-badge"> <img src ="https://images.dmca.com/Badges/dmca-badge-w100-5x1-07.png?ID=4ee7500b-1976-4cba-9bfa-0065bbf2c085"  alt="DMCA.com Protection Status" /></a>  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
-      </center>
     </div>
   </body>
 </html>
-<style>
-  body {
-  font-family: 'Inter', sans-serif;
-  }
-  .row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -16px;
-  margin-right: -16px;
-  }
-  .col {
-  flex: none;
-  }
-  .github:hover {
-  color: #FFF;
-  }
-  .twitter {
-  color: #00b6f1;
-  }
-  .discord {
-  color: #7289DA;
-  }
-  .fontawesome:hover {
-  color: #339af0;
-  }
-  .twitter2:hover {
-  color: #00b6f1;
-  }
-  .discord2:hover {
-  color: #7289DA;
-  }
-  .dscjobs:hover {
-  color: #3E4A75;
-  }
-  .naruto:hover {
-  color: #FFEC91;
-  }
-  .attack_on_titan:hover {
-  color: #D8A06D;
-  }
-  .valorant:hover {
-  color: #FF4655;
-  }
-  .bf2:hover {
-  color: #1B3264;
-  }
-  .ttf2:hover {
-  color: #597C82;
-  }
-  .socialbtn:hover {
-  transform: translate(0px, -3px);
-  animation-name: headsup;
-  animation-duration: 0.3s;
-  }
-  img {
-  pointer-events: none;
-  }
-  /* width */
-  ::-webkit-scrollbar {
-  width: 10px;
-  }
-  /* Track */
-  ::-webkit-scrollbar-track {
-  background: #0A0F16;
-  }
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-  background: #0E141D;
-  }
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-  background: #0E141D;
-  }
-  .wave {
-  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
-  animation-duration: 2.5s; /* Change to speed up or slow down */
-  animation-iteration-count: infinite; /* Never stop waving :) */
-  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
-  display: inline-block;
-  }
-  @keyframes wave-animation {
-  0% {
-  transform: rotate(0deg);
-  }
-  10% {
-  transform: rotate(14deg);
-  } /* The following five values can be played with to make the waving more or less extreme */
-  20% {
-  transform: rotate(-8deg);
-  }
-  30% {
-  transform: rotate(14deg);
-  }
-  40% {
-  transform: rotate(-4deg);
-  }
-  50% {
-  transform: rotate(10deg);
-  }
-  60% {
-  transform: rotate(0deg);
-  } /* Reset for the last half to pause */
-  100% {
-  transform: rotate(0deg);
-  }
-  }
-</style>
-<script>
-  $('img').mousedown(function (e) {
-  if(e.button == 2) { // right click
-    return false; // do nothing!
-  }
-  })
-</script>
-<script src="assets/JS/main.js"></script>

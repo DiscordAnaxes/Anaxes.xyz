@@ -1,0 +1,105 @@
+body {
+  font-family: "Inter", sans-serif;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -16px;
+  margin-right: -16px;
+}
+.col {
+  flex: none;
+}
+.github:hover {
+  color: #fff;
+}
+.twitter {
+  color: #00b6f1;
+}
+.discord {
+  color: #7289da;
+}
+.fontawesome:hover {
+  color: #339af0;
+}
+.twitter2:hover {
+  color: #00b6f1;
+}
+.discord2:hover {
+  color: #7289da;
+}
+.dscjobs:hover {
+  color: #3e4a75;
+}
+.naruto:hover {
+  color: #ffec91;
+}
+.attack_on_titan:hover {
+  color: #d8a06d;
+}
+.valorant:hover {
+  color: #ff4655;
+}
+.bf2:hover {
+  color: #1b3264;
+}
+.ttf2:hover {
+  color: #597c82;
+}
+.socialbtn:hover {
+  transform: translate(0px, -3px);
+  animation-name: headsup;
+  animation-duration: 0.3s;
+}
+img {
+  pointer-events: none;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #0a0f16;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0e141d;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0e141d;
+}
+.wave {
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}

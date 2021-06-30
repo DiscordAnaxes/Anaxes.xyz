@@ -16,7 +16,7 @@ fetch(url).then(function (response) {
                 (o, c) => (o.length === 19 ? `${o}${c}...` : `${o}${c}`),
                 ""
               )}</span></a>&nbsp;by&nbsp;<a href="https://open.spotify.com/search/${
-              data.data.spotify.artist
+              data.data.spotify.artist.split(";")[0]
             }" target="_blank" class="hover:text-green-500"><span class="font-bold">${data.data.spotify.artist
               .split("", 10)
               .reduce(
