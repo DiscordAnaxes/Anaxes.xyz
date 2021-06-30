@@ -73,12 +73,12 @@ fetch(url).then(function (response) {
       var discordStatusHTML = document.getElementById("discord_status");
       var status = `${
         data.data.discord_status === "online"
-          ? "<i class='fad fa-circle text-green-500 animate-pulse' title="Online"></i>"
+          ? "<i class='fad fa-circle text-green-500 animate-pulse' title='Online'></i>"
           : data.data.discord_status === "dnd"
-          ? "<i class='fad fa-circle text-red-500 animate-pulse' title="Do Not Disturb"></i>"
+          ? "<i class='fad fa-circle text-red-500 animate-pulse' title='Do Not Disturb'></i>"
           : data.data.discord_status === "idle"
-          ? "<i class='fad fa-circle text-yellow-500 animate-pulse' title="Idle"></i>"
-          : "<i class='fad fa-circle text-gray-500 animate-pulse' title="Offline"></i>"
+          ? "<i class='fad fa-circle text-yellow-500 animate-pulse' title='Idle'></i>"
+          : "<i class='fad fa-circle text-gray-500 animate-pulse' title='Offline'></i>"
       }`;
       discordStatusHTML.innerHTML += status;
     });
