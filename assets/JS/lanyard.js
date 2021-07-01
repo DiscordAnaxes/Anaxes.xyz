@@ -75,7 +75,7 @@ fetch(url).then(function (response) {
         data.data.discord_status === "online"
           ? "<i class='fad fa-circle text-green-500 animate-pulse' title='Online'></i>"
           : data.data.discord_status === "dnd"
-          ? "<i class='fad fa-circle-minus text-red-500 animate-pulse' title='Do Not Disturb'></i>"
+          ? "<i class='fad fa-minus-circle text-red-500 animate-pulse' title='Do Not Disturb'></i>"
           : data.data.discord_status === "idle"
           ? "<i class='fad fa-moon text-yellow-500 animate-pulse' title='Idle'></i>"
           : "<i class='fad fa-circle text-gray-500 animate-pulse' title='Offline'></i>"
