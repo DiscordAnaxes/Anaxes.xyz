@@ -43,7 +43,7 @@ fetch(url).then(function (response) {
               )} | ${
               data.data.activities[1].state
                 ? data.data.activities[1].state
-                : "🍿 Eating or 💤 Sleeping"
+                : "🍿 Eating, 🎮 Gaming or 💤 Sleeping"
             }</p>`
           : data.data.activities[1].name === "AnimeLab"
           ? `<p><i class="fad fa-video text-purple-500"></i> AnimeLab:&nbsp;${data.data.activities[1].details
