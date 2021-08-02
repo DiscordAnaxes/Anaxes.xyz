@@ -5,7 +5,7 @@ fetch(url).then(function (response) {
       response.json().then(function (data) {
         var discordStatusHTML = document.getElementById("discordStatus_socials");
         var status = `${
-          data.data.active_on_discord_desktop ? data.data.activities[0].emoji.name + ` ${data.data.activities[0].state} : "Anaxes#3274"`
+          data.data.active_on_discord_desktop ? data.data.activities[0].emoji.name + ` ${data.data.activities[0].state}` : "Anaxes#3274"
         }`;
         discordStatusHTML.innerHTML += status;
       });
