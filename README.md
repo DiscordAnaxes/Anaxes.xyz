@@ -36,9 +36,9 @@ code .
 
 ## 🏷️ Lanyard & 🐈 GitHub API
 
-Firstly, you want to change the API requests in `/assets/JS/lanyard.js`, `/assets/JS/github.js` & `/assets/JS/discord.js`.
+Firstly, you want to change the API endpoints in `/assets/JS/lanyard.js`, `/assets/JS/github.js` & `/assets/JS/discord.js`.
 
-In those files please change the ending of the API requests:
+In those files please change the ending of the API endpoints:
 
 lanyard.js & discord.js files:
 
