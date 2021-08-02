@@ -1,5 +1,5 @@
 # 🌏 anaxes.xyz
-My personal site created with [HTML](https://www.w3schools.com/html/) & [TailwindCSS](https://tailwindcss.com) utilising [Lanyard](https://discord.com/invite/UrXF2cfJ7F) and [GitHub](https://api.github.com) API.
+My personal site created with [HTML](https://www.w3schools.com/html/) & [TailwindCSS](https://tailwindcss.com), utilising [Lanyard](https://discord.com/invite/UrXF2cfJ7F) and [GitHub](https://api.github.com) API.
 
 
 ## 📚 Credits
