@@ -52,7 +52,7 @@ Github.js file:
 https://api.github.com/users/<your github username>
 ```
 
-*Note to use Lanyard API you **__must__** join their [Discord Server](https://discord.com/invite/UrXF2cfJ7F)*
+*Note to use Lanyard API you <strong><u>must</u></strong> join their [Discord Server](https://discord.com/invite/UrXF2cfJ7F)*
 
 ## 👋 Conclusion
 
