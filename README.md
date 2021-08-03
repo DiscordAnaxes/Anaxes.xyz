@@ -1,5 +1,5 @@
 # 🌏 anaxes.xyz
-My personal site created with [HTML](https://www.w3schools.com/html/) & [TailwindCSS](https://tailwindcss.com), utilising [Lanyard](https://discord.com/invite/UrXF2cfJ7F) and [GitHub](https://api.github.com) API.
+My personal site created with [HTML](https://www.w3schools.com/html/) & [TailwindCSS](https://tailwindcss.com), utilising [Lanyard](https://discord.com/invite/UrXF2cfJ7F), [GitHub](https://api.github.com) and [Twitter](https://developer.twitter.com) API.
 
 
 ## 📚 Credits
@@ -12,7 +12,7 @@ This personal website is heavily inspired/built off of [Audun's Personal Website
 <br/>
 🔗 Twitter: [tweetaudun](https://twitter.com/tweetaudun)
 
-*Note: Audun recently updated their personal website and github repo. My personal website is built off of a previous version of their website.*
+__*Note: Audun recently updated their personal website and github repo. My personal website is built off of a previous version of their website.__
 
 ## 🚀 Getting Started
 
@@ -34,9 +34,9 @@ Then, open the directory (This step is for Visual Studio Code. Please refer to y
 code .
 ```
 
-## 🏷️ Lanyard & 🐈 GitHub API
+## 🏷️ Lanyard, 🐈 GitHub API & 🐤 Twitter API
 
-Firstly, you want to change the API endpoints in `/assets/JS/lanyard.js`, `/assets/JS/github.js` & `/assets/JS/discord.js`.
+Firstly, you want to change the API endpoints in `/assets/JS/lanyard.js`, `/assets/JS/github.js`, `/assets/JS/discord.js`, & `/assets/JS/twitter.js`.
 
 In those files please change the ending of the API endpoints:
 
@@ -52,7 +52,11 @@ Github.js file:
 https://api.github.com/users/<your github username>
 ```
 
-*Note to use Lanyard API you <strong><u>must</u></strong> join their [Discord Server](https://discord.com/invite/UrXF2cfJ7F)*
+Twitter.js file:
+
+Unfortunately the endpoint for the Twitter API is custom and only retrieves my Twitter account data. You'll have to use your own system on getting Twitter data. 
+
+__*Note: To use Lanyard API you <strong><u>must</u></strong> join their [Discord Server](https://discord.com/invite/UrXF2cfJ7F)__
 
 ## 🔍 Deploy on Netlify
 
