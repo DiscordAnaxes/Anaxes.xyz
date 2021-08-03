@@ -22,13 +22,13 @@ To start off, please clone the repository:
 git clone https://github.com/DiscordAnaxes/Anaxes.xyz
 ```
 
-Next, change directory by:
+Next, change directory:
 
 ```bash
 cd Anaxes.xyz
 ```
 
-Then, open the directory by:
+Then, open the directory (This step is for Visual Studio Code. Please refer to your prefered IDE/Text Editor on how to open folders/directories.):
 
 ```bash
 code .
