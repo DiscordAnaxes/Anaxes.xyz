@@ -12,7 +12,7 @@ This personal website is heavily inspired/built off of [Audun's Personal Website
 <br/>
 🔗 Twitter: [tweetaudun](https://twitter.com/tweetaudun)
 
-__*Note: Audun recently updated their personal website and github repo. My personal website is built off of a previous version of their website.__
+_*Note: Audun recently updated their personal website and github repo. My personal website is built off of a previous version of their website._
 
 ## 🚀 Getting Started
 
@@ -56,7 +56,7 @@ Twitter.js file:
 
 Unfortunately the endpoint for the Twitter API is custom and only retrieves my Twitter account data. You'll have to use your own system on getting Twitter data. 
 
-__*Note: To use Lanyard API you <strong><u>must</u></strong> join their [Discord Server](https://discord.com/invite/UrXF2cfJ7F)__
+_*Note: To use Lanyard API you <strong><u>must</u></strong> join their [Discord Server](https://discord.com/invite/UrXF2cfJ7F)_
 
 ## 🔍 Deploy on Netlify
 
