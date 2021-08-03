@@ -60,7 +60,7 @@ The easiest way to deploy a website for free, is to use a provider called [Netli
 
 Check out the [Netlify deployment documentation](https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/) for more details.
 
-<a href="https://app.netlify.com/start/deploy?repository=https://github.com/DiscordAnaxes/Anaxes.xyz" target="_blank"><img src="https://www.netlify.com/img/deploy/button.svg"/></a>
+<a href="https://app.netlify.com/start/deploy?repository=https://github.com/DiscordAnaxes/Anaxes.xyz"><img src="https://www.netlify.com/img/deploy/button.svg"/></a>
 
 ## 👋 Conclusion
 
