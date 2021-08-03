@@ -54,6 +54,14 @@ https://api.github.com/users/<your github username>
 
 *Note to use Lanyard API you <strong><u>must</u></strong> join their [Discord Server](https://discord.com/invite/UrXF2cfJ7F)*
 
+## 🔍 Deploy on Netlify
+
+The easiest way to deploy a website for free, is to use a provider called [Netlify](https://netlify.com).
+
+Check out the [Netlify deployment documentation](https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/) for more details.
+
+<a href="https://app.netlify.com/start/deploy?repository=https://github.com/DiscordAnaxes/Anaxes.xyz" target="_blank"><img src="https://www.netlify.com/img/deploy/button.svg"/></a>
+
 ## 👋 Conclusion
 
 Thank you for taking your time to read this README. It would support Audun & Me greatly, if you link our respective websites in the footer area of the website (or anywhere that suits you).
