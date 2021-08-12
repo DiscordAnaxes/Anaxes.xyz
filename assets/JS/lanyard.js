@@ -45,8 +45,8 @@ fetch(url).then(function (response) {
                 ? data.data.activities[1].state
                 : "🍿 Eating, 🎮 Gaming or 💤 Sleeping"
             }</p>`
-          : data.data.activities[1].name === "AnimeLab"
-          ? `<p><i class="fad fa-video text-purple-500"></i> AnimeLab:&nbsp;${data.data.activities[1].details
+          : data.data.activities[1].name === "Crunchyroll"
+          ? `<p><i class="fad fa-video text-orange-500"></i> Crunchyroll:&nbsp;${data.data.activities[1].details
               .split("", 30)
               .reduce(
                 (o, c) => (o.length === 29 ? `${o}${c}...` : `${o}${c}`),
