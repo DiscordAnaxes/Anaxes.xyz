@@ -5,7 +5,7 @@ fetch(url).then(function (response) {
     response.json().then(function (data) {
       var githubFollowersHTML = document.getElementById("gh_followers");
       var followers = `${data.followers + " Followers"}`;
-      githubFollowersHTML.innerHTML += followers;
+      githubFollowersHTML!.innerHTML += followers;
     });
   } else {
     console.log("Response failed?");
