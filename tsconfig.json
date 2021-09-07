@@ -10,7 +10,7 @@
 		"resolveJsonModule": true,
 		"skipLibCheck": true,
 		"forceConsistentCasingInFileNames": true,
-		"outDir": "dist/",
+		"outDir": "./src/dist/",
 		"rootDir": "./src",
 		"strict": true,
 		"moduleResolution": "node",
