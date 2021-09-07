@@ -28,6 +28,12 @@ Next, change directory:
 cd Anaxes.xyz
 ```
 
+As this website uses [TypeScript](https://www.typescriptlang.org/), you will need to install it:
+
+```bash
+npm install -g typescript
+```
+
 Then, open the directory (This step is for Visual Studio Code. Please refer to your prefered IDE/Text Editor on how to open folders/directories.):
 
 ```bash
@@ -36,7 +42,7 @@ code .
 
 ## 🏷️ Lanyard, 🐈 GitHub API & 🐤 Twitter API
 
-Firstly, you want to change the API endpoints in `/assets/JS/lanyard.js`, `/assets/JS/github.js`, `/assets/JS/discord.js`, & `/assets/JS/twitter.js`.
+Firstly, you want to change the API endpoints in `/assets/ts/lanyard.ts`, `/assets/ts/github.ts`, `/assets/ts/discord.ts`, & `/assets/js/twitter.ts`.
 
 In those files please change the ending of the API endpoints:
 
@@ -56,7 +62,7 @@ Twitter.js file:
 
 Unfortunately the endpoint for the Twitter API is custom and only retrieves my Twitter account data. You'll have to use your own system on getting Twitter data. 
 
-_*Note: To use Lanyard API you <strong><u>must</u></strong> join their [Discord Server](https://discord.com/invite/UrXF2cfJ7F)_
+_*Note: To use Lanyard API you <strong><u>must</u></strong> join their [Discord Server](https://discord.com/invite/UrXF2cfJ7F) & to compile TypeScript to JavaScript: Run `tsc`_
 
 ## 🔍 Deploy on Netlify
 
