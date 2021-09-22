@@ -24,9 +24,9 @@ fetch("https://api.lanyard.rest/v1/users/567885938160697377").then(function (res
 				${data.data.activities[1].assets.small_image ? `<img draggable="false" class="rounded-full" style="width: 25px; height: 25px; margin-left: -20px;margin-bottom: -50px;" src=${`https://cdn.discordapp.com/app-assets/${data.data.activities[1].application_id}/${data.data.activities[1].assets.small_image}`} />` : ""}
 				<p class="ml-4 text-sm flex flex-col justify-between leading-snug">
 					<span class="font-bold">${data.data.listening_to_spotify && data.data.activities[1].name === "Spotify" ? "Listening&nbsp;to&nbsp;<i class='fab fa-spotify text-green-500'></i>" : `${data.data.activities[1].name === "Visual Studio Code" ? "Playing&nbsp;<i class='fad fa-code text-blue-500'></i>" : `${data.data.activities[1].name === "GitHub" ? "Playing&nbsp<i class='fab fa-github'></i>" : "Playing"}`}`}&nbsp;${data.data.activities[1].name}</span>
-					<span class="opacity-75">${data.data.activities[1].details.split("", 25).reduce((o, c) => (o.length === 24 ? `${o}${c}...` : `${o}${c}`), "")}</span>
-					${data.data.activities[1].state ? `<span class="opacity-50">${data.data.activities[1].state.split("", 35).reduce((o, c) => (o.length === 34 ? `${o}${c}...` : `${o}${c}`), "")}</span>` : ""}
-					<span class="opacity-50">⏰ ${timestamp.fromNow().split("ago")[0]} elapsed</span>
+					<span class="opacity-100">${data.data.listening_to_spotify && data.data.activities[1].name === "Spotify" ? `🎶 ${data.data.activities[1].details.split("", 25).reduce((o, c) => (o.length === 24 ? `${o}${c}...` : `${o}${c}`), "")}</span>` : `${data.data.activities[1].details.split("", 25).reduce((o, c) => (o.length === 24 ? `${o}${c}...` : `${o}${c}`), "")}</span>`}
+					${data.data.listening_to_spotify && data.data.activities[1].name === "Spotify" ? data.data.activities[1].state ? `<span class="opacity-100">😃 ${data.data.activities[1].state.split("", 35).reduce((o, c) => (o.length === 34 ? `${o}${c}...` : `${o}${c}`), "")}</span>` : "" : data.data.activities[1].state ? `<span class="opacity-100">${data.data.activities[1].state.split("", 35).reduce((o, c) => (o.length === 34 ? `${o}${c}...` : `${o}${c}`), "")}</span>` : ""}
+					<span class="opacity-100">⏰ ${timestamp.fromNow().split("ago")[0]} elapsed</span>
 				</p>
 			</div>
 			</div>
