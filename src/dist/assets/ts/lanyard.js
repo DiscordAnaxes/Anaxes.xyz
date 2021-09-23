@@ -12,17 +12,9 @@ fetch(url).then(function (response) {
                     .split("", 10)
                     .reduce((o, c) => (o.length === 9 ? `${o}${c}...` : `${o}${c}`), "")}</span>&nbsp;<i class="fad fa-external-link"></i></a></div>`
                 : data.data.activities[1].name === "GitHub"
-                    ? `<p><i class="fab fa-github text-white"></i> GitHub:&nbsp;${data.data.activities[1].details
-                        .split("", 30)
-                        .reduce((o, c) => (o.length === 29 ? `${o}${c}...` : `${o}${c}`), "")} | ${data.data.activities[1].state
-                        ? data.data.activities[1].state
-                        : "Viewing Activity"}</p>`
+                    ? `<p><i class="fab fa-github text-white"></i> GitHub:&nbsp;${data.data.activities[1].details.split("", 30).reduce((o, c) => (o.length === 29 ? `${o}${c}...` : `${o}${c}`), "")} | ${data.data.activities[1].state ? data.data.activities[1].state : "Viewing Activity"}</p>`
                     : data.data.activities[1].name === "Visual Studio Code"
-                        ? `<p><i class="fad fa-code text-blue-500"></i> VSCode:&nbsp;${data.data.activities[1].details
-                            .split("", 30)
-                            .reduce((o, c) => (o.length === 29 ? `${o}${c}...` : `${o}${c}`), "")} | ${data.data.activities[1].state
-                            ? data.data.activities[1].state
-                            : "🍿 Eating, 🎮 Gaming or 💤 Sleeping"}</p>`
+                        ? `<p><i class="fad fa-code text-blue-500"></i> VSCode:&nbsp;${data.data.activities[1].details.split("", 30).reduce((o, c) => (o.length === 29 ? `${o}${c}...` : `${o}${c}`), "")} | ${data.data.activities[1].state ? data.data.activities[1].state : "🍿 Eating, 🎮 Gaming or 💤 Sleeping"}</p>`
                         : data.data.activities[1].name === "Crunchyroll"
                             ? `<p><i class="fad fa-video text-orange-500"></i> Crunchyroll:&nbsp;${data.data.activities[1].details
                                 .split("", 30)

@@ -32,7 +32,7 @@ body {
   color: #5865f2;
 }
 .pbot:hover {
-  color: #00C8FF;
+  color: #00c8ff;
 }
 .naruto:hover {
   color: #ffec91;
@@ -107,22 +107,13 @@ img {
   }
 }
 .rainbow-text:hover {
-  background-image: linear-gradient(
-    to left,
-    violet,
-    indigo,
-    blue,
-    green,
-    yellow,
-    orange,
-    red
-  );
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .glass {
-    backdrop-filter: blur(7px);
-    -webkit-backdrop-filter: blur(7px);
-    border-radius: 10px;
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border-radius: 10px;
 }
