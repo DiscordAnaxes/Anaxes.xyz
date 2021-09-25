@@ -1,6 +1,7 @@
 //@ts-ignore
 window.showHelp = function () {
-  if (document.getElementById("show_side")!.style.marginTop === "1000px") return;
+  if (document.getElementById("show_side")!.style.marginTop === "1000px")
+    return;
   document.getElementById("show_side")!.style.display = "block";
   document.getElementById("click_it")!.classList.add("animate__fadeOut");
   document.getElementById("click_it")!.classList.add("animate__faster");
@@ -11,7 +12,8 @@ window.showHelp = function () {
 };
 //@ts-ignore
 window.hideHelp = function () {
-  if (document.getElementById("show_side")!.style.marginTop === "1000px") return;
+  if (document.getElementById("show_side")!.style.marginTop === "1000px")
+    return;
   document.getElementById("click_it")!.classList.remove("animate__fadeOut");
   document.getElementById("click_it")!.classList.add("animate__fadeInUp");
   document.getElementById("show_side")!.classList.add("animate__animated");
