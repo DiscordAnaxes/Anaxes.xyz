@@ -1,3 +1,4 @@
+//@ts-ignore
 window.showHelp = function () {
   if (document.getElementById("show_side")!.style.marginTop === "1000px") return;
   document.getElementById("show_side")!.style.display = "block";
@@ -8,6 +9,7 @@ window.showHelp = function () {
   document.getElementById("show_side")!.classList.add("animate__faster");
   document.getElementById("show_side")!.classList.remove("animate__fadeOut");
 };
+//@ts-ignore
 window.hideHelp = function () {
   if (document.getElementById("show_side")!.style.marginTop === "1000px") return;
   document.getElementById("click_it")!.classList.remove("animate__fadeOut");
@@ -27,6 +29,7 @@ document.addEventListener("click", function (event: any) {
     .getElementById("click_it")!
     .contains(event.target);
   if (!isClickInsideElement && !isClickInsideSecondary) {
+    //@ts-ignore
     window.hideHelp();
   }
 });

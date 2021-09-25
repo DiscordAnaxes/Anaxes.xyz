@@ -1,4 +1,5 @@
 "use strict";
+//@ts-ignore
 window.showHelp = function () {
     if (document.getElementById("show_side").style.marginTop === "1000px")
         return;
@@ -10,6 +11,7 @@ window.showHelp = function () {
     document.getElementById("show_side").classList.add("animate__faster");
     document.getElementById("show_side").classList.remove("animate__fadeOut");
 };
+//@ts-ignore
 window.hideHelp = function () {
     if (document.getElementById("show_side").style.marginTop === "1000px")
         return;
@@ -30,6 +32,7 @@ document.addEventListener("click", function (event) {
         .getElementById("click_it")
         .contains(event.target);
     if (!isClickInsideElement && !isClickInsideSecondary) {
+        //@ts-ignore
         window.hideHelp();
     }
 });
