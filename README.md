@@ -12,7 +12,7 @@ This personal website is heavily inspired/built off of [Audun's Personal Website
 <br/>
 🔗 Twitter: [tweetaudun](https://twitter.com/tweetaudun)
 
-_\*Note: Audun recently updated their personal website and github repo. My personal website is built off of a previous version of their website._
+_\*Note: Audun recently updated their personal website and github repo. My personal website is built off of a previous version of their website. This repository is in no way "mine". I have just added my personality to Audun's origin personal website._ 
 
 ## 🚀 Getting Started
 
@@ -34,7 +34,7 @@ As this website uses [TypeScript](https://www.typescriptlang.org/), you will nee
 npm install -g typescript
 ```
 
-Then, open the directory (This step is for Visual Studio Code. Please refer to your prefered IDE/Text Editor on how to open folders/directories.):
+Then, open the directory (This step is for Visual Studio Code. Please refer to your preferred IDE/Text Editor on how to open folders/directories.):
 
 ```bash
 code .
@@ -42,11 +42,11 @@ code .
 
 ## 🏷️ Lanyard, 🐈 GitHub API & 🐤 Twitter API
 
-Firstly, you want to change the API endpoints in `/assets/ts/lanyard.ts`, `/assets/ts/github.ts`, `/assets/ts/discord.ts`, & `/assets/js/twitter.ts`.
+Firstly, you want to change the API endpoints in `/assets/ts/lanyard.ts`, `/assets/ts/github.ts`, & `/assets/js/twitter.ts`.
 
 In those files please change the ending of the API endpoints:
 
-lanyard.js & discord.js files:
+Lanyard.js file:
 
 ```bash
 https://api.lanyard.rest/v1/users/<your discord id>
