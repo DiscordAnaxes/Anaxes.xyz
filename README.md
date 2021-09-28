@@ -12,7 +12,7 @@ This personal website is heavily inspired/built off of [Audun's Personal Website
 <br/>
 🔗 Twitter: [tweetaudun](https://twitter.com/tweetaudun)
 
-_\*Note: Audun recently updated their personal website and github repo. My personal website is built off of a previous version of their website. This repository is in no way "mine". I have just added my personality to Audun's origin personal website._ 
+_\*Note: Audun recently updated their personal website and github repo. My personal website is built off of a previous version of their website. This repository is in no way "mine". I have just added my personality to Audun's origin personal website._
 
 ## 🚀 Getting Started
 
