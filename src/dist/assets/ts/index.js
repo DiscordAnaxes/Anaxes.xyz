@@ -1,13 +1,13 @@
 "use strict";
 if ("serviceWorker" in navigator) {
-    navigator.serviceWorker
-        .register("sw.js")
-        .then((registration) => {
-        console.log("SW Registered!");
-        console.log(registration);
+  navigator.serviceWorker
+    .register("sw.js")
+    .then((registration) => {
+      console.log("SW Registered!");
+      console.log(registration);
     })
-        .catch((error) => {
-        console.log("SW Failed to register!");
-        console.log(error);
+    .catch((error) => {
+      console.log("SW Failed to register!");
+      console.log(error);
     });
 }
