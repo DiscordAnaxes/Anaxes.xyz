@@ -3,5 +3,3 @@ Disallow: /nogooglebot/
 
 User-agent: *
 Allow: /
-
-Sitemap: https://anaxes.xyz/sitemap.xml
