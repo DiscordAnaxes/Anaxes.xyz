@@ -4,14 +4,14 @@
     "description": "Personal website of DiscordAnaxes.",
     "icons": [
       {
-        "src": "assets/images/AnaxesLogo.png",
+        "src": "assets/images/AnaxesLogo.jpg",
         "sizes": "192x192",
-        "type": "image/png"
+        "type": "image/jpg"
       },
       {
-        "src": "assets/images/AnaxesLogo.png",
+        "src": "assets/images/AnaxesLogo.jpg",
         "sizes": "512x512",
-        "type": "image/png"
+        "type": "image/jpg"
       }
     ],
     "start_url": "/",
