@@ -10,7 +10,7 @@ fetch(url).then(function (response) {
               data.data.spotify.track_id
             }" target="_blank" class="hover:text-green-500 flex-shrink-0 flex items-center"><img src=${
               data.data.spotify.album_art_url
-            } class="block h-5 w-auto rounded-full" />&nbsp;<span class="font-bold">${data.data.spotify.song
+            } class="block h-5 w-auto rounded-full" alt="Spotify Album Cover" />&nbsp;<span class="font-bold">${data.data.spotify.song
               .split("", 20)
               .reduce(
                 (o: string | any[], c: any) =>
@@ -130,10 +130,10 @@ fetch(url).then(function (response) {
                 }`
               }`
             : `https://cdn.discordapp.com/app-assets/${data.data.activities[1].application_id}/${data.data.activities[1].assets.large_image}`
-        } />
+        } alt="Large Image Icon" />
 				${
           data.data.activities[1].assets.small_image
-            ? `<img draggable="false" class="rounded-full" style="width: 25px; height: 25px; margin-left: -20px;margin-bottom: -50px;" src=${`https://cdn.discordapp.com/app-assets/${data.data.activities[1].application_id}/${data.data.activities[1].assets.small_image}`} />`
+            ? `<img draggable="false" class="rounded-full" style="width: 25px; height: 25px; margin-left: -20px;margin-bottom: -50px;" src=${`https://cdn.discordapp.com/app-assets/${data.data.activities[1].application_id}/${data.data.activities[1].assets.small_image}`} alt="Small Image Icon" />`
             : ""
         }
 				<p class="ml-4 text-sm flex flex-col justify-between leading-snug">
