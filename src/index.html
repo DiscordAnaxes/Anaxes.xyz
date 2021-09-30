@@ -1,1033 +1,801 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!--Title-->
+    <title>Anaxes.xyz</title>
+    <link rel="icon" type="image/png" href="assets/images/AnaxesLogo512.png" />
 
-<head>
-  <!--Title-->
-  <title>Anaxes.xyz</title>
-  <link rel="icon" type="image/png" href="assets/images/AnaxesLogo512.png" />
+    <!--TailwindCSS , Font Awesome & Twitter Emojis-->
+    <link preload href="https://cdn.jsdelivr.net/npm/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+    <link preload href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet" />
+    <link preload href="https://rawgit.com/ellekasai/twemoji-awesome/gh-pages/twemoji-awesome.css" rel="stylesheet" />
+    <link preload rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-VhBcF/php0Z/P5ZxlxaEx1GwqTQVIBu4G4giRWxTKOCjTxsPFETUDdVL5B6vYvOt" crossorigin="anonymous" />
+    <link preload rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="manifest" href="anaxes.webmanifest">
+    <link rel="apple-touch-icon" href="assets/images/AnaxesLogo192-AppleTouch.png">
 
-  <!--TailwindCSS , Font Awesome & Twitter Emojis-->
-  <link rel="preload" href="https://cdn.jsdelivr.net/npm/tailwindcss@^1.0/dist/tailwind.min.css" as="style"
-    onload="this.onload=null;this.rel='stylesheet'">
-  <noscript>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@^1.0/dist/tailwind.min.css"></noscript>
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" as="style"
-    onload="this.onload=null;this.rel='stylesheet'">
-  <noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap">
-    </noscript>
-  <link rel="preload" href="https://rawgit.com/ellekasai/twemoji-awesome/gh-pages/twemoji-awesome.css" as="style"
-    onload="this.onload=null;this.rel='stylesheet'">
-  <noscript>
-    <link rel="stylesheet" href="https://rawgit.com/ellekasai/twemoji-awesome/gh-pages/twemoji-awesome.css"></noscript>
-  <link rel="preload" href="https://pro.fontawesome.com/releases/v5.14.0/css/all.css" as="style"
-    onload="this.onload=null;this.rel='stylesheet'"
-    integrity="sha384-VhBcF/php0Z/P5ZxlxaEx1GwqTQVIBu4G4giRWxTKOCjTxsPFETUDdVL5B6vYvOt" crossorigin="anonymous">
-  <noscript>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.14.0/css/all.css"></noscript>
-  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" as="style"
-    onload="this.onload=null;this.rel='stylesheet'">
-  <noscript>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"></noscript>
-  <link rel="manifest" href="anaxes.webmanifest">
-  <link rel="apple-touch-icon" href="assets/images/AnaxesLogo192-AppleTouch.png">
+    <!--META-->
+    <meta charset="UTF-8" />
+    <meta name="“robots”" content="“INDEX," FOLLOW” />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="Gatsby 2.20.14" />
+    <title data-react-helmet="true">Anaxes.xyz</title>
+    <meta data-react-helmet="true" name="description" content="Hey 👋, I am Anaxes 💻. 15 y/o Aspiring NASA Astrophysicist 🚀, Verified Discord Bot Developer 🤖, and avid Web Developer 🌐." />
+    <meta data-react-helmet="true" name="image" content="https://anaxes.xyz/assets/images/Anaxes_Embed.png" />
+    <meta data-react-helmet="true" property="og:title" content="Anaxes.xyz" />
+    <meta data-react-helmet="true" property="og:description" content="Hey 👋, I am Anaxes 💻. 15 y/o Aspiring NASA Astrophysicist 🚀, Verified Discord Bot Developer 🤖, and avid Web Developer 🌐." />
+    <meta data-react-helmet="true" property="og:image" content="https://anaxes.xyz/assets/images/Anaxes_Embed.png" />
+    <meta data-react-helmet="true" property="og:url" content="https://anaxes.xyz" />
+    <meta data-react-helmet="true" property="og:type" content="website" />
+    <meta data-react-helmet="true" name="twitter:card" content="summary_large_image" />
+    <meta data-react-helmet="true" name="twitter:creator" content="@DiscordAnaxes" />
+    <meta data-react-helmet="true" name="twitter:title" content="Anaxes.xyz" />
+    <meta data-react-helmet="true" name="twitter:description" content="Hey 👋, I am Anaxes 💻. 15 y/o Aspiring NASA Astrophysicist 🚀, Verified Discord Bot Developer 🤖, and avid Web Developer 🌐." />
+    <meta data-react-helmet="true" name="twitter:image" content="https://anaxes.xyz/assets/images/Anaxes_Embed.png" />
+    <meta name="theme-color" content="#0A0F16" />
 
-  <!--META-->
-  <meta charset="UTF-8" />
-  <meta name="“robots”" content="“INDEX," FOLLOW” />
-  <meta http-equiv="x-ua-compatible" content="ie=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="generator" content="Gatsby 2.20.14" />
-  <title data-react-helmet="true">Anaxes.xyz</title>
-  <meta data-react-helmet="true" name="description"
-    content="Hey 👋, I am Anaxes 💻. 15 y/o Aspiring NASA Astrophysicist 🚀, Verified Discord Bot Developer 🤖, and avid Web Developer 🌐." />
-  <meta data-react-helmet="true" name="image" content="https://anaxes.xyz/assets/images/Anaxes_Embed.png" />
-  <meta data-react-helmet="true" property="og:title" content="Anaxes.xyz" />
-  <meta data-react-helmet="true" property="og:description"
-    content="Hey 👋, I am Anaxes 💻. 15 y/o Aspiring NASA Astrophysicist 🚀, Verified Discord Bot Developer 🤖, and avid Web Developer 🌐." />
-  <meta data-react-helmet="true" property="og:image" content="https://anaxes.xyz/assets/images/Anaxes_Embed.png" />
-  <meta data-react-helmet="true" property="og:url" content="https://anaxes.xyz" />
-  <meta data-react-helmet="true" property="og:type" content="website" />
-  <meta data-react-helmet="true" name="twitter:card" content="summary_large_image" />
-  <meta data-react-helmet="true" name="twitter:creator" content="@DiscordAnaxes" />
-  <meta data-react-helmet="true" name="twitter:title" content="Anaxes.xyz" />
-  <meta data-react-helmet="true" name="twitter:description"
-    content="Hey 👋, I am Anaxes 💻. 15 y/o Aspiring NASA Astrophysicist 🚀, Verified Discord Bot Developer 🤖, and avid Web Developer 🌐." />
-  <meta data-react-helmet="true" name="twitter:image" content="https://anaxes.xyz/assets/images/Anaxes_Embed.png" />
-  <meta name="theme-color" content="#0A0F16" />
+    <!--CSS-->
+    <link rel="stylesheet" preload href="assets/css/style.css" />
+  </head>
 
-  <!--CSS-->
-  <link rel="preload" href="assets/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript>
-    <link rel="stylesheet" href="assets/css/style.css"></noscript>
-  <style type="text/css">
-    .twa {
-      display: inline-block;
-      height: 1em;
-      width: 1em;
-      margin: 0 .05em 0 .1em;
-      vertical-align: -0.1em;
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: 1em 1em;
-    }
+  <body style="background-color: #0a0f16;">
+    <div class="preloader">
+      <video autoplay loop muted playsinline style="left: 50%; position: absolute; top: 50%; transform: translate(-50%, -50%);">  
+        <source src="assets/images/AnaxesLogo.webm" type="video/webm">  
+      </video>  
+    </div>
 
-    .fa,
-    .fas {
-      font-family: "Font Awesome 5 Pro";
-      font-weight: 900
-    }
-
-    .fa,
-    .fab,
-    .fad,
-    .fal,
-    .far,
-    .fas {
-      -moz-osx-font-smoothing: grayscale;
-      -webkit-font-smoothing: antialiased;
-      display: inline-block;
-      font-style: normal;
-      font-variant: normal;
-      text-rendering: auto;
-      line-height: 1
-    }
-
-    :root {
-      --animate-duration: 1s;
-      --animate-delay: 1s;
-      --animate-repeat: 1
-    }
-
-    .animate__animated {
-      -webkit-animation-duration: 1s;
-      animation-duration: 1s;
-      -webkit-animation-duration: var(--animate-duration);
-      animation-duration: var(--animate-duration);
-      -webkit-animation-fill-mode: both;
-      animation-fill-mode: both
-    }
-
-    .glass {
-      backdrop-filter: blur(7px);
-      -webkit-backdrop-filter: blur(7px);
-      border-radius: 10px;
-    }
-
-    .preloader {
-      background: #0a0f16;
-      height: 100vh;
-      width: 100%;
-      position: fixed;
-      z-index: 100;
-    }
-
-    .disappear {
-      animation: vanish 5s forwards;
-    }
-
-    ::-webkit-scrollbar-thumb:hover {
-      background: #0e141d;
-    }
-
-    .wave {
-      animation-name: wave-animation;
-      /* Refers to the name of your @keyframes element below */
-      animation-duration: 2.5s;
-      /* Change to speed up or slow down */
-      animation-iteration-count: infinite;
-      /* Never stop waving :) */
-      transform-origin: 70% 70%;
-      /* Pivot around the bottom-left palm */
-      display: inline-block;
-    }
-
-    ::-webkit-scrollbar-thumb {
-      background: #0e141d;
-    }
-
-    ::-webkit-scrollbar-track {
-      background: #0a0f16;
-    }
-
-    ::-webkit-scrollbar {
-      width: 10px;
-    }
-
-    img {
-      pointer-events: none;
-    }
-
-    .twitter {
-      color: #1d9bf0;
-    }
-
-    .discord {
-      color: #5865f2;
-    }
-
-    .twitch {
-      color: #9146ff;
-    }
-
-    body {
-      font-family: "Inter", sans-serif;
-    }
-
-    .row {
-      display: flex;
-      flex-wrap: wrap;
-      margin-left: -16px;
-      margin-right: -16px;
-    }
-
-    .col {
-      flex: none;
-    }
-
-    html {
-      line-height: 1.15;
-      -webkit-text-size-adjust: 100%
-    }
-
-    body {
-      margin: 0
-    }
-  </style>
-</head>
-
-<body style="background-color: #0a0f16;">
-  <div class="preloader">
-    <video autoplay loop muted playsinline
-      style="left: 50%; position: absolute; top: 50%; transform: translate(-50%, -50%);">
-      <source src="assets/images/AnaxesLogo.webm" type="video/webm">
-    </video>
-  </div>
-
-  <div class="px-6 md:px-4 py-4" style="background-color: #0e141d;">
-    <div class="max-w-6xl mx-auto container text-white">
-      <div class="flex">
-        <div class="flex-initial">
-          <i class="twa twa-laptop-computer font-bold mr-4"></i>
-        </div>
-        &nbsp;
-        <div class="flex-1">
-          <a rel="noopener noreferrer" href="https://github.com/DiscordAnaxes/Anaxes.xyz" target="_blank">This website
-            is open-source on <i class="fab fa-github github"></i></a>
+    <div class="px-6 md:px-4 py-4" style="background-color: #0e141d;">
+      <div class="max-w-6xl mx-auto container text-white">
+        <div class="flex">
+          <div class="flex-initial">
+            <i class="twa twa-laptop-computer font-bold mr-4"></i>
+          </div>
+          &nbsp;
+          <div class="flex-1">
+            <a rel="noopener noreferrer" href="https://github.com/DiscordAnaxes/Anaxes.xyz" target="_blank">This website is open-source on <i class="fab fa-github github"></i></a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div onclick="window.showHelp()" id="click_it"
-    class="cursor-pointer shadow-lg p-4 bg-blue-900 rounded-full animate__animated animate__fadeInUp"
-    style="position: fixed; bottom: 20px; right: 20px; z-index: 9999; background-color: #0e141d;">
-    &nbsp;<i class="fas fa-question text-white text-3xl"></i>&nbsp;
-  </div>
-  <div id="show_side"
-    class="md:p-6 fixed right-0 bottom-0 w-64 md:origin-bottom-right rounded-lg transition transform ease-out duration-75 opacity-100 scale-100 md:w-2/6"
-    style="z-index: 99999; max-width: 370px; margin-bottom: -6px; margin-right: -6px; display: none;">
-    <div role="menu" aria-orientation="vertical" aria-labelledby="user-menu"
-      class="shadow-xl py-2 mt-2 bg-gray-700 rounded-lg shadow-2xl"
-      style="border-radius: 1vw; background-color: #0e141d;">
-      <a rel="noopener noreferrer" href="https://discord.com/users/567885938160697377" target="_blank" role="menuitem"
-        class="block px-6 py-4 text-sm leading-5 text-white transition duration-150 ease-in-out hover:bg-gray-800 focus:outline-none"
-        style="border-radius: 0.5vw;">
-        <span class="flex items-center text-base font-bold"> <i
-            class="twa text-lg twa-white-question-mark"></i>&nbsp;Discord DM </span>
-        <span class="block mt-2 text-sm text-gray-400">Get support by DM'ing me.</span>
-      </a>
-      <a rel="noopener noreferrer" href="mailto:anaxesoce@gmail.com" role="menuitem"
-        class="block px-6 py-4 text-sm leading-5 text-white transition duration-150 ease-in-out hover:bg-gray-800 focus:outline-none"
-        style="border-radius: 0.5vw;">
-        <span class="flex items-center text-base font-bold"> <i
-            class="twa text-lg twa-incoming-envelope"></i>&nbsp;Email Support </span>
-        <span class="block mt-2 text-sm text-gray-400">Get quick and easy support via email.</span>
-      </a>
-      <a rel="noopener noreferrer" href="https://anaxes.instatus.com/" target="_blank" role="menuitem"
-        class="block px-6 py-4 text-sm leading-5 text-white transition duration-150 ease-in-out hover:bg-gray-800 focus:outline-none"
-        style="border-radius: 0.5vw;">
-        <span class="flex items-center text-base font-bold"> <i class="twa text-lg twa-satellite"></i>&nbsp;Status
-        </span>
-        <span class="block mt-2 text-sm text-gray-400">Check the status of my websites.</span>
-      </a>
+    <div
+      onclick="window.showHelp()"
+      id="click_it"
+      class="cursor-pointer shadow-lg p-4 bg-blue-900 rounded-full animate__animated animate__fadeInUp"
+      style="position: fixed; bottom: 20px; right: 20px; z-index: 9999; background-color: #0e141d;"
+    >
+      &nbsp;<i class="fas fa-question text-white text-3xl"></i>&nbsp;
     </div>
-  </div>
-  <div class="px-4 py-4 max-w-6xl mx-auto container mt-20 px-2">
-    <div class="lg:flex items-center">
-      <div class="w-full text-center lg:text-left lg:w-2/3">
-        <div class="font-bold text-4xl"><span
-            class="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-500 hover:from-blue-500 hover:to-green-400">Anaxes</span>&nbsp;<span
-            id="discord_status"></span></div>
-        <div class="font-semibold text-lg text-gray-500">
-          Discord Bot Developer & Avid Front-end Developer
-        </div>
-        <div class="sm:w-full md:w-4/5 lg:w-full mx-auto font-regular text-lg text-gray-600 mt-12">
-          Hey <span class="wave"><i class="twa twa-wave"></i></span>, I am Anaxes <i class="twa twa-computer"></i>. 15
-          y/o Aspiring NASA Astrophysicist <i class="twa twa-rocket"></i>, Verified Discord Bot Developer
-          <i class="twa twa-robot-face"></i>, and avid Web Developer <i class="twa twa-globe-with-meridians"></i><br />
-          <br />
-          <div class="flex-shrink-0 flex items-center">
-            <i class="twa twa-art"></i>&nbsp;Working on&nbsp;
-            <a rel="noopener noreferrer" href="https://pb.anaxes.xyz" target="_blank"
-              class="font-bold pbot flex-shrink-0 flex items-center">
-              <img src="assets/images/projects/pbot.webp" class="block h-5 w-auto" alt="PBOT Logo" />&nbsp;PBOT&nbsp;<i
-                class="fad fa-external-link"></i>
-            </a>
+    <div
+      id="show_side"
+      class="md:p-6 fixed right-0 bottom-0 w-64 md:origin-bottom-right rounded-lg transition transform ease-out duration-75 opacity-100 scale-100 md:w-2/6"
+      style="z-index: 99999; max-width: 370px; margin-bottom: -6px; margin-right: -6px; display: none;"
+    >
+      <div role="menu" aria-orientation="vertical" aria-labelledby="user-menu" class="shadow-xl py-2 mt-2 bg-gray-700 rounded-lg shadow-2xl" style="border-radius: 1vw; background-color: #0e141d;">
+        <a
+          rel="noopener noreferrer"
+          href="https://discord.com/users/567885938160697377"
+          target="_blank"
+          role="menuitem"
+          class="block px-6 py-4 text-sm leading-5 text-white transition duration-150 ease-in-out hover:bg-gray-800 focus:outline-none"
+          style="border-radius: 0.5vw;"
+        >
+          <span class="flex items-center text-base font-bold"> <i class="twa text-lg twa-white-question-mark"></i>&nbsp;Discord DM </span>
+          <span class="block mt-2 text-sm text-gray-400">Get support by DM'ing me.</span>
+        </a>
+        <a
+          rel="noopener noreferrer"
+          href="mailto:anaxesoce@gmail.com"
+          role="menuitem"
+          class="block px-6 py-4 text-sm leading-5 text-white transition duration-150 ease-in-out hover:bg-gray-800 focus:outline-none"
+          style="border-radius: 0.5vw;"
+        >
+          <span class="flex items-center text-base font-bold"> <i class="twa text-lg twa-incoming-envelope"></i>&nbsp;Email Support </span>
+          <span class="block mt-2 text-sm text-gray-400">Get quick and easy support via email.</span>
+        </a>
+        <a
+          rel="noopener noreferrer"
+          href="https://anaxes.instatus.com/"
+          target="_blank"
+          role="menuitem"
+          class="block px-6 py-4 text-sm leading-5 text-white transition duration-150 ease-in-out hover:bg-gray-800 focus:outline-none"
+          style="border-radius: 0.5vw;"
+        >
+          <span class="flex items-center text-base font-bold"> <i class="twa text-lg twa-satellite"></i>&nbsp;Status </span>
+          <span class="block mt-2 text-sm text-gray-400">Check the status of my websites.</span>
+        </a>
+      </div>
+    </div>
+    <div class="px-4 py-4 max-w-6xl mx-auto container mt-20 px-2">
+      <div class="lg:flex items-center">
+        <div class="w-full text-center lg:text-left lg:w-2/3">
+          <div class="font-bold text-4xl"><span class="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-500 hover:from-blue-500 hover:to-green-400">Anaxes</span>&nbsp;<span id="discord_status"></span></div>
+          <div class="font-semibold text-lg text-gray-500">
+            Discord Bot Developer & Avid Front-end Developer
+          </div>
+          <div class="sm:w-full md:w-4/5 lg:w-full mx-auto font-regular text-lg text-gray-600 mt-12">
+            Hey <span class="wave"><i class="twa twa-wave"></i></span>, I am Anaxes <i class="twa twa-computer"></i>. 15 y/o Aspiring NASA Astrophysicist <i class="twa twa-rocket"></i>, Verified Discord Bot Developer
+            <i class="twa twa-robot-face"></i>, and avid Web Developer <i class="twa twa-globe-with-meridians"></i><br />
+            <br />
+            <div class="flex-shrink-0 flex items-center">
+              <i class="twa twa-art"></i>&nbsp;Working on&nbsp;
+              <a rel="noopener noreferrer" href="https://pb.anaxes.xyz" target="_blank" class="font-bold pbot flex-shrink-0 flex items-center">
+                <img src="assets/images/projects/pbot.webp" class="block h-5 w-auto" alt="PBOT Logo" />&nbsp;PBOT&nbsp;<i class="fad fa-external-link"></i>
+              </a>
+              &nbsp;&&nbsp;
+              <a rel="noopener noreferrer" href="https://botlist.site" target="_blank" class="font-bold flex-shrink-0 flex items-center">
+                <img src="assets/images/staff/ibl.webp" class="block h-5 w-auto" alt="IBL Logo" />&nbsp;<span class="rainbow-text">botlist.site</span>&nbsp;<i class="fad fa-external-link"></i>
+              </a>
+            </div>
+            <br />
+            <div class="flex-shrink-0 flex items-center">
+              <i class="twa twa-eyes"></i>&nbsp;Watching&nbsp;
+              <a rel="noopener noreferrer" href="https://myanimelist.net/anime/16498/Shingeki_no_Kyojin" target="_blank" class="font-bold attack_on_titan flex-shrink-0 flex items-center">
+                <img src="assets/images/attack_on_titan.webp" class="block h-5 w-auto" alt="AttackOnTitan Logo" />&nbsp;Shingeki no Kyojin&nbsp;<i class="fad fa-external-link"></i>
+              </a>
+            </div>
+            <br />
+            <i class="twa twa-telephone"></i>&nbsp;Contact via&nbsp;
+            <a rel="noopener noreferrer" href="https://twitter.com/DiscordAnaxes" class="twitter2 font-bold" target="_blank"> <i class="fab fa-twitter twitter"></i>&nbsp;<span class="twitter2">DiscordAnaxes</span>&nbsp;<i class="fad fa-external-link"></i> </a>
             &nbsp;&&nbsp;
-            <a rel="noopener noreferrer" href="https://botlist.site" target="_blank"
-              class="font-bold flex-shrink-0 flex items-center">
-              <img src="assets/images/staff/ibl.webp" class="block h-5 w-auto" alt="IBL Logo" />&nbsp;<span
-                class="rainbow-text">botlist.site</span>&nbsp;<i class="fad fa-external-link"></i>
-            </a>
+            <a rel="noopener noreferrer" href="https://discord.com/users/567885938160697377" class="font-bold" target="_blank"> <i class="fab fa-discord discord"></i>&nbsp;<span class="discord2">Anaxes#3274</span>&nbsp;<i class="fad fa-external-link"></i> </a>
+            <br />
+            <br />
+            <div id="lanyard_status"></div>
           </div>
-          <br />
-          <div class="flex-shrink-0 flex items-center">
-            <i class="twa twa-eyes"></i>&nbsp;Watching&nbsp;
-            <a rel="noopener noreferrer" href="https://myanimelist.net/anime/16498/Shingeki_no_Kyojin" target="_blank"
-              class="font-bold attack_on_titan flex-shrink-0 flex items-center">
-              <img src="assets/images/attack_on_titan.webp" class="block h-5 w-auto"
-                alt="AttackOnTitan Logo" />&nbsp;Shingeki no Kyojin&nbsp;<i class="fad fa-external-link"></i>
-            </a>
-          </div>
-          <br />
-          <i class="twa twa-telephone"></i>&nbsp;Contact via&nbsp;
-          <a rel="noopener noreferrer" href="https://twitter.com/DiscordAnaxes" class="twitter2 font-bold"
-            target="_blank"> <i class="fab fa-twitter twitter"></i>&nbsp;<span
-              class="twitter2">DiscordAnaxes</span>&nbsp;<i class="fad fa-external-link"></i> </a>
-          &nbsp;&&nbsp;
-          <a rel="noopener noreferrer" href="https://discord.com/users/567885938160697377" class="font-bold"
-            target="_blank"> <i class="fab fa-discord discord"></i>&nbsp;<span
-              class="discord2">Anaxes#3274</span>&nbsp;<i class="fad fa-external-link"></i> </a>
-          <br />
-          <br />
-          <div id="lanyard_status"></div>
+        </div>
+        <div class="mx-auto w-1/2 transform hover:scale-110 transition duration-300">
+          <img src="assets/images/AnaxesLogo.webp" class="hidden md:hidden lg:flex rounded-lg w-3/5 ml-auto mx-auto" alt="My_Logo" draggable="false" style="border-radius: 2.5vw;" />
         </div>
       </div>
-      <div class="mx-auto w-1/2 transform hover:scale-110 transition duration-300">
-        <img src="assets/images/AnaxesLogo.webp" class="hidden md:hidden lg:flex rounded-lg w-3/5 ml-auto mx-auto"
-          alt="My_Logo" draggable="false" style="border-radius: 2.5vw;" />
+      <!--Start of personal projects-->
+      <div class="font-regular flex tracking-widest uppercase text-md text-gray-500 mt-32 mb-6">
+        Personal projects
       </div>
-    </div>
-    <!--Start of personal projects-->
-    <div class="font-regular flex tracking-widest uppercase text-md text-gray-500 mt-32 mb-6">
-      Personal projects
-    </div>
-    <div class="mt-12 row items-center justify-center">
-      <!--PBOT Project-->
-      <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/3">
-        <a rel="noopener noreferrer" href="https://pb.anaxes.xyz" aria-label="PBOT" target="_blank">
-          <div
-            class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer"
-            style="background-color: #0e141d; border-radius: 1vw;">
+      <div class="mt-12 row items-center justify-center">
+        <!--PBOT Project-->
+        <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/3">
+          <a rel="noopener noreferrer" href="https://pb.anaxes.xyz" aria-label="PBOT" target="_blank">
+            <div class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer" style="background-color: #0e141d; border-radius: 1vw;">
+              <div class="flex items-center">
+                <div class="flex-initial ml-4 mr-6">
+                  <img src="assets/images/projects/pbot.webp" class="h-12 w-auto" alt="PBOT Logo" />
+                </div>
+                <div class="flex-initial">
+                  <div class="font-semibold text-md text-gray-600">
+                    PBOT&nbsp;&nbsp;<a rel="noopener noreferrer" aria-label="Potatoe Bot GitHub" href="https://github.com/Potatoe-Bot" target="_blank"><i class="fab fa-github text-white"></i></a>&nbsp;&nbsp;
+                    <a rel="noopener noreferrer" href="https://discord.gg/qg22m9y7Gb" aria-label="PBOT Disccord Server" target="_blank"><i class="fab fa-discord discord"></i></a>
+                  </div>
+                  <div class="font-bold text-xl text-red-500">260 servers!</div>
+                  <div class="font-regular text-xs text-gray-500">
+                    Launched 16th July 2020
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!--Widget.style Project-->
+        <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/3">
+          <a rel="noopener noreferrer" href="https://widget.style" target="_blank">
+            <div class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer" style="background-color: #0e141d; border-radius: 1vw;">
+              <div class="flex items-center">
+                <div class="flex-initial ml-4 mr-6">
+                  <img src="assets/images/projects/logo.webp" class="h-12 w-auto" alt="WidgetStyle Logo" />
+                </div>
+                <div class="flex-initial">
+                  <div class="font-semibold text-md text-gray-600">
+                    Widget.style
+                  </div>
+                  <div class="font-bold text-xl text-blue-500">Unknown</div>
+                  <div class="font-regular text-xs text-gray-500">
+                    Project shut down mid 2021
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!--Dscjobs.org Project-->
+        <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/3">
+          <a rel="noopener noreferrer" href="https://dscjobs.org" target="_blank">
+            <div class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer" style="background-color: #0e141d; border-radius: 1vw;">
+              <div class="flex items-center">
+                <div class="flex-initial ml-4 mr-6">
+                  <img src="assets/images/projects/dscjobs.webp" class="h-12 w-auto" alt="DscJobs Logo" />
+                </div>
+                <div class="flex-initial">
+                  <div class="font-semibold text-md text-gray-600">
+                    DscJobs.org
+                  </div>
+                  <div class="font-bold text-xl text-pink-300">100 cv's!</div>
+                  <div class="font-regular text-xs text-gray-500">
+                    Project shut down late 2021
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!--PreMiD Project-->
+        <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/3">
+          <a rel="noopener noreferrer" aria-label="PreMiD User Profile" href="https://premid.app/users/567885938160697377" target="_blank">
+            <div class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer" style="background-color: #0e141d; border-radius: 1vw;">
+              <div class="flex items-center">
+                <div class="flex-initial ml-4 mr-6">
+                  <img src="assets/images/projects/premid.webp" class="h-12 w-auto" alt="PreMiD Logo" />
+                </div>
+                <div class="flex-initial">
+                  <div class="font-semibold text-md text-gray-600">
+                    PreMiD Presences&nbsp;&nbsp;<a rel="noopener noreferrer" aria-label="PreMiD GitHub" href="https://github.com/premid/presences" target="_blank"><i class="fab fa-github text-white"></i></a>&nbsp;&nbsp;
+                    <a rel="noopener noreferrer" aria-label="PreMiD Twitter" href="https://twitter.com/PreMiDapp" target="_blank"><i class="fab fa-twitter twitter"></i></a>&nbsp;&nbsp;
+                    <a rel="noopener noreferrer" aria-label="PreMiD Discord" href="https://discord.com/invite/4z4qzZS" target="_blank"><i class="fab fa-discord discord"></i></a>
+                  </div>
+                  <div class="font-bold text-xl text-purple-500">
+                    4 Presences!
+                  </div>
+                  <div class="font-regular text-xs text-gray-500">
+                    Began 8th May 2021
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!--Services that I work for-->
+      <div class="text-center lg:text-left font-regular tracking-widest uppercase text-sm text-gray-500 mt-16 mb-6">
+        Services that I work for
+      </div>
+      <div class="row items-center justify-center mb-8">
+        <!--Infinity Bot List service-->
+        <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/3">
+          <a rel="noopener noreferrer" href="https://infinitybotlist.com" aria-label="InfinityBotList" target="_blank">
+            <div class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer" style="background-color: #0e141d; border-radius: 1vw;">
+              <div class="flex items-center">
+                <div class="flex-initial ml-4 mr-6">
+                  <img src="assets/images/staff/ibl.webp" class="h-12 w-auto" alt="IBL Logo" />
+                </div>
+                <div class="flex-initial">
+                  <div class="font-semibold text-md text-gray-600">
+                    Infinity Bot List&nbsp;&nbsp;<a rel="noopener noreferrer" aria-label="IBL GitHub" href="https://github.com/InfinityBotList" target="_blank"><i class="fab fa-github text-white"></i></a>&nbsp;&nbsp;
+                    <a rel="noopener noreferrer" aria-label="IBL Twitter" href="https://twitter.com/InfinityBotList" target="_blank"><i class="fab fa-twitter twitter"></i></a>&nbsp;&nbsp;
+                    <a rel="noopener noreferrer" aria-label="IBL Discord" href="https://discord.com/invite/KBCRuBKrHe" target="_blank"><i class="fab fa-discord discord"></i></a>
+                  </div>
+                  <div class="font-bold text-lg text-green-500">
+                    Senior Moderator
+                  </div>
+                  <div class="font-regular text-xs text-gray-500">
+                    Check out their website.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!--OCE.gg Service-->
+        <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/3">
+          <a rel="noopener noreferrer" href="https://oce.gg" aria-label="OCE.gg" target="_blank">
+            <div class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer" style="background-color: #0e141d; border-radius: 1vw;">
+              <div class="flex items-center">
+                <div class="flex-initial ml-4 mr-6">
+                  <img src="assets/images/staff/oce.webp" class="h-4 w-auto" alt="OCE.gg Logo" />
+                </div>
+                <div class="flex-initial">
+                  <div class="font-semibold text-md text-gray-600">
+                    OCE.gg&nbsp;&nbsp;<a rel="noopener noreferrer" aria-label="OCE.gg Discord" href="https://discord.com/invite/S7akvGxuwF" target="_blank"><i class="fab fa-discord discord"></i></a>&nbsp;&nbsp;
+                    <a rel="noopener noreferrer" aria-label="OCE.gg Twitter" href="https://twitter.com/ocedotgg" target="_blank"><i class="fab fa-twitter twitter"></i></a>&nbsp;&nbsp;
+                    <a rel="noopener noreferrer" aria-label="OCE.gg Twitch" href="https://www.twitch.tv/ocedotgg" target="_blank"><i class="fab fa-twitch twitch"></i></a>
+                  </div>
+                  <div class="font-bold text-lg text-blue-500">
+                    Community Moderator
+                  </div>
+                  <div class="font-regular text-xs text-gray-500">
+                    Check out their website.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!--Caards Service-->
+        <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/3">
+          <a rel="noopener noreferrer" href="https://ariabyte.com" aria-label="Ariabyte" target="_blank">
+            <div class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer" style="background-color: #0e141d; border-radius: 1vw;">
+              <div class="flex items-center">
+                <div class="flex-initial ml-4 mr-6">
+                  <img src="assets/images/staff/ariabyte.webp" class="h-12 w-auto rounded-full" alt="Ariabyte Logo" />
+                </div>
+                <div class="flex-initial">
+                  <div class="font-semibold text-md text-gray-600">
+                    Ariabyte&nbsp;&nbsp;<a rel="noopener noreferrer" aria-label="Ariabyte Discord" href="https://discord.com/invite/sdGWm8JCfF" target="_blank"><i class="fab fa-discord discord"></i></a>&nbsp;&nbsp;
+                    <a rel="noopener noreferrer" aria-label="Ariabyte Twitter" href="https://twitter.com/ariabyte" target="_blank"><i class="fab fa-twitter twitter"></i></a>
+                  </div>
+                  <div class="font-bold text-lg text-pink-500">
+                    Caards Moderator
+                  </div>
+                  <div class="font-regular text-xs text-gray-500">
+                    Check out their website.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!--Technologies that I use-->
+      <div class="text-center lg:text-left font-regular tracking-widest uppercase text-sm text-gray-500 mt-16 mb-6">
+        Technologies I use
+      </div>
+      <div class="row items-center justify-center mb-8">
+        <!--JavaScript-->
+        <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
+          <div class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer" style="background-color: #0e141d; border-radius: 1vw;">
             <div class="flex items-center">
               <div class="flex-initial ml-4 mr-6">
-                <img src="assets/images/projects/pbot.webp" class="h-12 w-auto" alt="PBOT Logo" />
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#EFD81D" class="flex-shrink-0 h-8 w-auto rounded-md">
+                  <path
+                    d="M0 0v512h512V0H0zm274.286 397.714c0 49.84-29.44 74.137-72.057 74.137-38.492 0-60.835-19.931-72.172-43.988l39.177-23.714c7.555 13.405 13.292 24.742 29.783 24.742 13.714 0 24.983-6.182 24.983-30.24V237.714h50.286v160zm113.543 72.995c-44.675 0-73.543-20.16-87.635-48L339.429 400c10.285 16.846 23.714 28.069 47.428 28.069 19.932 0 31.509-8.823 31.509-22.572 0-16.491-11.92-22.331-33.92-32l-12.023-5.166c-34.72-14.765-57.737-33.325-57.737-72.514 0-36.08 27.485-62.434 70.445-62.434 30.595 0 52.572 9.508 68.4 37.348L416 294.857c-8.251-14.777-17.143-20.571-30.926-20.571-14.091 0-23.028 8.937-23.028 20.571 0 14.434 8.937 20.274 29.554 29.212l12.023 5.154c40.903 17.531 63.931 35.428 63.931 75.611.012 43.315-34.011 65.875-79.725 65.875z"
+                  ></path>
+                </svg>
               </div>
               <div class="flex-initial">
-                <div class="font-semibold text-md text-gray-600">
-                  PBOT&nbsp;&nbsp;<a rel="noopener noreferrer" aria-label="Potatoe Bot GitHub"
-                    href="https://github.com/Potatoe-Bot" target="_blank"><i
-                      class="fab fa-github text-white"></i></a>&nbsp;&nbsp;
-                  <a rel="noopener noreferrer" href="https://discord.gg/qg22m9y7Gb" aria-label="PBOT Disccord Server"
-                    target="_blank"><i class="fab fa-discord discord"></i></a>
-                </div>
-                <div class="font-bold text-xl text-red-500">260 servers!</div>
-                <div class="font-regular text-xs text-gray-500">
-                  Launched 16th July 2020
-                </div>
+                <div class="font-bold text-lg text-white">JavaScript</div>
               </div>
-            </div>
-          </div>
-        </a>
-      </div>
-      <!--Widget.style Project-->
-      <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/3">
-        <a rel="noopener noreferrer" href="https://widget.style" target="_blank">
-          <div
-            class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer"
-            style="background-color: #0e141d; border-radius: 1vw;">
-            <div class="flex items-center">
-              <div class="flex-initial ml-4 mr-6">
-                <img src="assets/images/projects/logo.webp" class="h-12 w-auto" alt="WidgetStyle Logo" />
-              </div>
-              <div class="flex-initial">
-                <div class="font-semibold text-md text-gray-600">
-                  Widget.style
-                </div>
-                <div class="font-bold text-xl text-blue-500">Unknown</div>
-                <div class="font-regular text-xs text-gray-500">
-                  Project shut down mid 2021
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-      <!--Dscjobs.org Project-->
-      <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/3">
-        <a rel="noopener noreferrer" href="https://dscjobs.org" target="_blank">
-          <div
-            class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer"
-            style="background-color: #0e141d; border-radius: 1vw;">
-            <div class="flex items-center">
-              <div class="flex-initial ml-4 mr-6">
-                <img src="assets/images/projects/dscjobs.webp" class="h-12 w-auto" alt="DscJobs Logo" />
-              </div>
-              <div class="flex-initial">
-                <div class="font-semibold text-md text-gray-600">
-                  DscJobs.org
-                </div>
-                <div class="font-bold text-xl text-pink-300">100 cv's!</div>
-                <div class="font-regular text-xs text-gray-500">
-                  Project shut down late 2021
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-      <!--PreMiD Project-->
-      <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/3">
-        <a rel="noopener noreferrer" aria-label="PreMiD User Profile" href="https://premid.app/users/567885938160697377"
-          target="_blank">
-          <div
-            class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer"
-            style="background-color: #0e141d; border-radius: 1vw;">
-            <div class="flex items-center">
-              <div class="flex-initial ml-4 mr-6">
-                <img src="assets/images/projects/premid.webp" class="h-12 w-auto" alt="PreMiD Logo" />
-              </div>
-              <div class="flex-initial">
-                <div class="font-semibold text-md text-gray-600">
-                  PreMiD Presences&nbsp;&nbsp;<a rel="noopener noreferrer" aria-label="PreMiD GitHub"
-                    href="https://github.com/premid/presences" target="_blank"><i
-                      class="fab fa-github text-white"></i></a>&nbsp;&nbsp;
-                  <a rel="noopener noreferrer" aria-label="PreMiD Twitter" href="https://twitter.com/PreMiDapp"
-                    target="_blank"><i class="fab fa-twitter twitter"></i></a>&nbsp;&nbsp;
-                  <a rel="noopener noreferrer" aria-label="PreMiD Discord" href="https://discord.com/invite/4z4qzZS"
-                    target="_blank"><i class="fab fa-discord discord"></i></a>
-                </div>
-                <div class="font-bold text-xl text-purple-500">
-                  4 Presences!
-                </div>
-                <div class="font-regular text-xs text-gray-500">
-                  Began 8th May 2021
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-    <!--Services that I work for-->
-    <div class="text-center lg:text-left font-regular tracking-widest uppercase text-sm text-gray-500 mt-16 mb-6">
-      Services that I work for
-    </div>
-    <div class="row items-center justify-center mb-8">
-      <!--Infinity Bot List service-->
-      <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/3">
-        <a rel="noopener noreferrer" href="https://infinitybotlist.com" aria-label="InfinityBotList" target="_blank">
-          <div
-            class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer"
-            style="background-color: #0e141d; border-radius: 1vw;">
-            <div class="flex items-center">
-              <div class="flex-initial ml-4 mr-6">
-                <img src="assets/images/staff/ibl.webp" class="h-12 w-auto" alt="IBL Logo" />
-              </div>
-              <div class="flex-initial">
-                <div class="font-semibold text-md text-gray-600">
-                  Infinity Bot List&nbsp;&nbsp;<a rel="noopener noreferrer" aria-label="IBL GitHub"
-                    href="https://github.com/InfinityBotList" target="_blank"><i
-                      class="fab fa-github text-white"></i></a>&nbsp;&nbsp;
-                  <a rel="noopener noreferrer" aria-label="IBL Twitter" href="https://twitter.com/InfinityBotList"
-                    target="_blank"><i class="fab fa-twitter twitter"></i></a>&nbsp;&nbsp;
-                  <a rel="noopener noreferrer" aria-label="IBL Discord" href="https://discord.com/invite/KBCRuBKrHe"
-                    target="_blank"><i class="fab fa-discord discord"></i></a>
-                </div>
-                <div class="font-bold text-lg text-green-500">
-                  Senior Moderator
-                </div>
-                <div class="font-regular text-xs text-gray-500">
-                  Check out their website.
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-      <!--OCE.gg Service-->
-      <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/3">
-        <a rel="noopener noreferrer" href="https://oce.gg" aria-label="OCE.gg" target="_blank">
-          <div
-            class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer"
-            style="background-color: #0e141d; border-radius: 1vw;">
-            <div class="flex items-center">
-              <div class="flex-initial ml-4 mr-6">
-                <img src="assets/images/staff/oce.webp" class="h-4 w-auto" alt="OCE.gg Logo" />
-              </div>
-              <div class="flex-initial">
-                <div class="font-semibold text-md text-gray-600">
-                  OCE.gg&nbsp;&nbsp;<a rel="noopener noreferrer" aria-label="OCE.gg Discord"
-                    href="https://discord.com/invite/S7akvGxuwF" target="_blank"><i
-                      class="fab fa-discord discord"></i></a>&nbsp;&nbsp;
-                  <a rel="noopener noreferrer" aria-label="OCE.gg Twitter" href="https://twitter.com/ocedotgg"
-                    target="_blank"><i class="fab fa-twitter twitter"></i></a>&nbsp;&nbsp;
-                  <a rel="noopener noreferrer" aria-label="OCE.gg Twitch" href="https://www.twitch.tv/ocedotgg"
-                    target="_blank"><i class="fab fa-twitch twitch"></i></a>
-                </div>
-                <div class="font-bold text-lg text-blue-500">
-                  Community Moderator
-                </div>
-                <div class="font-regular text-xs text-gray-500">
-                  Check out their website.
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-      <!--Caards Service-->
-      <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/3">
-        <a rel="noopener noreferrer" href="https://ariabyte.com" aria-label="Ariabyte" target="_blank">
-          <div
-            class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer"
-            style="background-color: #0e141d; border-radius: 1vw;">
-            <div class="flex items-center">
-              <div class="flex-initial ml-4 mr-6">
-                <img src="assets/images/staff/ariabyte.webp" class="h-12 w-auto rounded-full" alt="Ariabyte Logo" />
-              </div>
-              <div class="flex-initial">
-                <div class="font-semibold text-md text-gray-600">
-                  Ariabyte&nbsp;&nbsp;<a rel="noopener noreferrer" aria-label="Ariabyte Discord"
-                    href="https://discord.com/invite/sdGWm8JCfF" target="_blank"><i
-                      class="fab fa-discord discord"></i></a>&nbsp;&nbsp;
-                  <a rel="noopener noreferrer" aria-label="Ariabyte Twitter" href="https://twitter.com/ariabyte"
-                    target="_blank"><i class="fab fa-twitter twitter"></i></a>
-                </div>
-                <div class="font-bold text-lg text-pink-500">
-                  Caards Moderator
-                </div>
-                <div class="font-regular text-xs text-gray-500">
-                  Check out their website.
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-    <!--Technologies that I use-->
-    <div class="text-center lg:text-left font-regular tracking-widest uppercase text-sm text-gray-500 mt-16 mb-6">
-      Technologies I use
-    </div>
-    <div class="row items-center justify-center mb-8">
-      <!--JavaScript-->
-      <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
-        <div
-          class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer"
-          style="background-color: #0e141d; border-radius: 1vw;">
-          <div class="flex items-center">
-            <div class="flex-initial ml-4 mr-6">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#EFD81D"
-                class="flex-shrink-0 h-8 w-auto rounded-md">
-                <path
-                  d="M0 0v512h512V0H0zm274.286 397.714c0 49.84-29.44 74.137-72.057 74.137-38.492 0-60.835-19.931-72.172-43.988l39.177-23.714c7.555 13.405 13.292 24.742 29.783 24.742 13.714 0 24.983-6.182 24.983-30.24V237.714h50.286v160zm113.543 72.995c-44.675 0-73.543-20.16-87.635-48L339.429 400c10.285 16.846 23.714 28.069 47.428 28.069 19.932 0 31.509-8.823 31.509-22.572 0-16.491-11.92-22.331-33.92-32l-12.023-5.166c-34.72-14.765-57.737-33.325-57.737-72.514 0-36.08 27.485-62.434 70.445-62.434 30.595 0 52.572 9.508 68.4 37.348L416 294.857c-8.251-14.777-17.143-20.571-30.926-20.571-14.091 0-23.028 8.937-23.028 20.571 0 14.434 8.937 20.274 29.554 29.212l12.023 5.154c40.903 17.531 63.931 35.428 63.931 75.611.012 43.315-34.011 65.875-79.725 65.875z">
-                </path>
-              </svg>
-            </div>
-            <div class="flex-initial">
-              <div class="font-bold text-lg text-white">JavaScript</div>
             </div>
           </div>
         </div>
-      </div>
-      <!--HTML5-->
-      <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
-        <div
-          class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer"
-          style="background-color: #0e141d; border-radius: 1vw;">
-          <div class="flex items-center">
-            <div class="flex-initial ml-4 mr-6">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#dd4b25"
-                class="flex-shrink-0 h-8 w-auto rounded-md">
-                <path
-                  d="M64 32l34.94 403.21L255.77 480 413 435.15 448 32zm308 132H188l4 51h176l-13.51 151.39L256 394.48l-98.68-28-6.78-77.48h48.26l3.42 39.29L256 343.07l53.42-14.92L315 264H148l-12.59-149.59H376.2z">
-                </path>
-              </svg>
-            </div>
-            <div class="flex-initial">
-              <div class="font-bold text-lg text-white">HTML5</div>
+        <!--HTML5-->
+        <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
+          <div class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer" style="background-color: #0e141d; border-radius: 1vw;">
+            <div class="flex items-center">
+              <div class="flex-initial ml-4 mr-6">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#dd4b25" class="flex-shrink-0 h-8 w-auto rounded-md">
+                  <path d="M64 32l34.94 403.21L255.77 480 413 435.15 448 32zm308 132H188l4 51h176l-13.51 151.39L256 394.48l-98.68-28-6.78-77.48h48.26l3.42 39.29L256 343.07l53.42-14.92L315 264H148l-12.59-149.59H376.2z"></path>
+                </svg>
+              </div>
+              <div class="flex-initial">
+                <div class="font-bold text-lg text-white">HTML5</div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <!--Node.JS-->
-      <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
-        <div
-          class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer"
-          style="background-color: #0e141d; border-radius: 1vw;">
-          <div class="flex items-center">
-            <div class="flex-initial ml-4 mr-6">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="#6FA660" viewBox="0 0 512 512"
-                class="flex-shrink-0 h-8 w-auto">
-                <path
-                  d="M429.76 130.07L274.33 36.85a37 37 0 00-36.65 0L82.24 130.06A38.2 38.2 0 0064 162.83V349a38.26 38.26 0 0018.24 32.8L123 406.14l.23.13c20.58 10.53 28.46 10.53 37.59 10.53 32.14 0 52.11-20.8 52.11-54.29V182a8.51 8.51 0 00-8.42-8.58h-22.38a8.51 8.51 0 00-8.42 8.58v180.51a15 15 0 01-6.85 13.07c-5.9 3.6-14.47 2.84-24.14-2.15l-39.06-23.51a1.1 1.1 0 01-.48-.92V165.46a1.32 1.32 0 01.59-1.06l151.84-93a.82.82 0 01.73 0l151.93 93a1.34 1.34 0 01.55 1.1V349a1.28 1.28 0 01-.45 1l-152.06 90.65a1.22 1.22 0 01-.8 0l-38.83-23.06a7.8 7.8 0 00-7.83-.41l-.34.2c-10.72 6.35-13.6 8-23.54 11.62-1.62.59-5.43 2-5.76 5.77s3.29 6.45 6.51 8.32l51.9 31.87a35.67 35.67 0 0018.3 5.07h.58a35.87 35.87 0 0017.83-5.07l155.43-93.13A38.37 38.37 0 00448 349V162.83a38.21 38.21 0 00-18.24-32.76z">
-                </path>
-                <path
-                  d="M307.88 318.05c-37.29 0-45.24-10.42-47.6-27.24a8.43 8.43 0 00-8.22-7.32h-19.8a8.44 8.44 0 00-8.26 8.58c0 14.58 5.12 62.17 83.92 62.17 24.38 0 44.66-5.7 58.63-16.49S388 311.26 388 292.55c0-37.55-24.5-47.83-72.75-54.55-49.05-6.82-49.05-10.29-49.05-17.89 0-5.47 0-18.28 35.46-18.28 25.23 0 38.74 3.19 43.06 20a8.35 8.35 0 008.06 6.67h19.87a8.24 8.24 0 006.16-2.86 8.91 8.91 0 002.12-6.44c-2.57-35.55-28.56-53.58-79.24-53.58-46.06 0-73.55 20.75-73.55 55.5 0 38.1 28.49 48.87 71.29 53.33 50 5.17 50 12.71 50 19.37.03 10.38-4.28 24.23-41.55 24.23z">
-                </path>
-              </svg>
-            </div>
-            <div class="flex-initial">
-              <div class="font-bold text-lg text-white">NodeJS</div>
+        <!--Node.JS-->
+        <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
+          <div class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer" style="background-color: #0e141d; border-radius: 1vw;">
+            <div class="flex items-center">
+              <div class="flex-initial ml-4 mr-6">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="#6FA660" viewBox="0 0 512 512" class="flex-shrink-0 h-8 w-auto">
+                  <path
+                    d="M429.76 130.07L274.33 36.85a37 37 0 00-36.65 0L82.24 130.06A38.2 38.2 0 0064 162.83V349a38.26 38.26 0 0018.24 32.8L123 406.14l.23.13c20.58 10.53 28.46 10.53 37.59 10.53 32.14 0 52.11-20.8 52.11-54.29V182a8.51 8.51 0 00-8.42-8.58h-22.38a8.51 8.51 0 00-8.42 8.58v180.51a15 15 0 01-6.85 13.07c-5.9 3.6-14.47 2.84-24.14-2.15l-39.06-23.51a1.1 1.1 0 01-.48-.92V165.46a1.32 1.32 0 01.59-1.06l151.84-93a.82.82 0 01.73 0l151.93 93a1.34 1.34 0 01.55 1.1V349a1.28 1.28 0 01-.45 1l-152.06 90.65a1.22 1.22 0 01-.8 0l-38.83-23.06a7.8 7.8 0 00-7.83-.41l-.34.2c-10.72 6.35-13.6 8-23.54 11.62-1.62.59-5.43 2-5.76 5.77s3.29 6.45 6.51 8.32l51.9 31.87a35.67 35.67 0 0018.3 5.07h.58a35.87 35.87 0 0017.83-5.07l155.43-93.13A38.37 38.37 0 00448 349V162.83a38.21 38.21 0 00-18.24-32.76z"
+                  ></path>
+                  <path
+                    d="M307.88 318.05c-37.29 0-45.24-10.42-47.6-27.24a8.43 8.43 0 00-8.22-7.32h-19.8a8.44 8.44 0 00-8.26 8.58c0 14.58 5.12 62.17 83.92 62.17 24.38 0 44.66-5.7 58.63-16.49S388 311.26 388 292.55c0-37.55-24.5-47.83-72.75-54.55-49.05-6.82-49.05-10.29-49.05-17.89 0-5.47 0-18.28 35.46-18.28 25.23 0 38.74 3.19 43.06 20a8.35 8.35 0 008.06 6.67h19.87a8.24 8.24 0 006.16-2.86 8.91 8.91 0 002.12-6.44c-2.57-35.55-28.56-53.58-79.24-53.58-46.06 0-73.55 20.75-73.55 55.5 0 38.1 28.49 48.87 71.29 53.33 50 5.17 50 12.71 50 19.37.03 10.38-4.28 24.23-41.55 24.23z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="flex-initial">
+                <div class="font-bold text-lg text-white">NodeJS</div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <!--TailwindCSS-->
-      <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
-        <div
-          class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer"
-          style="background-color: #0e141d; border-radius: 1vw;">
-          <div class="flex items-center">
-            <div class="flex-initial ml-4 mr-6">
-              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 h-8 w-auto">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M6.333 9.933C7.088 6.911 8.978 5.4 12 5.4c4.533 0 5.1 3.4 7.367 3.967 1.511.377 2.833-.189 3.966-1.7-.755 3.022-2.644 4.533-5.666 4.533-4.534 0-5.1-3.4-7.367-3.967-1.511-.378-2.833.189-3.967 1.7zm-5.666 6.8C1.422 13.711 3.31 12.2 6.333 12.2c4.534 0 5.1 3.4 7.367 3.967 1.51.377 2.833-.19 3.967-1.7C16.91 17.489 15.022 19 12 19c-4.533 0-5.1-3.4-7.367-3.967-1.511-.378-2.833.189-3.966 1.7z"
-                  fill="url(#prefix__paint0_linear)"></path>
-                <defs>
-                  <linearGradient id="prefix__paint0_linear" x1=".667" y1="-6.689" x2="23.333" y2="31.089"
-                    gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#2383AE"></stop>
-                    <stop offset="1" stop-color="#6DD7B9"></stop>
-                  </linearGradient>
-                </defs>
-              </svg>
-            </div>
-            <div class="flex-initial">
-              <div class="font-bold text-lg text-white">TailwindCSS</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--TypeScript-->
-      <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
-        <div
-          class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer"
-          style="background-color: #0e141d; border-radius: 1vw;">
-          <div class="flex items-center">
-            <div class="flex-initial ml-4 mr-6">
-              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-                class="flex-shrink-0 h-8 w-auto rounded-md">
-                <path d="M0 0h24v24H0V0z" fill="#fff"></path>
-                <path
-                  d="M0 12v12h24V0H0v12zm19.34-.956c.61.152 1.075.423 1.502.865.221.236.549.667.575.77.008.03-1.036.73-1.669 1.123-.022.015-.114-.083-.217-.236-.309-.45-.632-.644-1.128-.678-.727-.05-1.2.332-1.192.967a.88.88 0 00.103.45c.16.332.457.53 1.39.934 1.718.739 2.453 1.226 2.91 1.92.51.773.625 2.008.278 2.926-.38.998-1.325 1.676-2.655 1.9-.411.073-1.386.062-1.828-.018-.964-.171-1.878-.647-2.442-1.272-.221-.244-.651-.88-.625-.926.011-.015.11-.076.221-.141l.892-.514.69-.4.145.213c.201.31.643.732.91.873.766.404 1.817.346 2.335-.118.221-.202.312-.412.312-.72 0-.279-.033-.4-.178-.61-.187-.266-.568-.49-1.65-.96-1.239-.533-1.772-.864-2.26-1.39a3.167 3.167 0 01-.659-1.2c-.091-.34-.114-1.189-.042-1.531.255-1.2 1.158-2.031 2.462-2.279.422-.08 1.406-.05 1.82.054v-.002zm-5.633 1.001l.007.983H10.59v8.876H8.381v-8.876H5.257v-.964l.027-.99c.01-.015 1.912-.022 4.217-.019l4.194.012.012.978z"
-                  fill="#007ACC"></path>
-              </svg>
-            </div>
-            <div class="flex-initial">
-              <div class="font-bold text-lg text-white">TypeScript</div>
+        <!--TailwindCSS-->
+        <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
+          <div class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer" style="background-color: #0e141d; border-radius: 1vw;">
+            <div class="flex items-center">
+              <div class="flex-initial ml-4 mr-6">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 h-8 w-auto">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M6.333 9.933C7.088 6.911 8.978 5.4 12 5.4c4.533 0 5.1 3.4 7.367 3.967 1.511.377 2.833-.189 3.966-1.7-.755 3.022-2.644 4.533-5.666 4.533-4.534 0-5.1-3.4-7.367-3.967-1.511-.378-2.833.189-3.967 1.7zm-5.666 6.8C1.422 13.711 3.31 12.2 6.333 12.2c4.534 0 5.1 3.4 7.367 3.967 1.51.377 2.833-.19 3.967-1.7C16.91 17.489 15.022 19 12 19c-4.533 0-5.1-3.4-7.367-3.967-1.511-.378-2.833.189-3.966 1.7z"
+                    fill="url(#prefix__paint0_linear)"
+                  ></path>
+                  <defs>
+                    <linearGradient id="prefix__paint0_linear" x1=".667" y1="-6.689" x2="23.333" y2="31.089" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#2383AE"></stop>
+                      <stop offset="1" stop-color="#6DD7B9"></stop>
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <div class="flex-initial">
+                <div class="font-bold text-lg text-white">TailwindCSS</div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <!--Photoshop-->
-      <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
-        <div
-          class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer"
-          style="background-color: #0e141d; border-radius: 1vw;">
-          <div class="flex items-center">
-            <div class="flex-initial ml-4 mr-6">
-              <?xml version="1.0" encoding="utf-8"?>
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 240 234" class="h-8 w-auto"
-                style="enable-background: new 0 0 240 234;" xml:space="preserve">
-                <style type="text/css">
-                  .st0 {
-                    fill: #001e36;
-                  }
+        <!--TypeScript-->
+        <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
+          <div class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer" style="background-color: #0e141d; border-radius: 1vw;">
+            <div class="flex items-center">
+              <div class="flex-initial ml-4 mr-6">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 h-8 w-auto rounded-md">
+                  <path d="M0 0h24v24H0V0z" fill="#fff"></path>
+                  <path
+                    d="M0 12v12h24V0H0v12zm19.34-.956c.61.152 1.075.423 1.502.865.221.236.549.667.575.77.008.03-1.036.73-1.669 1.123-.022.015-.114-.083-.217-.236-.309-.45-.632-.644-1.128-.678-.727-.05-1.2.332-1.192.967a.88.88 0 00.103.45c.16.332.457.53 1.39.934 1.718.739 2.453 1.226 2.91 1.92.51.773.625 2.008.278 2.926-.38.998-1.325 1.676-2.655 1.9-.411.073-1.386.062-1.828-.018-.964-.171-1.878-.647-2.442-1.272-.221-.244-.651-.88-.625-.926.011-.015.11-.076.221-.141l.892-.514.69-.4.145.213c.201.31.643.732.91.873.766.404 1.817.346 2.335-.118.221-.202.312-.412.312-.72 0-.279-.033-.4-.178-.61-.187-.266-.568-.49-1.65-.96-1.239-.533-1.772-.864-2.26-1.39a3.167 3.167 0 01-.659-1.2c-.091-.34-.114-1.189-.042-1.531.255-1.2 1.158-2.031 2.462-2.279.422-.08 1.406-.05 1.82.054v-.002zm-5.633 1.001l.007.983H10.59v8.876H8.381v-8.876H5.257v-.964l.027-.99c.01-.015 1.912-.022 4.217-.019l4.194.012.012.978z"
+                    fill="#007ACC"
+                  ></path>
+                </svg>
+              </div>
+              <div class="flex-initial">
+                <div class="font-bold text-lg text-white">TypeScript</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Photoshop-->
+        <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
+          <div class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer" style="background-color: #0e141d; border-radius: 1vw;">
+            <div class="flex items-center">
+              <div class="flex-initial ml-4 mr-6">
+                <?xml version="1.0" encoding="utf-8"?>
+                <svg
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 240 234"
+                  class="h-8 w-auto"
+                  style="enable-background: new 0 0 240 234;"
+                  xml:space="preserve"
+                >
+                  <style type="text/css">
+                    .st0 {
+                      fill: #001e36;
+                    }
 
-                  .st1 {
-                    fill: #31a8ff;
-                  }
-                </style>
-                <g id="Layer_2_1_">
-                  <g id="Surfaces">
-                    <g id="Photo_Surface">
-                      <g id="Outline_no_shadow">
-                        <path class="st0" d="M42.5,0h155C221,0,240,19,240,42.5v149c0,23.5-19,42.5-42.5,42.5h-155C19,234,0,215,0,191.5v-149
-					C0,19,19,0,42.5,0z" />
+                    .st1 {
+                      fill: #31a8ff;
+                    }
+                  </style>
+                  <g id="Layer_2_1_">
+                    <g id="Surfaces">
+                      <g id="Photo_Surface">
+                        <g id="Outline_no_shadow">
+                          <path
+                            class="st0"
+                            d="M42.5,0h155C221,0,240,19,240,42.5v149c0,23.5-19,42.5-42.5,42.5h-155C19,234,0,215,0,191.5v-149
+					C0,19,19,0,42.5,0z"
+                          />
+                        </g>
                       </g>
                     </g>
-                  </g>
-                  <g id="Outlined_Mnemonics_Logos">
-                    <g id="Ps">
-                      <path class="st1" d="M54,164.1V61.2c0-0.7,0.3-1.1,1-1.1c1.7,0,3.3,0,5.6-0.1c2.4-0.1,4.9-0.1,7.6-0.2c2.7-0.1,5.6-0.1,8.7-0.2
+                    <g id="Outlined_Mnemonics_Logos">
+                      <g id="Ps">
+                        <path
+                          class="st1"
+                          d="M54,164.1V61.2c0-0.7,0.3-1.1,1-1.1c1.7,0,3.3,0,5.6-0.1c2.4-0.1,4.9-0.1,7.6-0.2c2.7-0.1,5.6-0.1,8.7-0.2
 				c3.1-0.1,6.1-0.1,9.1-0.1c8.2,0,15,1,20.6,3.1c5,1.7,9.6,4.5,13.4,8.2c3.2,3.2,5.7,7.1,7.3,11.4c1.5,4.2,2.3,8.5,2.3,13
 				c0,8.6-2,15.7-6,21.3c-4,5.6-9.6,9.8-16.1,12.2c-6.8,2.5-14.3,3.4-22.5,3.4c-2.4,0-4,0-5-0.1c-1-0.1-2.4-0.1-4.3-0.1v32.1
 				c0.1,0.7-0.4,1.3-1.1,1.4c-0.1,0-0.2,0-0.4,0H55.2C54.4,165.4,54,165,54,164.1z M75.8,79.4V113c1.4,0.1,2.7,0.2,3.9,0.2H85
 				c3.9,0,7.8-0.6,11.5-1.8c3.2-0.9,6-2.8,8.2-5.3c2.1-2.5,3.1-5.9,3.1-10.3c0.1-3.1-0.7-6.2-2.3-8.9c-1.7-2.6-4.1-4.6-7-5.7
-				c-3.7-1.5-7.7-2.1-11.8-2c-2.6,0-4.9,0-6.8,0.1C77.9,79.2,76.5,79.3,75.8,79.4L75.8,79.4z" />
-                      <path class="st1" d="M192,106.9c-3-1.6-6.2-2.7-9.6-3.4c-3.7-0.8-7.4-1.3-11.2-1.3c-2-0.1-4.1,0.2-6,0.7c-1.3,0.3-2.4,1-3.1,2
+				c-3.7-1.5-7.7-2.1-11.8-2c-2.6,0-4.9,0-6.8,0.1C77.9,79.2,76.5,79.3,75.8,79.4L75.8,79.4z"
+                        />
+                        <path
+                          class="st1"
+                          d="M192,106.9c-3-1.6-6.2-2.7-9.6-3.4c-3.7-0.8-7.4-1.3-11.2-1.3c-2-0.1-4.1,0.2-6,0.7c-1.3,0.3-2.4,1-3.1,2
 				c-0.5,0.8-0.8,1.8-0.8,2.7c0,0.9,0.4,1.8,1,2.6c0.9,1.1,2.1,2,3.4,2.7c2.3,1.2,4.7,2.3,7.1,3.3c5.4,1.8,10.6,4.3,15.4,7.3
 				c3.3,2.1,6,4.9,7.9,8.3c1.6,3.2,2.4,6.7,2.3,10.3c0.1,4.7-1.3,9.4-3.9,13.3c-2.8,4-6.7,7.1-11.2,8.9c-4.9,2.1-10.9,3.2-18.1,3.2
 				c-4.6,0-9.1-0.4-13.6-1.3c-3.5-0.6-7-1.7-10.2-3.2c-0.7-0.4-1.2-1.1-1.1-1.9v-17.4c0-0.3,0.1-0.7,0.4-0.9
 				c0.3-0.2,0.6-0.1,0.9,0.1c3.9,2.3,8,3.9,12.4,4.9c3.8,1,7.8,1.5,11.8,1.5c3.8,0,6.5-0.5,8.3-1.4c1.6-0.7,2.7-2.4,2.7-4.2
 				c0-1.4-0.8-2.7-2.4-4c-1.6-1.3-4.9-2.8-9.8-4.7c-5.1-1.8-9.8-4.2-14.2-7.2c-3.1-2.2-5.7-5.1-7.6-8.5c-1.6-3.2-2.4-6.7-2.3-10.2
 				c0-4.3,1.2-8.4,3.4-12.1c2.5-4,6.2-7.2,10.5-9.2c4.7-2.4,10.6-3.5,17.7-3.5c4.1,0,8.3,0.3,12.4,0.9c3,0.4,5.9,1.2,8.6,2.3
-				c0.4,0.1,0.8,0.5,1,0.9c0.1,0.4,0.2,0.8,0.2,1.2v16.3c0,0.4-0.2,0.8-0.5,1C192.9,107.1,192.4,107.1,192,106.9z" />
+				c0.4,0.1,0.8,0.5,1,0.9c0.1,0.4,0.2,0.8,0.2,1.2v16.3c0,0.4-0.2,0.8-0.5,1C192.9,107.1,192.4,107.1,192,106.9z"
+                        />
+                      </g>
                     </g>
                   </g>
-                </g>
-              </svg>
-            </div>
-            <div class="flex-initial">
-              <div class="font-bold text-lg text-white">Photoshop</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--Font Awesome-->
-      <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
-        <div
-          class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer"
-          style="background-color: #0e141d; border-radius: 1vw;">
-          <div class="flex items-center">
-            <div class="flex-initial ml-4 mr-6">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="#339AF0" viewBox="0 0 448 512" class="h-8 w-auto">
-                <path
-                  d="M397.8 32H50.2C22.7 32 0 54.7 0 82.2v347.6C0 457.3 22.7 480 50.2 480h347.6c27.5 0 50.2-22.7 50.2-50.2V82.2c0-27.5-22.7-50.2-50.2-50.2zm-45.4 284.3c0 4.2-3.6 6-7.8 7.8-16.7 7.2-34.6 13.7-53.8 13.7-26.9 0-39.4-16.7-71.7-16.7-23.3 0-47.8 8.4-67.5 17.3-1.2.6-2.4.6-3.6 1.2V385c0 1.8 0 3.6-.6 4.8v1.2c-2.4 8.4-10.2 14.3-19.1 14.3-11.3 0-20.3-9-20.3-20.3V166.4c-7.8-6-13.1-15.5-13.1-26.3 0-18.5 14.9-33.5 33.5-33.5 18.5 0 33.5 14.9 33.5 33.5 0 10.8-4.8 20.3-13.1 26.3v18.5c1.8-.6 3.6-1.2 5.4-2.4 18.5-7.8 40.6-14.3 61.5-14.3 22.7 0 40.6 6 60.9 13.7 4.2 1.8 8.4 2.4 13.1 2.4 22.7 0 47.8-16.1 53.8-16.1 4.8 0 9 3.6 9 7.8v140.3z" />
-              </svg>
-            </div>
-            <div class="flex-initial">
-              <div class="font-bold text-lg text-white">Font Awesome</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--GitHub-->
-      <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
-        <div
-          class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer"
-          style="background-color: #0e141d; border-radius: 1vw;">
-          <div class="flex items-center">
-            <div class="flex-initial ml-4 mr-6">
-              <svg class="h-8 w-auto" viewBox="0 0 256 250" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
-                <g>
-                  <path
-                    d="M128.00106,0 C57.3172926,0 0,57.3066942 0,128.00106 C0,184.555281 36.6761997,232.535542 87.534937,249.460899 C93.9320223,250.645779 96.280588,246.684165 96.280588,243.303333 C96.280588,240.251045 96.1618878,230.167899 96.106777,219.472176 C60.4967585,227.215235 52.9826207,204.369712 52.9826207,204.369712 C47.1599584,189.574598 38.770408,185.640538 38.770408,185.640538 C27.1568785,177.696113 39.6458206,177.859325 39.6458206,177.859325 C52.4993419,178.762293 59.267365,191.04987 59.267365,191.04987 C70.6837675,210.618423 89.2115753,204.961093 96.5158685,201.690482 C97.6647155,193.417512 100.981959,187.77078 104.642583,184.574357 C76.211799,181.33766 46.324819,170.362144 46.324819,121.315702 C46.324819,107.340889 51.3250588,95.9223682 59.5132437,86.9583937 C58.1842268,83.7344152 53.8029229,70.715562 60.7532354,53.0843636 C60.7532354,53.0843636 71.5019501,49.6441813 95.9626412,66.2049595 C106.172967,63.368876 117.123047,61.9465949 128.00106,61.8978432 C138.879073,61.9465949 149.837632,63.368876 160.067033,66.2049595 C184.49805,49.6441813 195.231926,53.0843636 195.231926,53.0843636 C202.199197,70.715562 197.815773,83.7344152 196.486756,86.9583937 C204.694018,95.9223682 209.660343,107.340889 209.660343,121.315702 C209.660343,170.478725 179.716133,181.303747 151.213281,184.472614 C155.80443,188.444828 159.895342,196.234518 159.895342,208.176593 C159.895342,225.303317 159.746968,239.087361 159.746968,243.303333 C159.746968,246.709601 162.05102,250.70089 168.53925,249.443941 C219.370432,232.499507 256,184.536204 256,128.00106 C256,57.3066942 198.691187,0 128.00106,0 Z M47.9405593,182.340212 C47.6586465,182.976105 46.6581745,183.166873 45.7467277,182.730227 C44.8183235,182.312656 44.2968914,181.445722 44.5978808,180.80771 C44.8734344,180.152739 45.876026,179.97045 46.8023103,180.409216 C47.7328342,180.826786 48.2627451,181.702199 47.9405593,182.340212 Z M54.2367892,187.958254 C53.6263318,188.524199 52.4329723,188.261363 51.6232682,187.366874 C50.7860088,186.474504 50.6291553,185.281144 51.2480912,184.70672 C51.8776254,184.140775 53.0349512,184.405731 53.8743302,185.298101 C54.7115892,186.201069 54.8748019,187.38595 54.2367892,187.958254 Z M58.5562413,195.146347 C57.7719732,195.691096 56.4895886,195.180261 55.6968417,194.042013 C54.9125733,192.903764 54.9125733,191.538713 55.713799,190.991845 C56.5086651,190.444977 57.7719732,190.936735 58.5753181,192.066505 C59.3574669,193.22383 59.3574669,194.58888 58.5562413,195.146347 Z M65.8613592,203.471174 C65.1597571,204.244846 63.6654083,204.03712 62.5716717,202.981538 C61.4524999,201.94927 61.1409122,200.484596 61.8446341,199.710926 C62.5547146,198.935137 64.0575422,199.15346 65.1597571,200.200564 C66.2704506,201.230712 66.6095936,202.705984 65.8613592,203.471174 Z M75.3025151,206.281542 C74.9930474,207.284134 73.553809,207.739857 72.1039724,207.313809 C70.6562556,206.875043 69.7087748,205.700761 70.0012857,204.687571 C70.302275,203.678621 71.7478721,203.20382 73.2083069,203.659543 C74.6539041,204.09619 75.6035048,205.261994 75.3025151,206.281542 Z M86.046947,207.473627 C86.0829806,208.529209 84.8535871,209.404622 83.3316829,209.4237 C81.8013,209.457614 80.563428,208.603398 80.5464708,207.564772 C80.5464708,206.498591 81.7483088,205.631657 83.2786917,205.606221 C84.8005962,205.576546 86.046947,206.424403 86.046947,207.473627 Z M96.6021471,207.069023 C96.7844366,208.099171 95.7267341,209.156872 94.215428,209.438785 C92.7295577,209.710099 91.3539086,209.074206 91.1652603,208.052538 C90.9808515,206.996955 92.0576306,205.939253 93.5413813,205.66582 C95.054807,205.402984 96.4092596,206.021919 96.6021471,207.069023 Z"
-                    fill="#FFF"></path>
-                </g>
-              </svg>
-            </div>
-            <div class="flex-initial">
-              <div class="font-bold text-lg text-white">GitHub</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--Visual Studio Code-->
-      <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
-        <div
-          class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer"
-          style="background-color: #0e141d; border-radius: 1vw;">
-          <div class="flex items-center">
-            <div class="flex-initial ml-4 mr-6">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg"
-                class="h-8 w-auto" alt="Visual Studio Code Logo" />
-            </div>
-            <div class="flex-initial">
-              <div class="font-bold text-lg text-white">
-                VS Code
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--NPM-->
-      <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
-        <div
-          class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer"
-          style="background-color: #0e141d; border-radius: 1vw;">
-          <div class="flex items-center">
-            <div class="flex-initial ml-4 mr-6">
-              <svg class="h-8 w-auto" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
-                <g>
-                  <polygon fill="#C12127" points="0 256 0 0 256 0 256 256"></polygon>
-                  <polygon fill="#FFFFFF" points="48 48 208 48 208 208 176 208 176 80 128 80 128 208 48 208"></polygon>
-                </g>
-              </svg>
-            </div>
-            <div class="flex-initial">
-              <div class="font-bold text-lg text-white">NPM</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--CSS3-->
-      <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
-        <div
-          class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer"
-          style="background-color: #0e141d; border-radius: 1vw;">
-          <div class="flex items-center">
-            <div class="flex-initial ml-4 mr-6">
-              <svg class="h-8 w-auto" viewBox="0 0 256 361" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
-                <g>
-                  <path
-                    d="M127.843868,360.087912 L23.6617143,331.166242 L0.445186813,70.7657143 L255.554813,70.7657143 L232.31367,331.125451 L127.843868,360.087912 L127.843868,360.087912 Z"
-                    fill="#264DE4"></path>
-                  <path
-                    d="M212.416703,314.546637 L232.277802,92.0573187 L128,92.0573187 L128,337.950242 L212.416703,314.546637 L212.416703,314.546637 Z"
-                    fill="#2965F1"></path>
-                  <path
-                    d="M53.6685714,188.636132 L56.530989,220.572835 L128,220.572835 L128,188.636132 L53.6685714,188.636132 L53.6685714,188.636132 Z"
-                    fill="#EBEBEB"></path>
-                  <path
-                    d="M47.917011,123.994725 L50.8202198,155.932132 L128,155.932132 L128,123.994725 L47.917011,123.994725 L47.917011,123.994725 Z"
-                    fill="#EBEBEB"></path>
-                  <path
-                    d="M128,271.580132 L127.860044,271.617407 L92.2915165,262.013187 L90.0177582,236.54189 L57.957978,236.54189 L62.4323516,286.687648 L127.853011,304.848879 L128,304.808088 L128,271.580132 L128,271.580132 Z"
-                    fill="#EBEBEB"></path>
-                  <path
-                    d="M60.4835165,0 L99.1648352,0 L99.1648352,16.1758242 L76.6593407,16.1758242 L76.6593407,32.3516484 L99.1648352,32.3516484 L99.1648352,48.5274725 L60.4835165,48.5274725 L60.4835165,0 L60.4835165,0 Z"
-                    fill="#000000"></path>
-                  <path
-                    d="M106.901099,0 L145.582418,0 L145.582418,14.0659341 L123.076923,14.0659341 L123.076923,16.8791209 L145.582418,16.8791209 L145.582418,49.2307692 L106.901099,49.2307692 L106.901099,34.4615385 L129.406593,34.4615385 L129.406593,31.6483516 L106.901099,31.6483516 L106.901099,0 L106.901099,0 Z"
-                    fill="#000000"></path>
-                  <path
-                    d="M153.318681,0 L192,0 L192,14.0659341 L169.494505,14.0659341 L169.494505,16.8791209 L192,16.8791209 L192,49.2307692 L153.318681,49.2307692 L153.318681,34.4615385 L175.824176,34.4615385 L175.824176,31.6483516 L153.318681,31.6483516 L153.318681,0 L153.318681,0 Z"
-                    fill="#000000"></path>
-                  <path
-                    d="M202.126769,188.636132 L207.892396,123.994725 L127.889582,123.994725 L127.889582,155.932132 L172.892132,155.932132 L169.98611,188.636132 L127.889582,188.636132 L127.889582,220.572835 L167.216527,220.572835 L163.509451,261.992791 L127.889582,271.606857 L127.889582,304.833407 L193.362286,286.687648 L193.842637,281.291956 L201.347516,197.212132 L202.126769,188.636132 L202.126769,188.636132 Z"
-                    fill="#FFFFFF"></path>
-                </g>
-              </svg>
-            </div>
-            <div class="flex-initial">
-              <div class="font-bold text-lg text-white">CSS3</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--Windows-->
-      <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
-        <div
-          class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer"
-          style="background-color: #0e141d; border-radius: 1vw;">
-          <div class="flex items-center">
-            <div class="flex-initial ml-4 mr-6">
-              <svg class="h-8 w-auto" viewBox="0 0 256 257" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
-                <g>
-                  <path
-                    d="M0,36.3573818 L104.619084,22.1093454 L104.664817,123.02292 L0.0955693151,123.618411 L0,36.3573818 Z M104.569248,134.650129 L104.650452,235.651651 L0.0812046021,221.274919 L0.0753414539,133.972642 L104.569248,134.650129 Z M117.25153,20.2454506 L255.967753,6.21724894e-15 L255.967753,121.739477 L117.25153,122.840723 L117.25153,20.2454506 Z M256,135.599959 L255.96746,256.791232 L117.251237,237.213007 L117.056874,135.373055 L256,135.599959 Z"
-                    fill="#00ADEF"></path>
-                </g>
-              </svg>
-            </div>
-            <div class="flex-initial">
-              <div class="font-bold text-lg text-white">Windows</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--Figma-->
-      <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
-        <div
-          class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer"
-          style="background-color: #0e141d; border-radius: 1vw;">
-          <div class="flex items-center">
-            <div class="flex-initial ml-4 mr-6">
-              <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-8 w-auto">
-                <path d="M7.25 19c1.794 0 3.25-1.344 3.25-3v-3H7.25c-1.793 0-3.249 1.344-3.249 3s1.456 3 3.25 3z"
-                  fill="#0ACF83"></path>
-                <path d="M4.001 10c0-1.656 1.456-3 3.25-3H10.5v6H7.25c-1.793 0-3.249-1.344-3.249-3z" fill="#A259FF">
-                </path>
-                <path d="M4.002 4c0-1.656 1.455-3 3.249-3h3.25v6H7.25C5.457 7 4 5.656 4 4z" fill="#F24E1E"></path>
-                <path d="M10.5 1h3.25c1.793 0 3.249 1.344 3.249 3s-1.456 3-3.25 3H10.5V1z" fill="#FF7262"></path>
-                <path
-                  d="M16.999 10c0 1.656-1.456 3-3.25 3-1.793 0-3.249-1.344-3.249-3s1.456-3 3.25-3c1.793 0 3.249 1.344 3.249 3z"
-                  fill="#1ABCFE"></path>
-              </svg>
-            </div>
-            <div class="flex-initial">
-              <div class="font-bold text-lg text-white">Figma</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--NuxtJS-->
-      <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
-        <div
-          class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer"
-          style="background-color: #0e141d; border-radius: 1vw;">
-          <div class="flex items-center">
-            <div class="flex-initial ml-4 mr-6">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" class="h-8 w-auto">
-                <path
-                  d="M224.093 141.297l-11.838 20.842-40.483-71.297L47.494 309.683h84.144c0 11.511 9.178 20.842 20.498 20.842H47.494c-7.322 0-14.088-3.975-17.749-10.423a21.145 21.145 0 01.001-20.84l124.278-218.84C157.685 73.971 164.453 70 171.776 70c7.324 0 14.091 3.973 17.752 10.421l34.565 60.876z"
-                  fill="#00C58E"></path>
-                <path
-                  d="M314.164 299.4l-77.876-137.123-11.837-20.842-11.838 20.842L134.746 299.4a21.147 21.147 0 00-.001 20.84c3.661 6.448 10.427 10.422 17.749 10.422H296.39c7.324 0 14.093-3.97 17.755-10.419a21.14 21.14 0 00.001-20.843h.018zm-161.67 10.421l71.957-126.702 71.939 126.702H152.494z"
-                  fill="#2D3748"></path>
-                <path
-                  d="M369.484 320.104c-3.661 6.447-10.426 10.421-17.748 10.421h-55.704c11.321 0 20.498-9.331 20.498-20.842h35.163l-99.774-175.706-15.988 28.162-11.838-20.841 10.078-17.742c3.662-6.449 10.429-10.422 17.752-10.422 7.324 0 14.091 3.973 17.752 10.422l99.809 175.706a21.148 21.148 0 010 20.842z"
-                  fill="#108775"></path>
-              </svg>
-            </div>
-            <div class="flex-initial">
-              <div class="font-bold text-lg text-white">NuxtJS</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--VueJS-->
-      <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
-        <div
-          class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer"
-          style="background-color: #0e141d; border-radius: 1vw;">
-          <div class="flex items-center">
-            <div class="flex-initial ml-4 mr-6">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-8 w-auto">
-                <path d="M256 144.03l-55.49-96.11h-79.43L256 281.61 390.92 47.92h-79.43L256 144.03z" fill="#35495E">
-                </path>
-                <path d="M409.4 47.92L256 313.61 102.6 47.92H15.74L256 464.08 496.26 47.92H409.4z" fill="#41B883">
-                </path>
-              </svg>
-            </div>
-            <div class="flex-initial">
-              <div class="font-bold text-lg text-white">VueJS</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--Discord-->
-      <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
-        <div
-          class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer"
-          style="background-color: #0e141d; border-radius: 1vw;">
-          <div class="flex items-center">
-            <div class="flex-initial ml-4 mr-6">
-              <svg class="h-8 w-auto" viewBox="0 0 71 55" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0)">
-                  <path
-                    d="M60.1045 4.8978C55.5792 2.8214 50.7265 1.2916 45.6527 0.41542C45.5603 0.39851 45.468 0.440769 45.4204 0.525289C44.7963 1.6353 44.105 3.0834 43.6209 4.2216C38.1637 3.4046 32.7345 3.4046 27.3892 4.2216C26.905 3.0581 26.1886 1.6353 25.5617 0.525289C25.5141 0.443589 25.4218 0.40133 25.3294 0.41542C20.2584 1.2888 15.4057 2.8186 10.8776 4.8978C10.8384 4.9147 10.8048 4.9429 10.7825 4.9795C1.57795 18.7309 -0.943561 32.1443 0.293408 45.3914C0.299005 45.4562 0.335386 45.5182 0.385761 45.5576C6.45866 50.0174 12.3413 52.7249 18.1147 54.5195C18.2071 54.5477 18.305 54.5139 18.3638 54.4378C19.7295 52.5728 20.9469 50.6063 21.9907 48.5383C22.0523 48.4172 21.9935 48.2735 21.8676 48.2256C19.9366 47.4931 18.0979 46.6 16.3292 45.5858C16.1893 45.5041 16.1781 45.304 16.3068 45.2082C16.679 44.9293 17.0513 44.6391 17.4067 44.3461C17.471 44.2926 17.5606 44.2813 17.6362 44.3151C29.2558 49.6202 41.8354 49.6202 53.3179 44.3151C53.3935 44.2785 53.4831 44.2898 53.5502 44.3433C53.9057 44.6363 54.2779 44.9293 54.6529 45.2082C54.7816 45.304 54.7732 45.5041 54.6333 45.5858C52.8646 46.6197 51.0259 47.4931 49.0921 48.2228C48.9662 48.2707 48.9102 48.4172 48.9718 48.5383C50.038 50.6034 51.2554 52.5699 52.5959 54.435C52.6519 54.5139 52.7526 54.5477 52.845 54.5195C58.6464 52.7249 64.529 50.0174 70.6019 45.5576C70.6551 45.5182 70.6887 45.459 70.6943 45.3942C72.1747 30.0791 68.2147 16.7757 60.1968 4.9823C60.1772 4.9429 60.1437 4.9147 60.1045 4.8978ZM23.7259 37.3253C20.2276 37.3253 17.3451 34.1136 17.3451 30.1693C17.3451 26.225 20.1717 23.0133 23.7259 23.0133C27.308 23.0133 30.1626 26.2532 30.1066 30.1693C30.1066 34.1136 27.28 37.3253 23.7259 37.3253ZM47.3178 37.3253C43.8196 37.3253 40.9371 34.1136 40.9371 30.1693C40.9371 26.225 43.7636 23.0133 47.3178 23.0133C50.9 23.0133 53.7545 26.2532 53.6986 30.1693C53.6986 34.1136 50.9 37.3253 47.3178 37.3253Z"
-                    fill="#5865F2" />
-                </g>
-                <defs>
-                  <clipPath id="clip0">
-                    <rect width="71" height="55" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </div>
-            <div class="flex-initial">
-              <div class="font-bold text-lg text-white">Discord</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--Activity Status-->
-    <div id="activities_anaxes"></div>
-    <!--Contact me via-->
-    <div class="text-center lg:text-left font-regular tracking-widest uppercase text-sm text-gray-500 mt-16 mb-6">
-      Contact me via
-    </div>
-    <div class="row items-center justify-center mb-8">
-      <!--Twitter-->
-      <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/3">
-        <a rel="noopener noreferrer" href="https://twitter.com/DiscordAnaxes" target="_blank">
-          <div
-            class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer"
-            style="background-color: #0e141d; border-radius: 1vw;">
-            <div class="flex items-center">
-              <div class="flex-initial ml-4 mr-6">
-                <img src="assets/images/socials/Twitter.webp" class="h-12 w-auto" alt="Twitter Logo" />
+                </svg>
               </div>
               <div class="flex-initial">
-                <div id="tw_followers" class="font-bold text-lg twitter"></div>
-                <div class="font-regular text-xs text-gray-500">
-                  <i class="twa twa-tada"></i>&nbsp;Aiming for 100!
+                <div class="font-bold text-lg text-white">Photoshop</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Font Awesome-->
+        <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
+          <div class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer" style="background-color: #0e141d; border-radius: 1vw;">
+            <div class="flex items-center">
+              <div class="flex-initial ml-4 mr-6">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="#339AF0" viewBox="0 0 448 512" class="h-8 w-auto">
+                  <path
+                    d="M397.8 32H50.2C22.7 32 0 54.7 0 82.2v347.6C0 457.3 22.7 480 50.2 480h347.6c27.5 0 50.2-22.7 50.2-50.2V82.2c0-27.5-22.7-50.2-50.2-50.2zm-45.4 284.3c0 4.2-3.6 6-7.8 7.8-16.7 7.2-34.6 13.7-53.8 13.7-26.9 0-39.4-16.7-71.7-16.7-23.3 0-47.8 8.4-67.5 17.3-1.2.6-2.4.6-3.6 1.2V385c0 1.8 0 3.6-.6 4.8v1.2c-2.4 8.4-10.2 14.3-19.1 14.3-11.3 0-20.3-9-20.3-20.3V166.4c-7.8-6-13.1-15.5-13.1-26.3 0-18.5 14.9-33.5 33.5-33.5 18.5 0 33.5 14.9 33.5 33.5 0 10.8-4.8 20.3-13.1 26.3v18.5c1.8-.6 3.6-1.2 5.4-2.4 18.5-7.8 40.6-14.3 61.5-14.3 22.7 0 40.6 6 60.9 13.7 4.2 1.8 8.4 2.4 13.1 2.4 22.7 0 47.8-16.1 53.8-16.1 4.8 0 9 3.6 9 7.8v140.3z"
+                  />
+                </svg>
+              </div>
+              <div class="flex-initial">
+                <div class="font-bold text-lg text-white">Font Awesome</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--GitHub-->
+        <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
+          <div class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer" style="background-color: #0e141d; border-radius: 1vw;">
+            <div class="flex items-center">
+              <div class="flex-initial ml-4 mr-6">
+                <svg class="h-8 w-auto" viewBox="0 0 256 250" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+                  <g>
+                    <path
+                      d="M128.00106,0 C57.3172926,0 0,57.3066942 0,128.00106 C0,184.555281 36.6761997,232.535542 87.534937,249.460899 C93.9320223,250.645779 96.280588,246.684165 96.280588,243.303333 C96.280588,240.251045 96.1618878,230.167899 96.106777,219.472176 C60.4967585,227.215235 52.9826207,204.369712 52.9826207,204.369712 C47.1599584,189.574598 38.770408,185.640538 38.770408,185.640538 C27.1568785,177.696113 39.6458206,177.859325 39.6458206,177.859325 C52.4993419,178.762293 59.267365,191.04987 59.267365,191.04987 C70.6837675,210.618423 89.2115753,204.961093 96.5158685,201.690482 C97.6647155,193.417512 100.981959,187.77078 104.642583,184.574357 C76.211799,181.33766 46.324819,170.362144 46.324819,121.315702 C46.324819,107.340889 51.3250588,95.9223682 59.5132437,86.9583937 C58.1842268,83.7344152 53.8029229,70.715562 60.7532354,53.0843636 C60.7532354,53.0843636 71.5019501,49.6441813 95.9626412,66.2049595 C106.172967,63.368876 117.123047,61.9465949 128.00106,61.8978432 C138.879073,61.9465949 149.837632,63.368876 160.067033,66.2049595 C184.49805,49.6441813 195.231926,53.0843636 195.231926,53.0843636 C202.199197,70.715562 197.815773,83.7344152 196.486756,86.9583937 C204.694018,95.9223682 209.660343,107.340889 209.660343,121.315702 C209.660343,170.478725 179.716133,181.303747 151.213281,184.472614 C155.80443,188.444828 159.895342,196.234518 159.895342,208.176593 C159.895342,225.303317 159.746968,239.087361 159.746968,243.303333 C159.746968,246.709601 162.05102,250.70089 168.53925,249.443941 C219.370432,232.499507 256,184.536204 256,128.00106 C256,57.3066942 198.691187,0 128.00106,0 Z M47.9405593,182.340212 C47.6586465,182.976105 46.6581745,183.166873 45.7467277,182.730227 C44.8183235,182.312656 44.2968914,181.445722 44.5978808,180.80771 C44.8734344,180.152739 45.876026,179.97045 46.8023103,180.409216 C47.7328342,180.826786 48.2627451,181.702199 47.9405593,182.340212 Z M54.2367892,187.958254 C53.6263318,188.524199 52.4329723,188.261363 51.6232682,187.366874 C50.7860088,186.474504 50.6291553,185.281144 51.2480912,184.70672 C51.8776254,184.140775 53.0349512,184.405731 53.8743302,185.298101 C54.7115892,186.201069 54.8748019,187.38595 54.2367892,187.958254 Z M58.5562413,195.146347 C57.7719732,195.691096 56.4895886,195.180261 55.6968417,194.042013 C54.9125733,192.903764 54.9125733,191.538713 55.713799,190.991845 C56.5086651,190.444977 57.7719732,190.936735 58.5753181,192.066505 C59.3574669,193.22383 59.3574669,194.58888 58.5562413,195.146347 Z M65.8613592,203.471174 C65.1597571,204.244846 63.6654083,204.03712 62.5716717,202.981538 C61.4524999,201.94927 61.1409122,200.484596 61.8446341,199.710926 C62.5547146,198.935137 64.0575422,199.15346 65.1597571,200.200564 C66.2704506,201.230712 66.6095936,202.705984 65.8613592,203.471174 Z M75.3025151,206.281542 C74.9930474,207.284134 73.553809,207.739857 72.1039724,207.313809 C70.6562556,206.875043 69.7087748,205.700761 70.0012857,204.687571 C70.302275,203.678621 71.7478721,203.20382 73.2083069,203.659543 C74.6539041,204.09619 75.6035048,205.261994 75.3025151,206.281542 Z M86.046947,207.473627 C86.0829806,208.529209 84.8535871,209.404622 83.3316829,209.4237 C81.8013,209.457614 80.563428,208.603398 80.5464708,207.564772 C80.5464708,206.498591 81.7483088,205.631657 83.2786917,205.606221 C84.8005962,205.576546 86.046947,206.424403 86.046947,207.473627 Z M96.6021471,207.069023 C96.7844366,208.099171 95.7267341,209.156872 94.215428,209.438785 C92.7295577,209.710099 91.3539086,209.074206 91.1652603,208.052538 C90.9808515,206.996955 92.0576306,205.939253 93.5413813,205.66582 C95.054807,205.402984 96.4092596,206.021919 96.6021471,207.069023 Z"
+                      fill="#FFF"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+              <div class="flex-initial">
+                <div class="font-bold text-lg text-white">GitHub</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Visual Studio Code-->
+        <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
+          <div class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer" style="background-color: #0e141d; border-radius: 1vw;">
+            <div class="flex items-center">
+              <div class="flex-initial ml-4 mr-6">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" class="h-8 w-auto" alt="Visual Studio Code Logo" />
+              </div>
+              <div class="flex-initial">
+                <div class="font-bold text-lg text-white">
+                  VS Code
                 </div>
               </div>
             </div>
           </div>
-        </a>
-      </div>
-      <!--Github-->
-      <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/3">
-        <a rel="noopener noreferrer" href="https://github.com/DiscordAnaxes" target="_blank">
-          <div
-            class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer"
-            style="background-color: #0e141d; border-radius: 1vw;">
-            <div class="flex items-center">
-              <div class="flex-initial ml-4 mr-6">
-                <img src="assets/images/socials/GitHub.webp" class="h-12 w-auto" alt="GitHub Logo" />
-              </div>
-              <div class="flex-initial">
-                <div id="gh_followers" class="font-bold text-lg text-white"></div>
-                <div class="font-regular text-xs text-gray-500">
-                  <i class="twa twa-robot-face"></i>&nbsp;Aiming for 50!
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-      <!--Discord-->
-      <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/3">
-        <a rel="noopener noreferrer" href="https://discord.com/users/567885938160697377" target="_blank">
-          <div
-            class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer"
-            style="background-color: #0e141d; border-radius: 1vw;">
-            <div class="flex items-center">
-              <div class="flex-initial ml-4 mr-6">
-                <img src="assets/images/socials/Discord.webp" class="h-12 w-auto" alt="Discord Logo" />
-              </div>
-              <div class="flex-initial">
-                <div id="discordStatus_socials" class="font-bold text-lg discord"></div>
-                <div class="font-regular text-xs text-gray-500">
-                  <i class="twa twa-mobile-phone"></i>&nbsp;DM me if necessary!
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-      <!--Social Icons below Contact me via-->
-      <div class="md:px-16 px-4 pb-16 pt-16 text-center">
-        <div class="mt-4 items-center">
-          <a rel="noopener noreferrer" aria-label="My Github" target="_blank" href="https://github.com/DiscordAnaxes"
-            class="mr-3 github socialbtn fab fa-github text-3xl text-gray-600"></a>
-          <a rel="noopener noreferrer" aria-label="My Discord" target="_blank"
-            href="https://discord.com/users/567885938160697377"
-            class="socialbtn discord2 fab fa-discord text-3xl mr-3 text-gray-600"></a>
-          <a rel="noopener noreferrer" aria-label="My Twitter" target="_blank" href="https://twitter.com/DiscordAnaxes"
-            class="mr-3 twitter2 socialbtn fab fa-twitter text-3xl text-gray-600"></a>
-          <a rel="noopener noreferrer" aria-label="Fontawesome Website" target="_blank"
-            href="https://fontawesome.com/icons"
-            class="mr-3 fontawesome socialbtn fab fa-font-awesome text-3xl text-gray-600"></a>
-          <a rel="noopener noreferrer" aria-label="NASA Website" target="_blank" href="https://nasa.gov"
-            class="mr-3 socialbtn fad fa-user-astronaut text-3xl text-gray-600 hover:text-green-400"></a>
         </div>
-        <br />
-        <p class="font-bold text-yellow-500 hover:text-pink-500"><i class="fad fa-crown"></i>&nbsp;<a
-            rel="noopener noreferrer" href="https://github.com/audn/audun.gg" target="_blank">Audun.gg</a></p>
-        <p class="font-medium text-lg inter text-white">
-          Copyright &copy;
-          <a rel="noopener noreferrer" href="/"><span
-              class="font-semibold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-green-400 hover:from-pink-500 hover:to-purple-400">Anaxes.xyz</span></a>&nbsp;2020
-          - 2021.
-        </p>
-        <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"></script>
+        <!--NPM-->
+        <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
+          <div class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer" style="background-color: #0e141d; border-radius: 1vw;">
+            <div class="flex items-center">
+              <div class="flex-initial ml-4 mr-6">
+                <svg class="h-8 w-auto" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+                  <g>
+                    <polygon fill="#C12127" points="0 256 0 0 256 0 256 256"></polygon>
+                    <polygon fill="#FFFFFF" points="48 48 208 48 208 208 176 208 176 80 128 80 128 208 48 208"></polygon>
+                  </g>
+                </svg>
+              </div>
+              <div class="flex-initial">
+                <div class="font-bold text-lg text-white">NPM</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--CSS3-->
+        <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
+          <div class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer" style="background-color: #0e141d; border-radius: 1vw;">
+            <div class="flex items-center">
+              <div class="flex-initial ml-4 mr-6">
+                <svg class="h-8 w-auto" viewBox="0 0 256 361" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+                  <g>
+                    <path d="M127.843868,360.087912 L23.6617143,331.166242 L0.445186813,70.7657143 L255.554813,70.7657143 L232.31367,331.125451 L127.843868,360.087912 L127.843868,360.087912 Z" fill="#264DE4"></path>
+                    <path d="M212.416703,314.546637 L232.277802,92.0573187 L128,92.0573187 L128,337.950242 L212.416703,314.546637 L212.416703,314.546637 Z" fill="#2965F1"></path>
+                    <path d="M53.6685714,188.636132 L56.530989,220.572835 L128,220.572835 L128,188.636132 L53.6685714,188.636132 L53.6685714,188.636132 Z" fill="#EBEBEB"></path>
+                    <path d="M47.917011,123.994725 L50.8202198,155.932132 L128,155.932132 L128,123.994725 L47.917011,123.994725 L47.917011,123.994725 Z" fill="#EBEBEB"></path>
+                    <path
+                      d="M128,271.580132 L127.860044,271.617407 L92.2915165,262.013187 L90.0177582,236.54189 L57.957978,236.54189 L62.4323516,286.687648 L127.853011,304.848879 L128,304.808088 L128,271.580132 L128,271.580132 Z"
+                      fill="#EBEBEB"
+                    ></path>
+                    <path
+                      d="M60.4835165,0 L99.1648352,0 L99.1648352,16.1758242 L76.6593407,16.1758242 L76.6593407,32.3516484 L99.1648352,32.3516484 L99.1648352,48.5274725 L60.4835165,48.5274725 L60.4835165,0 L60.4835165,0 Z"
+                      fill="#000000"
+                    ></path>
+                    <path
+                      d="M106.901099,0 L145.582418,0 L145.582418,14.0659341 L123.076923,14.0659341 L123.076923,16.8791209 L145.582418,16.8791209 L145.582418,49.2307692 L106.901099,49.2307692 L106.901099,34.4615385 L129.406593,34.4615385 L129.406593,31.6483516 L106.901099,31.6483516 L106.901099,0 L106.901099,0 Z"
+                      fill="#000000"
+                    ></path>
+                    <path
+                      d="M153.318681,0 L192,0 L192,14.0659341 L169.494505,14.0659341 L169.494505,16.8791209 L192,16.8791209 L192,49.2307692 L153.318681,49.2307692 L153.318681,34.4615385 L175.824176,34.4615385 L175.824176,31.6483516 L153.318681,31.6483516 L153.318681,0 L153.318681,0 Z"
+                      fill="#000000"
+                    ></path>
+                    <path
+                      d="M202.126769,188.636132 L207.892396,123.994725 L127.889582,123.994725 L127.889582,155.932132 L172.892132,155.932132 L169.98611,188.636132 L127.889582,188.636132 L127.889582,220.572835 L167.216527,220.572835 L163.509451,261.992791 L127.889582,271.606857 L127.889582,304.833407 L193.362286,286.687648 L193.842637,281.291956 L201.347516,197.212132 L202.126769,188.636132 L202.126769,188.636132 Z"
+                      fill="#FFFFFF"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+              <div class="flex-initial">
+                <div class="font-bold text-lg text-white">CSS3</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Windows-->
+        <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
+          <div class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer" style="background-color: #0e141d; border-radius: 1vw;">
+            <div class="flex items-center">
+              <div class="flex-initial ml-4 mr-6">
+                <svg class="h-8 w-auto" viewBox="0 0 256 257" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+                  <g>
+                    <path
+                      d="M0,36.3573818 L104.619084,22.1093454 L104.664817,123.02292 L0.0955693151,123.618411 L0,36.3573818 Z M104.569248,134.650129 L104.650452,235.651651 L0.0812046021,221.274919 L0.0753414539,133.972642 L104.569248,134.650129 Z M117.25153,20.2454506 L255.967753,6.21724894e-15 L255.967753,121.739477 L117.25153,122.840723 L117.25153,20.2454506 Z M256,135.599959 L255.96746,256.791232 L117.251237,237.213007 L117.056874,135.373055 L256,135.599959 Z"
+                      fill="#00ADEF"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+              <div class="flex-initial">
+                <div class="font-bold text-lg text-white">Windows</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Figma-->
+        <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
+          <div class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer" style="background-color: #0e141d; border-radius: 1vw;">
+            <div class="flex items-center">
+              <div class="flex-initial ml-4 mr-6">
+                <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-8 w-auto">
+                  <path d="M7.25 19c1.794 0 3.25-1.344 3.25-3v-3H7.25c-1.793 0-3.249 1.344-3.249 3s1.456 3 3.25 3z" fill="#0ACF83"></path>
+                  <path d="M4.001 10c0-1.656 1.456-3 3.25-3H10.5v6H7.25c-1.793 0-3.249-1.344-3.249-3z" fill="#A259FF"></path>
+                  <path d="M4.002 4c0-1.656 1.455-3 3.249-3h3.25v6H7.25C5.457 7 4 5.656 4 4z" fill="#F24E1E"></path>
+                  <path d="M10.5 1h3.25c1.793 0 3.249 1.344 3.249 3s-1.456 3-3.25 3H10.5V1z" fill="#FF7262"></path>
+                  <path d="M16.999 10c0 1.656-1.456 3-3.25 3-1.793 0-3.249-1.344-3.249-3s1.456-3 3.25-3c1.793 0 3.249 1.344 3.249 3z" fill="#1ABCFE"></path>
+                </svg>
+              </div>
+              <div class="flex-initial">
+                <div class="font-bold text-lg text-white">Figma</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--NuxtJS-->
+        <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
+          <div class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer" style="background-color: #0e141d; border-radius: 1vw;">
+            <div class="flex items-center">
+              <div class="flex-initial ml-4 mr-6">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" class="h-8 w-auto">
+                  <path
+                    d="M224.093 141.297l-11.838 20.842-40.483-71.297L47.494 309.683h84.144c0 11.511 9.178 20.842 20.498 20.842H47.494c-7.322 0-14.088-3.975-17.749-10.423a21.145 21.145 0 01.001-20.84l124.278-218.84C157.685 73.971 164.453 70 171.776 70c7.324 0 14.091 3.973 17.752 10.421l34.565 60.876z"
+                    fill="#00C58E"
+                  ></path>
+                  <path
+                    d="M314.164 299.4l-77.876-137.123-11.837-20.842-11.838 20.842L134.746 299.4a21.147 21.147 0 00-.001 20.84c3.661 6.448 10.427 10.422 17.749 10.422H296.39c7.324 0 14.093-3.97 17.755-10.419a21.14 21.14 0 00.001-20.843h.018zm-161.67 10.421l71.957-126.702 71.939 126.702H152.494z"
+                    fill="#2D3748"
+                  ></path>
+                  <path
+                    d="M369.484 320.104c-3.661 6.447-10.426 10.421-17.748 10.421h-55.704c11.321 0 20.498-9.331 20.498-20.842h35.163l-99.774-175.706-15.988 28.162-11.838-20.841 10.078-17.742c3.662-6.449 10.429-10.422 17.752-10.422 7.324 0 14.091 3.973 17.752 10.422l99.809 175.706a21.148 21.148 0 010 20.842z"
+                    fill="#108775"
+                  ></path>
+                </svg>
+              </div>
+              <div class="flex-initial">
+                <div class="font-bold text-lg text-white">NuxtJS</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--VueJS-->
+        <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
+          <div class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer" style="background-color: #0e141d; border-radius: 1vw;">
+            <div class="flex items-center">
+              <div class="flex-initial ml-4 mr-6">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-8 w-auto">
+                  <path d="M256 144.03l-55.49-96.11h-79.43L256 281.61 390.92 47.92h-79.43L256 144.03z" fill="#35495E"></path>
+                  <path d="M409.4 47.92L256 313.61 102.6 47.92H15.74L256 464.08 496.26 47.92H409.4z" fill="#41B883"></path>
+                </svg>
+              </div>
+              <div class="flex-initial">
+                <div class="font-bold text-lg text-white">VueJS</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Discord-->
+        <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/4">
+          <div class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer" style="background-color: #0e141d; border-radius: 1vw;">
+            <div class="flex items-center">
+              <div class="flex-initial ml-4 mr-6">
+                <svg class="h-8 w-auto" viewBox="0 0 71 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0)">
+                    <path
+                      d="M60.1045 4.8978C55.5792 2.8214 50.7265 1.2916 45.6527 0.41542C45.5603 0.39851 45.468 0.440769 45.4204 0.525289C44.7963 1.6353 44.105 3.0834 43.6209 4.2216C38.1637 3.4046 32.7345 3.4046 27.3892 4.2216C26.905 3.0581 26.1886 1.6353 25.5617 0.525289C25.5141 0.443589 25.4218 0.40133 25.3294 0.41542C20.2584 1.2888 15.4057 2.8186 10.8776 4.8978C10.8384 4.9147 10.8048 4.9429 10.7825 4.9795C1.57795 18.7309 -0.943561 32.1443 0.293408 45.3914C0.299005 45.4562 0.335386 45.5182 0.385761 45.5576C6.45866 50.0174 12.3413 52.7249 18.1147 54.5195C18.2071 54.5477 18.305 54.5139 18.3638 54.4378C19.7295 52.5728 20.9469 50.6063 21.9907 48.5383C22.0523 48.4172 21.9935 48.2735 21.8676 48.2256C19.9366 47.4931 18.0979 46.6 16.3292 45.5858C16.1893 45.5041 16.1781 45.304 16.3068 45.2082C16.679 44.9293 17.0513 44.6391 17.4067 44.3461C17.471 44.2926 17.5606 44.2813 17.6362 44.3151C29.2558 49.6202 41.8354 49.6202 53.3179 44.3151C53.3935 44.2785 53.4831 44.2898 53.5502 44.3433C53.9057 44.6363 54.2779 44.9293 54.6529 45.2082C54.7816 45.304 54.7732 45.5041 54.6333 45.5858C52.8646 46.6197 51.0259 47.4931 49.0921 48.2228C48.9662 48.2707 48.9102 48.4172 48.9718 48.5383C50.038 50.6034 51.2554 52.5699 52.5959 54.435C52.6519 54.5139 52.7526 54.5477 52.845 54.5195C58.6464 52.7249 64.529 50.0174 70.6019 45.5576C70.6551 45.5182 70.6887 45.459 70.6943 45.3942C72.1747 30.0791 68.2147 16.7757 60.1968 4.9823C60.1772 4.9429 60.1437 4.9147 60.1045 4.8978ZM23.7259 37.3253C20.2276 37.3253 17.3451 34.1136 17.3451 30.1693C17.3451 26.225 20.1717 23.0133 23.7259 23.0133C27.308 23.0133 30.1626 26.2532 30.1066 30.1693C30.1066 34.1136 27.28 37.3253 23.7259 37.3253ZM47.3178 37.3253C43.8196 37.3253 40.9371 34.1136 40.9371 30.1693C40.9371 26.225 43.7636 23.0133 47.3178 23.0133C50.9 23.0133 53.7545 26.2532 53.6986 30.1693C53.6986 34.1136 50.9 37.3253 47.3178 37.3253Z"
+                      fill="#5865F2"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0">
+                      <rect width="71" height="55" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <div class="flex-initial">
+                <div class="font-bold text-lg text-white">Discord</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Activity Status-->
+      <div id="activities_anaxes"></div>
+      <!--Contact me via-->
+      <div class="text-center lg:text-left font-regular tracking-widest uppercase text-sm text-gray-500 mt-16 mb-6">
+        Contact me via
+      </div>
+      <div class="row items-center justify-center mb-8">
+        <!--Twitter-->
+        <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/3">
+          <a rel="noopener noreferrer" href="https://twitter.com/DiscordAnaxes" target="_blank">
+            <div class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer" style="background-color: #0e141d; border-radius: 1vw;">
+              <div class="flex items-center">
+                <div class="flex-initial ml-4 mr-6">
+                  <img src="assets/images/socials/Twitter.webp" class="h-12 w-auto" alt="Twitter Logo" />
+                </div>
+                <div class="flex-initial">
+                  <div id="tw_followers" class="font-bold text-lg twitter"></div>
+                  <div class="font-regular text-xs text-gray-500">
+                    <i class="twa twa-tada"></i>&nbsp;Aiming for 100!
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!--Github-->
+        <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/3">
+          <a rel="noopener noreferrer" href="https://github.com/DiscordAnaxes" target="_blank">
+            <div class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer" style="background-color: #0e141d; border-radius: 1vw;">
+              <div class="flex items-center">
+                <div class="flex-initial ml-4 mr-6">
+                  <img src="assets/images/socials/GitHub.webp" class="h-12 w-auto" alt="GitHub Logo" />
+                </div>
+                <div class="flex-initial">
+                  <div id="gh_followers" class="font-bold text-lg text-white"></div>
+                  <div class="font-regular text-xs text-gray-500">
+                    <i class="twa twa-robot-face"></i>&nbsp;Aiming for 50!
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!--Discord-->
+        <div class="px-6 sm:px-4 col mb-8 w-full md:w-1/2 lg:w-1/3">
+          <a rel="noopener noreferrer" href="https://discord.com/users/567885938160697377" target="_blank">
+            <div class="flex items-center px-6 py-4 transform hover:scale-105 duration-200 shadow rounded-md px-6 sm:px-4 hover:bg-gray-100 cursor-pointer" style="background-color: #0e141d; border-radius: 1vw;">
+              <div class="flex items-center">
+                <div class="flex-initial ml-4 mr-6">
+                  <img src="assets/images/socials/Discord.webp" class="h-12 w-auto" alt="Discord Logo" />
+                </div>
+                <div class="flex-initial">
+                  <div id="discordStatus_socials" class="font-bold text-lg discord"></div>
+                  <div class="font-regular text-xs text-gray-500">
+                    <i class="twa twa-mobile-phone"></i>&nbsp;DM me if necessary!
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!--Social Icons below Contact me via-->
+        <div class="md:px-16 px-4 pb-16 pt-16 text-center">
+          <div class="mt-4 items-center">
+            <a rel="noopener noreferrer" aria-label="My Github" target="_blank" href="https://github.com/DiscordAnaxes" class="mr-3 github socialbtn fab fa-github text-3xl text-gray-600"></a>
+            <a rel="noopener noreferrer" aria-label="My Discord" target="_blank" href="https://discord.com/users/567885938160697377" class="socialbtn discord2 fab fa-discord text-3xl mr-3 text-gray-600"></a>
+            <a rel="noopener noreferrer" aria-label="My Twitter" target="_blank" href="https://twitter.com/DiscordAnaxes" class="mr-3 twitter2 socialbtn fab fa-twitter text-3xl text-gray-600"></a>
+            <a rel="noopener noreferrer" aria-label="Fontawesome Website" target="_blank" href="https://fontawesome.com/icons" class="mr-3 fontawesome socialbtn fab fa-font-awesome text-3xl text-gray-600"></a>
+            <a rel="noopener noreferrer" aria-label="NASA Website" target="_blank" href="https://nasa.gov" class="mr-3 socialbtn fad fa-user-astronaut text-3xl text-gray-600 hover:text-green-400"></a>
+          </div>
+          <br />
+          <p class="font-bold text-yellow-500 hover:text-pink-500"><i class="fad fa-crown"></i>&nbsp;<a rel="noopener noreferrer" href="https://github.com/audn/audun.gg" target="_blank">Audun.gg</a></p>
+          <p class="font-medium text-lg inter text-white">
+            Copyright &copy;
+            <a rel="noopener noreferrer" href="/"><span class="font-semibold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-green-400 hover:from-pink-500 hover:to-purple-400">Anaxes.xyz</span></a>&nbsp;2020 - 2021.
+          </p>
+          <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"></script>
+        </div>
       </div>
     </div>
-  </div>
-  <!--JavaScript Files-->
+    <!--JavaScript Files-->
   <script defer src="dist/assets/ts/loader.js" type="text/javascript"></script>
   <script defer src="dist/assets/ts/lanyard.js" type="text/javascript"></script>
   <script defer src="dist/assets/ts/github.js" type="text/javascript"></script>
@@ -1035,6 +803,5 @@
   <script defer src="dist/assets/ts/support.js" type="text/javascript"></script>
   <script defer src="dist/assets/ts/index.js" type="text/javascript"></script>
   <script defer src="https://momentjs.com/downloads/moment.min.js" type="text/javascript"></script>
-</body>
-
+  </body>
 </html>
