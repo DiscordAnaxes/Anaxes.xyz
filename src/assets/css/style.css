@@ -119,7 +119,7 @@ img {
 }
 
 .preloader {
-  background: #0a0f16 url(../images/AnaxesLogo.gif) no-repeat center center;
+  background: #0a0f16;
   height: 100vh;
   width: 100%;
   position: fixed;
